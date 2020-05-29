@@ -1,0 +1,15 @@
+{
+  "name": "ha-docs",
+  "version": "1.0.0",
+  "description": "HomeAssistant学习笔记的视频文档",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docsify serve docs"
+  },
+  "author": "",
+  "license": "ISC"
+}
