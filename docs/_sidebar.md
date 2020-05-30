@@ -11,7 +11,7 @@
   - [电视投屏](tv_cast.md)
   - [离线下载](image_install.md)
   - [上海公交](image_install.md)
-  - [外网访问](image_install.md)
+  - [外网访问](frp_install.md)
   - [智能音箱接入控制](image_install.md)
 
 - 插件开发
