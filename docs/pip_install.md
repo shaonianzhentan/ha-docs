@@ -1,4 +1,7 @@
 # HomeAssistant的安装
+
+*视频介绍：https://www.bilibili.com/video/BV1Lk4y1r7e8/*
+
 ---
 !> 注意: 这里使用的是python3.7及之后的版本，请确保版本正确
 
