@@ -9,13 +9,12 @@
 [common]
 server_addr = frp1.chuantou.org
 server_port = 7000
-privilege_token = www.xxorg.com
-user = test-ha
+token = www.xxorg.com
 
 [test-ha]
 type = http
 local_ip = 127.0.0.1
-local_port = 80
+local_port = 8123
 subdomain = test-ha
 ```
 
