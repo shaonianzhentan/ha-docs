@@ -17,6 +17,7 @@ local_ip = 127.0.0.1
 local_port = 8123
 subdomain = test-ha
 ```
+!> 注意：修改配置里的`test-ha`保证其唯一性
 
 > 使用Docker启动frp内网穿透服务
 
