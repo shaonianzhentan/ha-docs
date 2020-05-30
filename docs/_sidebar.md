@@ -8,7 +8,7 @@
 
   - [系统信息查看](image_install.md)
   - [音乐播放](image_install.md)
-  - [电视投屏](image_install.md)
+  - [电视投屏](tv_cast.md)
   - [离线下载](image_install.md)
   - [上海公交](image_install.md)
   - [外网访问](image_install.md)
