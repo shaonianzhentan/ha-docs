@@ -10,7 +10,9 @@
 homeassistant:
   customize: !include customize.yaml
 
+# 传感器配置
 sensor:
+  # 系统日期时间
   - platform: time_date
     display_options:
       - date
@@ -60,6 +62,7 @@ sensor:
       - type: ipv6_address
         arg: eth0
 ```
+!> 注意：`eth0`是有线网口，无线网卡的名称一般是`wlan0`，可以通过`ifconfig`命令查看
 
 > 分组配置文件：`groups.yaml`
 ```yaml
