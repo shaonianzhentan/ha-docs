@@ -24,3 +24,54 @@ subdomain = test-ha
 ```bash
 docker run --restart=always --network host -d -v ~/frpc.ini:/etc/frp/frpc.ini --name frpc snowdreamtech/frpc
 ```
+
+## 高级配置
+
+> 服务设备配置
+```ini
+
+[common]
+server_addr = 服务器IP
+server_port = 服务器端口
+token = Token密钥
+admin_addr = 127.0.0.1
+admin_port = 7400
+admin_user = admin
+admin_pwd = admin
+
+[secret_ssh]
+type = stcp
+sk = 客户端自定义密钥
+local_ip = 127.0.0.1
+local_port = 22
+
+[ha]
+type = http
+local_port = 88
+subdomain = ha
+
+```
+
+> 操作设备配置
+```ini
+[common]
+server_addr = 服务器IP
+server_port = 服务器端口
+token = Token密钥
+
+[secret_ssh_visitor]
+type = stcp
+# stcp 的访问者
+role = visitor
+# 要访问的 stcp 代理的名字
+server_name = secret_ssh
+sk = 客户端自定义密钥
+# 绑定本地端口用于访问 ssh 服务
+bind_addr = 127.0.0.1
+bind_port = 6000
+```
+
+```bash
+# 本地通过ssh连接服务设备
+ssh -oPort=6000 pi@127.0.0.1
+```
