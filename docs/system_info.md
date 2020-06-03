@@ -1,6 +1,6 @@
 # 系统信息查看
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1MA411q7zs*
 
 ---
 
