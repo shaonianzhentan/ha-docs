@@ -5,16 +5,18 @@
 ---
 
 ```bash
-docker run -it --net="host" --name="z2m" -v ~/z2m/data:/app/data --device=/dev/ttyACM0 -e TZ=Asia/Shanghai koenkk/zigbee2mqtt:latest
+docker run \
+   -it \
+   --net="host" \
+   --name="z2m" \
+   -v ~/z2m/data:/app/data \
+   --device=/dev/ttyACM0 \
+   -e TZ=Asia/Shanghai \
+   -v /run/udev:/run/udev:ro \
+   --privileged=true \
+   koenkk/zigbee2mqtt:latest
 ```
 
-> 配置文件: `~/z2m/data/configuration.yaml`
+> 配置文件`~/z2m/data/configuration.yaml`,将`homeassistant`设置为`true`
 
-```yaml
-mqtt:
-  base_topic: zigbee2mqtt
-  server: 'mqtt://localhost'
-  user: admin
-  password: public
-
-```
+详情请查看配置: https://github.com/Koenkk/zigbee2mqtt/blob/master/data/configuration.yaml
