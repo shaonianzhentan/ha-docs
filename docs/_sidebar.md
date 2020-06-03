@@ -12,6 +12,7 @@
   - [Node安装](install_node.md)
   - [Node-RED安装](install_nodered.md)
   - [梯子管理](install_v2.md)
+  - [zigbee2mqtt](install_z2m.md)
 
 - 插件配置
 
