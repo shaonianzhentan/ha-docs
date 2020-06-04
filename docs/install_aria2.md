@@ -39,7 +39,7 @@ nano /etc/nginx/conf.d/root.conf
 ```
 
 !> 注意修改配置里的`域名`
-```apacheconf
+```nginx
 server
 {
     listen 80;

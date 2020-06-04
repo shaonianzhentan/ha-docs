@@ -2,7 +2,7 @@
 
   - [docker安装](docker_install.md)
   - [pip安装](pip_install.md)
-  - [镜像安装](image_install.md)
+  - [镜像安装](install_image.md)
 
 - 服务
   - [Nginx管理](install_nginx.md)
@@ -15,6 +15,8 @@
   - [Zigbee2mqtt](install_z2m.md)
   - [MPD音乐播放](install_mpd.md)
   - [VLC音乐播放](install_vlc.md)
+  - [DLNA音乐播放](install_dlna.md)
+  - [MiniDLNA流媒体服务器](install_minidlna.md)
   - [Kodi视频播放器](install_kodi.md)
 
 - 插件配置

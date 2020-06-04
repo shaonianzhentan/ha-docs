@@ -17,7 +17,7 @@ nano /etc/nginx/conf.d/v2.conf
 ```
 
 *自定义配置文件: `v2.conf`*
-```
+```nginx
     server
     {
         listen 80;
