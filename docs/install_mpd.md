@@ -1,6 +1,6 @@
 # Music Player Daemon
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1ci4y147Bn/*
 
 ---
 

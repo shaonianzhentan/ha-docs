@@ -14,6 +14,7 @@
   - [MQTT安装](install_mqtt.md)
   - [Zigbee2mqtt](install_z2m.md)
   - [MPD音乐播放](install_mpd.md)
+  - [VLC音乐播放](install_vlc.md)
   - [Kodi视频播放器](install_kodi.md)
 
 - 插件配置
