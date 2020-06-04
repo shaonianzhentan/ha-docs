@@ -1,6 +1,6 @@
 # Nginx安装
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV12k4y1B73B/*
 
 ---
 
@@ -39,3 +39,24 @@ nano /etc/nginx/nginx.conf
 
 > 实时监控100行Nginx错误日志命令 `tail -100f /var/log/nginx/error.log`
 
+## HomeAssistant反向代理配置
+
+*配置文件：/etc/nginx/conf.d/root.conf*
+
+```nginx
+server {
+    listen          88;
+    server_name localhost;
+
+    location / {
+            proxy_pass  http://localhost:8123;
+    }
+
+    location /api/websocket {
+            proxy_pass  http://localhost:8123/api/websocket;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+    }
+}
+```
