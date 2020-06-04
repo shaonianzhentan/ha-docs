@@ -4,13 +4,17 @@
   - [pip安装](pip_install.md)
   - [镜像安装](install_image.md)
 
-- 服务
+- 云端服务
+
+  - [frps安装](install_frps.md)
+  - [梯子管理](install_v2.md)
+
+- 本地服务
   - [Nginx管理](install_nginx.md)
   - [外网访问](frp_install.md)
   - [下载管理](install_aria2.md)
   - [Node安装](install_node.md)
   - ~~[Node-RED安装](install_nodered.md)~~
-  - [梯子管理](install_v2.md)
   - [MQTT安装](install_mqtt.md)
   - [Zigbee2mqtt](install_z2m.md)
   - [MPD音乐播放](install_mpd.md)
