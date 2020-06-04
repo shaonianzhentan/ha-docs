@@ -4,7 +4,7 @@
 
 ---
 
-!> 原图标名称格式`mdi-home-assistant`，在HomeAssistant中使用时应改为`mdi:home-assistant`，注意格式
+!> 原图标名称格式`mdi-home-assistant`，在HomeAssistant中使用时应改为`mdi:home-assistant`，`mdi-`改为`mdi:`
 
 > 图标预览：https://unpkg.com/@mdi/font@5.3.45/preview.html
 
