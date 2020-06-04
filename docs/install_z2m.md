@@ -1,8 +1,10 @@
 # zigbee2mqtt安装
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/bv1dk4y1B73W*
 
 ---
+
+!> 注意: 在买的时候一定要`让卖家刷好固件`, 一定要说是用来`做zigbee2mqtt开发`的, 如果卖家`不懂就别买`了
 
 ```bash
 docker run \

@@ -1,6 +1,6 @@
 # MQTT安装
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/bv1MC4y1a7Uj*
 
 ---
 
