@@ -1,4 +1,7 @@
 # 外网访问
+
+*视频介绍：https://www.bilibili.com/video/BV1YK4y1t7x8*
+
 ---
 
 ## 运行frp服务
