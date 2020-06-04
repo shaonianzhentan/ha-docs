@@ -25,3 +25,7 @@
   - [智能音箱接入控制](image_install.md)
 
 - 插件开发
+
+- 资源网站
+
+  - [MDI图标](website_icon.md)
