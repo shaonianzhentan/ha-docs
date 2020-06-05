@@ -27,7 +27,7 @@
 
   - [系统信息查看](system_info.md)  
   - [电视投屏](tv_cast.md)
-  - ~~[网易云音乐](plug_ha_cloud_music.md)~~
+  - [网易云音乐](plug_ha_cloud_music.md)
   - ~~[上海公交](plug_ha_shbus.md)~~
   - ~~[文字语音控制](plug_ha_voice.md)~~
   - ~~[百度地图](plug_ha_baidu_map.md)~~

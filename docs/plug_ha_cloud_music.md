@@ -4,7 +4,9 @@
 
 ---
 
-> 安装网易云音乐的接口服务
+## 安装接口
+
+> 网易云音乐API
 
 官方文档：https://binaryify.github.io/NeteaseCloudMusicApi/
 
@@ -12,16 +14,6 @@
 docker run -d -p 3000:3000 --name netease_cloud_music_api    binaryify/netease_cloud_music_api
 ```
 
-> 插件配置
-
-源码地址：https://github.com/shaonianzhentan/ha_cloud_music
-
-```yaml
-# 详细配置请参考源码文档
-media_player:
-  - platform: ha_cloud_music
-    api_url: http://localhost:3000
-```
 
 > 配置反向代理给外网访问`如果没这个需求可以不用配置`
 
@@ -36,4 +28,17 @@ server {
             proxy_pass  http://localhost:3000/;
     }
 }
+```
+
+## 安装插件
+
+> 插件配置
+
+源码地址：https://github.com/shaonianzhentan/ha_cloud_music
+
+```yaml
+# 详细配置请参考源码文档
+media_player:
+  - platform: ha_cloud_music
+    api_url: http://localhost:3000
 ```
