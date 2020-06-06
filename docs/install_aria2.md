@@ -1,6 +1,6 @@
 # 下载管理
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1KA411B76H/*
 
 ---
 
@@ -14,6 +14,10 @@ bash aria2.sh
 
 # 修改下载地址到/home/www/aria2
 ```
+
+!> 如果出现错误可以尝试修改`/etc/hosts`文件，添加`151.101.76.133 raw.githubusercontent.com
+`
+
 ## 安装Aria2管理面板 
 
 ```bash
