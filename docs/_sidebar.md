@@ -30,7 +30,7 @@
   - [网易云音乐](plug_ha_cloud_music.md)
   - ~~[上海公交](plug_ha_shbus.md)~~
   - ~~[文字语音控制](plug_ha_voice.md)~~
-  - ~~[百度地图](plug_ha_baidu_map.md)~~
+  - [百度地图](plug_ha_baidu_map.md)
   - [侧边栏管理](plug_ha_sidebar.md)
   - [文件管理器](plug_ha_file_explorer.md)
   - ~~[蓝牙在家](plug_ha_ble_home.md)~~
