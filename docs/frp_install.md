@@ -65,13 +65,22 @@ plugin_crt_path = /etc/frp/server.crt
 plugin_key_path = /etc/frp/server.key
 plugin_host_header_rewrite = 127.0.0.1
 
-[ha-nr]
+[ha-nodered]
 type=http
 local_ip=127.0.0.1
 local_port=1880
 http_user=自定义用户名
 http_pwd=自定义密码
-subdomain=ha-nr
+subdomain=ha-nodered
+
+[ha-docker]
+type=http
+local_ip=127.0.0.1
+local_port=9000
+http_user=自定义用户名
+http_pwd=自定义密码
+subdomain=ha-docker
+
 ```
 
 > 操作设备配置
