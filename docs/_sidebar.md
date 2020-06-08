@@ -3,6 +3,7 @@
   - [docker安装](install_docker.md)
   - [pip安装](pip_install.md)
   - [镜像安装](install_image.md)
+  - [安卓手机安装](install_android.md)
 
 - 云端服务
 
