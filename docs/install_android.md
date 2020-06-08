@@ -1,6 +1,6 @@
 # 安卓手机安装
 
-*视频介绍：https://www.bilibili.com/video/BV1sz4y197v9/*
+*视频介绍：*
 
 ---
 
