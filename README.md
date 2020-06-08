@@ -7,7 +7,7 @@
 git clone https://github.com/shaonianzhentan/ha-docs
 
 # 安装依赖
-npm i
+npm i docsify-cli -g
 
 # 开始运行
 npm start

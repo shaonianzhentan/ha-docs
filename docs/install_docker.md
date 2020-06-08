@@ -12,6 +12,22 @@ sudo sh get-docker.sh
 ```
 [具体操作请查看详细安装文档](https://www.runoob.com/docker/ubuntu-docker-install.html)
 
+## Docker换源
+
+!> 注意：如果拉取速度没问题，可以不用换
+```bash
+# 编辑配置文件
+nano /etc/docker/daemon.json
+```
+> 配置文件的内容
+```json
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"]
+}
+```
+[具体操作请查看详细操作文档](https://lug.ustc.edu.cn/wiki/mirrors/help/docker)
+
+
 ## Docker管理界面安装
 
 > 安装方式
