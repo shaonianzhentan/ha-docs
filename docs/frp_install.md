@@ -37,10 +37,12 @@ docker run --restart=always --network host -d -v ~/frpc.ini:/etc/frp/frpc.ini --
 server_addr = 服务器IP
 server_port = 服务器端口
 token = Token密钥
+tls_enable = true
+
 admin_addr = 127.0.0.1
 admin_port = 7400
-admin_user = admin
-admin_pwd = admin
+admin_user = 自定义用户名
+admin_pwd = 自定义密码
 
 [secret_ssh]
 type = stcp
@@ -49,10 +51,27 @@ local_ip = 127.0.0.1
 local_port = 22
 
 [ha]
-type = http
-local_port = 88
-subdomain = ha
+type=http
+local_ip=127.0.0.1
+local_port=88
+subdomain=ha
 
+[ha-https]
+type=https
+plugin = https2http
+plugin_local_addr = 127.0.0.1:88
+subdomain=ha
+plugin_crt_path = /etc/frp/server.crt
+plugin_key_path = /etc/frp/server.key
+plugin_host_header_rewrite = 127.0.0.1
+
+[ha-nr]
+type=http
+local_ip=127.0.0.1
+local_port=1880
+http_user=自定义用户名
+http_pwd=自定义密码
+subdomain=ha-nr
 ```
 
 > 操作设备配置
