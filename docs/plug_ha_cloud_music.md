@@ -24,7 +24,7 @@ server {
     listen          88;
     server_name localhost;
 
-    location /163 {
+    location /163/ {
             proxy_pass  http://localhost:3000/;
     }
 }

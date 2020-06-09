@@ -1,7 +1,7 @@
 - 安装
 
   - [docker安装](install_docker.md)
-  - [pip安装](pip_install.md)
+  - [pip安装](install_pip.md)
   - [镜像安装](install_image.md)
   - [安卓手机安装](install_android.md)
 
@@ -12,7 +12,7 @@
 
 - 本地服务
   - [Nginx管理](install_nginx.md)
-  - [外网访问](frp_install.md)
+  - [外网访问](install_frpc.md)
   - [下载管理](install_aria2.md)
   - [Node安装](install_node.md)
   - [Node-RED安装](install_nodered.md)
@@ -48,6 +48,12 @@
 - 插件开发
 
   - ~~[控制挂墙平板](plug_dev_pad.md)~~
+
+- 用户界面开发
+
+  - [自定义Lovelace卡片](plug_dev_custom_card.md)
+  - [自定义状态卡片](plug_dev_custom_state_card.md)
+  - [自定义面板](plug_dev_custom_panel.md)
 
 - 自动化场景
 
