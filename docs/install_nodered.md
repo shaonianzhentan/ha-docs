@@ -33,8 +33,11 @@ node-red
 
 > 开机启动
 ```bash
+# 查看全局node_modules目录
+npm
+
 # 启动node-red
-pm2 start node-red
+pm2 start 全局node_modules安装目录/node-red/red.js --name nodered
 
 # 查看运行列表
 pm2 list
