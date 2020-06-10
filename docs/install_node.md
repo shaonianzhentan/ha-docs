@@ -14,3 +14,22 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install --lts
 
 ```
+
+> 安装
+
+```bash
+# 安装pm2管理模块
+npm i pm2 -g
+
+# 查看列表
+pm2 list
+
+# 启动程序
+pm2 start xxx.js --name 自定义名称
+
+# 保存配置
+pm2 save
+
+# 开机启动
+pm2 startup
+```

@@ -4,8 +4,44 @@
 
 ---
 
+## docker方式安装
+
 ```bash
 
 docker run -it -d -p 1880:1880 --net="host" --name mynodered nodered/node-red:1.0.1-10-minimal-arm32v6
 
+```
+
+```bash
+# 进入容器内部
+docker exec -it mynodered /bin/bash
+# 切换到安装模块目录中
+cd /data
+```
+
+## npm方式安装
+
+> 安装运行
+
+```bash
+# 全局安装node-red
+npm install -g --unsafe-perm node-red
+
+# 启动
+node-red
+```
+
+> 开机启动
+```bash
+# 启动node-red
+pm2 start node-red
+
+# 查看运行列表
+pm2 list
+
+# 保存配置
+pm2 save
+
+# 加入开机启动项
+pm2 startup
 ```
