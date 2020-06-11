@@ -1,6 +1,6 @@
 # Node安装
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1gt4y1y7zH/*
 
 ---
 
@@ -15,7 +15,7 @@ nvm install --lts
 
 ```
 
-> 安装
+> 安装pm2管理所有node程序
 
 ```bash
 # 安装pm2管理模块

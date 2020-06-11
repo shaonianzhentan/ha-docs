@@ -1,6 +1,6 @@
 # Node-RED安装
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV19V411C74F/*
 
 ---
 
