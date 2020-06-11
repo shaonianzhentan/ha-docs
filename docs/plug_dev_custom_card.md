@@ -10,6 +10,11 @@
 ```js
 class CustomCardName extends HTMLElement {
 
+    // 自定义默认配置
+    static getStubConfig() {
+        return { entity: "sun.sun" }
+    }
+  
     /*
      * 设置配置信息
      */
@@ -37,7 +42,7 @@ class CustomCardName extends HTMLElement {
             composed: true
         });
         event.detail = data;
-        document.querySelector('home-assistant').dispatchEvent(event);
+        this.dispatchEvent(event);
     }
 
     /*
@@ -106,7 +111,7 @@ class CustomCardName extends HTMLElement {
         $('#btnToast').onclick = () => {
             this.toast("我是一个提示哦！")
         }
-        $('#btnToast').onclick = () => {
+        $('#btnMoreInfo').onclick = () => {
             this.showMoreInfo(_config.entity)
         }
     }
@@ -118,13 +123,15 @@ class CustomCardName extends HTMLElement {
     }
 }
 
+// 定义DOM对象元素
 customElements.define('custom-card-name', CustomCardName);
-```
 
-
-> 使用自定义Lovelace卡片
-
-```yaml
-type: 'custom:custom-card-name'
-entity: binary_sensor.updater
+// 添加预览
+window.customCards = window.customCards || [];
+window.customCards.push({
+  type: "custom-card-name",
+  name: "卡片名称",
+  preview: false,
+  description: "卡片名称描述"
+});
 ```
