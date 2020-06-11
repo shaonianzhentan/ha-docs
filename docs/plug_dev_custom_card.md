@@ -135,3 +135,5 @@ window.customCards.push({
   description: "卡片名称描述"
 });
 ```
+
+官方文档地址：https://developers.home-assistant.io/docs/frontend/custom-ui/lovelace-custom-card
