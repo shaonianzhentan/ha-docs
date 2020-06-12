@@ -17,8 +17,8 @@
         identifiers: "20200606",
         manufacturer: "制造商",
         model: "HA",
-        name = "设备名称",
-        sw_version = "1.0"
+        name: "设备名称",
+        sw_version: "1.0"
     }
 }
 
