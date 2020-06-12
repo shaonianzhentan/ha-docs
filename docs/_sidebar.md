@@ -47,6 +47,7 @@
 
 - 插件开发
 
+  - [MQTT传感器](plug_dev_mqtt_sensor.md)
   - ~~[控制挂墙平板](plug_dev_pad.md)~~
 
 - 用户界面开发
