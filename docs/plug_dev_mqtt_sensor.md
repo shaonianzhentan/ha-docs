@@ -1,6 +1,6 @@
 # MQTT传感器
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1Lz411i7v6/*
 
 ---
 
