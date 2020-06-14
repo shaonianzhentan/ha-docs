@@ -1,6 +1,6 @@
 # MQTT开关
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1rp4y1D7Un/*
 
 ---
 
@@ -14,7 +14,6 @@
     state_topic: "device20200606/switch_object_id/state",
     json_attributes_topic: "device20200606/switch_object_id/attributes",
     command_topic: "device20200606/switch_object_id/set",
-    optimistic: false, 
     device: {
         identifiers: "20200606",
         manufacturer: "制造商",
