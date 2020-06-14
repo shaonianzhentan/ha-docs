@@ -1,6 +1,6 @@
 # MQTT电灯
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1fV411r7xQ/*
 
 ---
 
@@ -10,18 +10,19 @@
 {
     unique_id: "HA-light_object_id",
     name: "电灯",
-    icon: "mdi:lightbulb-on-outline",
     state_topic: "device20200606/light_object_id/state",
     command_topic: "device20200606/light_object_id/set",
     brightness_state_topic: "device20200606/light_object_id/brightness/status",
     brightness_command_topic: "device20200606/light_object_id/brightness/set",
     rgb_state_topic: "device20200606/light_object_id/rgb/status",
     rgb_command_topic: "device20200606/light_object_id/rgb/set",
+    color_temp_command_topic: "device20200606/light_object_id/color_temp/status",
+    color_temp_state_topic: "device20200606/light_object_id/color_temp/set",   
     json_attributes_topic: "device20200606/light_object_id/attributes",
     effect_list: ["模式一", "模式二"],
     effect_state_topic: "device20200606/light_object_id/effect/state",
     effect_command_topic: "device20200606/light_object_id/effect/set",
-    optimistic: false,
+    optimistic: true,
     device: {
         identifiers: "20200606",
         manufacturer: "制造商",
