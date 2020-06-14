@@ -1,4 +1,4 @@
-# MQTT电灯
+# MQTT灯光
 
 *视频介绍：https://www.bilibili.com/video/BV1fV411r7xQ/*
 
