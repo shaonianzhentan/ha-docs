@@ -24,9 +24,13 @@
   - [MiniDLNA流媒体服务器](install_minidlna.md)
   - [Kodi视频播放器](install_kodi.md)
 
+- 官方配置
+
+  - [系统信息查看](system_info.md)
+  - [信息存储](system_recorder.md)
+
 - 插件配置
 
-  - [系统信息查看](system_info.md)  
   - [电视投屏](tv_cast.md)
   - [网易云音乐](plug_ha_cloud_music.md)
   - ~~[上海公交](plug_ha_shbus.md)~~
