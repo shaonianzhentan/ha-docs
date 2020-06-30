@@ -15,3 +15,5 @@ network={
     priority=1
 }
 ```
+
+> 在`boot`目录下新建`ssh`文件开启ssh服务
