@@ -23,6 +23,7 @@
   - [DLNA媒体播放器](install_dlna.md)
   - [MiniDLNA流媒体服务器](install_minidlna.md)
   - [Kodi视频播放器](install_kodi.md)
+  - [私有云盘-可道云](install_kodbox.md)
 
 - 官方配置
 
