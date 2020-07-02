@@ -19,3 +19,5 @@ network={
 > 在`boot`目录下新建`ssh`文件开启ssh服务
 
 > 树莓派原生系统：默认账号`pi`和密码`raspberry`
+
+树莓派系统换源：https://mirror.tuna.tsinghua.edu.cn/help/raspbian/
