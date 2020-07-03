@@ -15,6 +15,13 @@ nvm install --lts
 
 ```
 
+> npm换源
+
+```bash
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+官方文件：https://cnpmjs.org/
+
 > 安装pm2管理所有node程序
 
 ```bash
