@@ -56,6 +56,7 @@ class CustomCardState extends HTMLElement {
         return this._stateObj
     }
 
+    // 接收当前状态对象
     set stateObj(value) {
         this._stateObj = value
         // console.log(value)
