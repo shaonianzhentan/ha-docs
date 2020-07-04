@@ -1,6 +1,6 @@
 # 自定义状态卡片
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1Ct4y197eo/*
 
 ---
 
