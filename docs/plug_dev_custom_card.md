@@ -1,6 +1,6 @@
 # 自定义Lovelace卡片
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1zg4y1v7WE/*
 
 ---
 
