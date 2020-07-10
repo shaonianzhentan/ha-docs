@@ -70,3 +70,7 @@
 - 资源网站
 
   - [MDI图标](website_icon.md)
+
+- 相关小知识
+  
+  - [Android小知识](about_android.md)
