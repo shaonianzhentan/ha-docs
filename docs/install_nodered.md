@@ -8,7 +8,7 @@
 
 ```bash
 
-docker run -it -d -p 1880:1880 --net="host" --name mynodered nodered/node-red:1.0.1-10-minimal-arm32v6
+docker run -it -d -p 1880:1880 --restart=always --net="host" --name mynodered nodered/node-red:1.0.1-10-minimal-arm32v6
 
 ```
 

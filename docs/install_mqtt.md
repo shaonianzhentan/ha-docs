@@ -8,7 +8,7 @@
 
 ```bash
 
-docker run -it -d --name emqx -p 18083:18083 -p 1883:1883 -p 8083:8083 emqx/emqx:latest
+docker run -it -d --name emqx -p 18083:18083 -p 1883:1883 -p 8083:8083 --restart=always emqx/emqx:latest
 
 ```
 

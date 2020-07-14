@@ -10,6 +10,7 @@
 docker run \
    -it \
    --net="host" \
+   --restart=always \
    --name="z2m" \
    -v ~/z2m/data:/app/data \
    --device=/dev/ttyACM0 \
