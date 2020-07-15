@@ -1,6 +1,6 @@
 # MiniDLNA流媒体服务器
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1a5411Y7Ns/*
 
 ---
 

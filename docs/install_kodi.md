@@ -1,6 +1,6 @@
 # Kodi视频播放器
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV17D4y1S7HE/*
 
 ---
 

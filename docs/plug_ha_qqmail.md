@@ -1,6 +1,6 @@
 # QQ邮箱通知
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1kg4y1q7DZ/*
 
 ---
 
