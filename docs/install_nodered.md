@@ -11,10 +11,8 @@
 ```bash
 
 # 正常安装
-docker run -it -d -p 1880:1880 --restart=always --net="host" --name mynodered nodered/node-red:1.0.1-10-minimal-arm32v6
-
-# 注意：宿主机root权限安装
 docker run -it -d -p 1880:1880 --restart=always --privileged=true --net="host" --name mynodered nodered/node-red:1.0.1-10-minimal-arm32v6
+
 ```
 
 ```bash

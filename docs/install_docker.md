@@ -45,7 +45,7 @@ docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/doc
 
 ```bash
 # 配置文件路径：~/homeassistant
-docker run -d --net="host" --name="ha" --restart=always -v ~/homeassistant:/config -p 8123:8123 homeassistant/home-assistant:latest
+docker run -d --net="host" --name="ha" --restart=always --privileged=true -v ~/homeassistant:/config -p 8123:8123 homeassistant/home-assistant:latest
 
 ```
 !> 可以自定义修改HomeAssistant配置文件的路径，“~”代表当前登录用户的根目录

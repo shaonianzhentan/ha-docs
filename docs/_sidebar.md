@@ -29,6 +29,7 @@
 
   - [系统信息查看](system_info.md)
   - [信息存储](system_recorder.md)
+  - [摄像监控](system_camera.md)
 
 - 插件配置
 
