@@ -22,7 +22,18 @@ sensor:
       - content
       - state
     unit_of_measurement: 元
-
+  - platform: rest
+    name: 松江40路到站时间
+    resource: http://www.shjt.org.cn:8005/bus/TrafficLineXML.aspx?TypeID=3&lineid=871612&stopid=14&direction=0&name=%E6%9D%BE%E6%B1%9F40%E8%B7%AF
+    json_attributes_path: "$.result.cars.car"
+    json_attributes:
+      - "terminal"
+      - "stopdis"
+      - "distance"
+      - "time"
+    value_template: '{{ ((value_json.result.cars.car.time | int) / 60) | round(0, "floor") }}'
+    unit_of_measurement: "分钟"
+    
 # HTTP通知接口服务
 notify:
   - platform: rest
