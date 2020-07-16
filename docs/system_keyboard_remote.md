@@ -6,7 +6,7 @@
 
 > 官方配置
 
-```bash
+```yaml
 
 keyboard_remote:
  - device_descriptor: '/dev/input/event3'
