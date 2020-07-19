@@ -77,3 +77,4 @@
 - 相关小知识
   
   - [Android小知识](about_android.md)
+  - [GPIO接口](about_gpio.md)
