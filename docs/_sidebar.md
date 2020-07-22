@@ -78,4 +78,4 @@
   
   - [Android小知识](about_android.md)
   - [GPIO接口](about_gpio.md)
-  - [创建AP热点](about_create_ap.md)
+  - [树莓派](about_pi.md)
