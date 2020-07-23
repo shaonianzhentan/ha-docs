@@ -4,7 +4,7 @@
 
 > 文档作者：`Moneky - D - Code`
 
-> 联系方式：`QQ: 635147515`
+> 联系方式：`QQ: 635147515`、HomeAssistant学习交流群：`61417349`
 
 > 源码地址：[https://github.com/shaonianzhentan/ha-docs](https://github.com/shaonianzhentan/ha-docs)
 
