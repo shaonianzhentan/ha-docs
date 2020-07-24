@@ -32,6 +32,7 @@
   - [摄像监控](system_camera.md)
   - [键盘控制器](system_keyboard_remote.md)
   - [HTTP接口请求](system_http_api.md)
+  - [主题](system_theme.md)
 
 - 插件配置
 

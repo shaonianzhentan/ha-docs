@@ -2,6 +2,8 @@
 
 ---
 
+> 安装与配置
+
 ```bash
 # 安装相关依赖
 sudo apt-get install libmariadbclient-dev default-libmysqlclient-dev libssl-dev
@@ -16,3 +18,18 @@ recorder:
 ```
 
 官方配置地址：https://www.home-assistant.io/integrations/recorder/
+
+> `mysql8.0`及以后修改密码方法
+
+```bash
+# 使用root的空密码进入mysql
+mysql -u root -p
+
+# mysql修改root账号密码方法1
+alter user'root'@'localhost' identified by '新密码';
+# mysql修改root账号密码方法2
+alter user'root'@'localhost' identified with mysql_native_password by '新密码';
+
+# 查看加密后的密码
+select authentication_string from user where user='root'
+```
