@@ -4,6 +4,7 @@
   - [pip安装](install_pip.md)
   - [镜像安装](install_image.md)
   - [安卓手机安装](install_android.md)
+  - [我的安装](install_my.md)
 
 - 云端服务
 
