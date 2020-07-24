@@ -12,8 +12,8 @@
 
 - 本地服务
   - [Nginx管理](install_nginx.md)
-  - [外网访问](install_frpc.md)
-  - [下载管理](install_aria2.md)
+  - [Frpc外网访问](install_frpc.md)
+  - [Aria2下载管理](install_aria2.md)
   - [Node安装](install_node.md)
   - [Node-RED安装](install_nodered.md)
   - [MQTT安装](install_mqtt.md)
@@ -23,7 +23,7 @@
   - [DLNA媒体播放器](install_dlna.md)
   - [MiniDLNA流媒体服务器](install_minidlna.md)
   - [Kodi视频播放器](install_kodi.md)
-  - [私有云盘-可道云](install_kodbox.md)
+  - [Kodbox私有云盘](install_kodbox.md)
 
 - 官方配置
 
