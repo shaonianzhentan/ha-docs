@@ -35,6 +35,12 @@ service php7.3-fpm restart
 
 # 查看服务运行情况
 ps auwx | grep php
+
+# 如果你有硬盘，可以挂载
+# 编辑开机启动
+nano /etc/rc.local
+# 加入开机自动挂载
+mount /dev/sda1 /mnt
 ```
 
 ## nginx配置运行php
