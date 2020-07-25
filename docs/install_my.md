@@ -1,5 +1,6 @@
 # 我的安装配置
 
+安装相关服务
 ```bash
 # 安装Docker管理
 sudo docker run -itd --net="host" --restart=always --name="prtainer-demo" docker.io/portainer/portainer
@@ -12,10 +13,11 @@ sudo docker run -itd --net="host" --restart=always --name="mynodered" --privileg
 
 # 安装HomeAssistant
 sudo docker run -itd --net="host" --restart=always --name="ha" --privileged=true -v ~/homeassistant:/config homeassistant/home-assistant:latest
+```
 
-# frpc服务
-sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
 
+配置文件管理
+```bash
 # clone文件
 git clone https://github.com.cnpmjs.org/shaonianzhentan/ha_file_explorer
 # 复制文件夹
@@ -25,4 +27,67 @@ sudo rm -rf ha_file_explorer
 
 # 编辑配置
 sudo nano ~/homeassistant/configuration.yaml
+
+```
+```yaml
+# 配置文件管理器
+ha_file_explorer:
+```
+
+配置网易云音乐
+```bash
+# 网易云音乐API
+sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
+```
+```yaml
+# 配置媒体播放器
+media_player:
+  - platform: ha_cloud_music
+    api_url: http://localhost:3000
+```
+
+配置外网访问
+```bash
+# 新建配置文件，配置必要信息
+sudo touch ~/homeassistant/frpc.ini
+
+# 编辑配置文件
+sudo nano ~/homeassistant/frpc.ini
+
+# frpc服务
+sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
+```
+
+配置zigbee2mqtt
+```bash
+# 运行
+sudo docker run \
+   -itd \
+   --net="host" \
+   --restart=always \
+   --name="z2m" \
+   -v ~/homeassistant/zigbee2mqtt:/app/data \
+   --device=/dev/ttyACM0 \
+   -e TZ=Asia/Shanghai \
+   -v /run/udev:/run/udev:ro \
+   --privileged=true \
+   koenkk/zigbee2mqtt:latest
+
+# 编辑配置(将homeassistant设置为true)
+sudo nano ~/homeassistant/zigbee2mqtt/configuration.yaml
+```
+
+安装NodeRed相关依赖包（这里是在Docker控制台里操作的）
+```bash
+# 进入NodeRed目录
+cd /data
+
+# 换源
+npm config set registry https://registry.npm.taobao.org
+
+# 安装HomeAssistant模块（必须要装）
+npm install node-red-contrib-home-assistant-websocket
+
+# 安装onvif摄像监控模块（可不装）
+npm install node-red-contrib-onvif-nodes@0.0.1-beta.7
 ```
