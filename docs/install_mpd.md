@@ -34,3 +34,40 @@ media_player:
 ```
 
 配置参考文档: https://www.home-assistant.io/integrations/mpd/
+
+## 遇到的问题
+
+> 香橙派Armbian系统开启3.5耳机口输出
+```bash
+# 打开系统配置
+armbian-config
+
+# 选择
+System - Hardware - 空格选中analog-codec
+
+# 然后保存即可
+```
+
+> 在HA中无法控制音量
+```bash
+# 打开音量控制器，看看实际控制的名称（香橙派Armbian系统里是DAC）
+alsamixer
+
+# 修改mixer_control控制
+sudo nano /etc/mpd.conf
+
+```
+找到音频输出配置，然后将`mixer_control`修改为指定的值
+```nginx
+audio_output {
+        type            "alsa"
+        name            "My ALSA Device"
+#       device          "hw:0,0"        # optional
+#       mixer_type      "hardware"      # optional
+#       mixer_device    "default"       # optional
+#       mixer_control   "PCM"           # optional
+        mixer_control   "DAC"
+#       mixer_index     "0"             # optional
+}
+
+```

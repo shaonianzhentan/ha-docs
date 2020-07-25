@@ -8,11 +8,9 @@ sudo docker run -itd --net="host" --restart=always --name="prtainer-demo" docker
 # 安装EMQX
 sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
 
-# 安装Node-Red
-sudo docker run -itd --net="host" --restart=always --name="mynodered" --privileged=true nodered/node-red:1.0.1-10-minimal-arm32v6
-
 # 安装HomeAssistant
-sudo docker run -itd --net="host" --restart=always --name="ha" --privileged=true -v ~/homeassistant:/config homeassistant/home-assistant:latest
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" -v ~/homeassistant:/config homeassistant/home-assistant:latest
+
 ```
 
 
@@ -77,10 +75,18 @@ sudo docker run \
 sudo nano ~/homeassistant/zigbee2mqtt/configuration.yaml
 ```
 
-安装NodeRed相关依赖包（这里是在Docker控制台里操作的）
+NodeRed相关安装
 ```bash
+# 创建文件夹
+sudo mkdir ~/homeassistant/nodered
+# 设置权限
+sudo chmod 777 ~/homeassistant/nodered
+
+# 安装Node-Red
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red:1.0.1-10-minimal-arm32v6
+
 # 进入NodeRed目录
-cd /data
+cd ~/homeassistant/nodered
 
 # 换源
 npm config set registry https://registry.npm.taobao.org
@@ -90,4 +96,10 @@ npm install node-red-contrib-home-assistant-websocket
 
 # 安装onvif摄像监控模块（可不装）
 npm install node-red-contrib-onvif-nodes@0.0.1-beta.7
+
+# 安装blinker
+npm install node-red-contrib-blinker-mqtt
+# 编辑文件
+nano ~/homeassistant/nodered/node_modules/node-red-contrib-blinker-mqtt/blinker-mqtt.js
+# .replace(/'/g, '"')
 ```
