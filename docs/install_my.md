@@ -9,7 +9,7 @@ sudo docker run -itd --net="host" --restart=always --name="prtainer-demo" docker
 sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
 
 # 安装HomeAssistant
-sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" -v ~/homeassistant:/config homeassistant/home-assistant:latest
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" -v ~/homeassistant:/config -e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
 
 ```
 
