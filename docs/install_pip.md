@@ -38,7 +38,7 @@ trusted-host=mirrors.aliyun.com
 
 > windows换源
 
-```
+```bash
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
