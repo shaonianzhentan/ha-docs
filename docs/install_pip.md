@@ -36,6 +36,12 @@ trusted-host=mirrors.aliyun.com
 * 豆瓣(douban) http://pypi.douban.com/simple/ 
 * 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
 
+> windows换源
+
+```
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 ## HomeAssistant安装
 
 > 安装方式
