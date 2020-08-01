@@ -4,6 +4,23 @@
 
 ---
 !> 注意: 这里使用的是python3.7及之后的版本，请确保版本正确
+## pip安装
+```bash
+# 如果系统中没有3.8以上，可以使用以下方式安装
+sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev -y
+
+wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
+
+tar zxvf Python-3.8.5.tgz
+
+cd Python-3.8.5
+
+sudo ./configure
+
+sudo make
+
+sudo make install
+```
 
 ## pip换源
 

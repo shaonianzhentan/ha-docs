@@ -31,14 +31,6 @@ adb shell input keyevent 66
 
 ## 应用程序操作
 ```bash
-# 打开微信
-adb shell am start com.tencent.mm/com.tencent.mm.ui.LauncherUI
-
-# 打开爱奇艺
-adb shell am start -n com.qiyi.video/org.qiyi.android.video.MainActivity
-
-# 打开QQ
-adb shell am start -n com.tencent.mobileqq/.activity.SplashActivity
 
 # 查看手机屏幕分辨率
 adb shell wm size
@@ -68,5 +60,42 @@ adb push test.apk /sdcard
 adb shell dumpsys window windows
 
 # 查看Android手机当前正在运行的Activity
-adb shell dumpsys activity activities 
+adb shell dumpsys activity activities
+```
+
+## 启动应用
+
+> 手机应用
+```bash
+# 打开微信
+adb shell am start com.tencent.mm/com.tencent.mm.ui.LauncherUI
+
+# 打开爱奇艺
+adb shell am start -n com.qiyi.video/org.qiyi.android.video.MainActivity
+
+# 打开QQ
+adb shell am start -n com.tencent.mobileqq/.activity.SplashActivity
+
+```
+> 电视应用
+```bash
+# 天猫魔盒主页
+am start com.youku.taitan.tv/com.youku.tv.home.activity.HomeActivity
+
+# 奇异果
+am start com.gitvdideo.aliapp/com.gala.video.app.epg.HomeActivity
+
+# 腾讯视频
+am start com.ktcp.video/.activity.MainActivity
+
+# 哔哩哔哩
+am start com.xiaodianshi.tv.yst/.ui.splash.SplashActivity
+
+# 启动Kodi
+am start org.xbmc.kodi/.Splash
+
+```
+```
+# 使用Kodi播放指定视频
+am start -a android.intent.action.VIEW -d "http://192.168.1.101/kodi/河神2/第23集/index.m3u8" -t "video/*" -n "org.xbmc.kodi/.Splash"
 ```

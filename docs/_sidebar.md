@@ -25,6 +25,7 @@
   - [MiniDLNA流媒体服务器](install_minidlna.md)
   - [Kodi视频播放器](install_kodi.md)
   - [Kodbox私有云盘](install_kodbox.md)
+  - [Samba局域网共享](install_samba.md)
 
 - 官方配置
 
