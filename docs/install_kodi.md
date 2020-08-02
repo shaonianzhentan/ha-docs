@@ -7,7 +7,11 @@
 ## 安装
 
 ```bash
+# 安装kodi播放器
+sudo apt install kodi -y
 
+# 安装IPTV插件
+sudo apt install kodi-pvr-iptvsimple -y
 ```
 下载地址: http://mirrors.kodi.tv/releases/
 

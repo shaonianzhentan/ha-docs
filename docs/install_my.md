@@ -36,6 +36,13 @@ ha_file_explorer:
 ```bash
 # 网易云音乐API
 sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
+
+# 或者在node环境中直接运行
+cd ~/git
+git clone https://github.com.cnpmjs.org/Binaryify/NeteaseCloudMusicApi
+cd NeteaseCloudMusicApi
+cnpm i
+pm2 start app.js --name music
 ```
 ```yaml
 # 配置媒体播放器
@@ -102,4 +109,18 @@ npm install node-red-contrib-blinker-mqtt
 # 编辑文件
 nano ~/homeassistant/nodered/node_modules/node-red-contrib-blinker-mqtt/blinker-mqtt.js
 # .replace(/'/g, '"')
+```
+
+配置WebSSH2
+```bash
+cd ~/git
+git clone https://github.com.cnpmjs.org/billchurch/webssh2
+cd webssh2/app
+cnpm i
+pm2 start index.js --name webssh
+```
+```nginx
+location /ssh/ {
+    proxy_pass http://localhost:2222;
+}
 ```
