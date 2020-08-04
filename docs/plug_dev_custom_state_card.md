@@ -89,7 +89,7 @@ class CustomCardState extends HTMLElement {
         // 创建成功
         this.isCreated = true
         /* ***************** 附加代码 ***************** */
-        let { _stateObj, $ } = this
+        let { $ } = this
         // 定义事件
         $('#btnToast').onclick = () => {
             this.toast("我是一个提示哦！")
