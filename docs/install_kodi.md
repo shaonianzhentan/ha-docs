@@ -63,18 +63,18 @@ playerid: 1
 > 获取kodi列表
 ```js
 fetch('http://localhost:8080/jsonrpc?PlaylistCollection', {
-    method:'POST', 
+    method:'POST',
     headers:{
         'Content-Type': 'application/json'
     },
     body:JSON.stringify({
-        "jsonrpc":"2.0",
-        "method":"Playlist.GetItems",
-        "id": Date.now(),
-        "params": {
-            "playlistid":1,
-            "properties": ["title","thumbnail","file","artist","genre","year","rating","album","track","duration","playcount","dateadded","episode","artistid","albumid","tvshowid"],
-            "limits":{"start":0}
+        jsonrpc: "2.0",
+        method: "Playlist.GetItems",
+        id: Date.now().toString(),
+        params: {
+            playlistid:1,
+            properties: ["file"],
+            limits:{ start: 0 }
         }
     })
 }).then(res=>res.json()).then(res=>{
