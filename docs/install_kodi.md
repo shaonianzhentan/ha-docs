@@ -47,7 +47,7 @@ media_player:
 
 ## 相关方法
 
-> 调用服务`kodi.call_method`
+> 调用服务`kodi.call_method`, 监听事件`kodi_call_method_result`
 ```yaml
 # 选择集数
 method: Player.Open
@@ -58,6 +58,14 @@ item:
 # 播放/暂停
 method: Player.Open
 playerid: 1
+
+# 获取列表
+method: Playlist.GetItems
+playlistid: 1
+properties:
+  - file
+limits:
+  start: 0
 ```
 
 > 获取kodi列表
