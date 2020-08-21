@@ -40,19 +40,18 @@
 
   - [电视投屏](tv_cast.md)
   - [网易云音乐](plug_ha_cloud_music.md)
-  - ~~[上海公交](plug_ha_shbus.md)~~
   - [语音小助手](plug_ha_voice.md)
   - [百度地图](plug_ha_baidu_map.md)
   - [侧边栏管理](plug_ha_sidebar.md)
   - [文件管理器](plug_ha_file_explorer.md)
-  - ~~[蓝牙在家](plug_ha_ble_home.md)~~
+  - [蓝牙在家](plug_ha_ble_home.md)
   - [QQ邮箱通知](plug_ha_qqmail.md)
 
 - 硬件设备插件配置
 
   - ~~[智能音箱接入控制](plug_voice_box.md)~~
   - ~~[易微联设备接入](plug_ewelink.md)~~
-  - ~~[小米设备接入](plug_xiaomi.md)~~
+  - [小米设备接入](plug_xiaomi.md)
   - ~~[ESP系列设备接入](plug_esp.md)~~
   - ~~[Arduino设备接入](plug_arduino.md)~~
 
