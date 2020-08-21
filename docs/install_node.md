@@ -34,6 +34,9 @@ pm2 list
 # 启动程序
 pm2 start xxx.js --name 自定义名称
 
+# 执行python脚本
+pm2 start main.py -x --interpreter python
+
 # 保存配置
 pm2 save
 
