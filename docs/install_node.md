@@ -13,6 +13,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 # 安装最新版的node
 nvm install --lts
 
+# 注意：在【树莓派zero】上千万别装12及以上版本，需要编译非常浪费时间
+nvm install 10.0.0
 ```
 
 > npm换源

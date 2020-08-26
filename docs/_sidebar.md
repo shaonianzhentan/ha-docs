@@ -75,6 +75,7 @@
 - 资源网站
 
   - [MDI图标](website_icon.md)
+  - [GitHub慢慢慢](website_github520.md)
 
 - 相关小知识
   
