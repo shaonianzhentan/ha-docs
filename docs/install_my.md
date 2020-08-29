@@ -112,6 +112,30 @@ sudo nano data/configuration.yaml
 pm2 start index.js --name z2m
 ```
 
+安装frpc
+```bash
+# 下载程序
+wget https://github.com/fatedier/frp/releases/download/v0.33.0/frp_0.33.0_linux_arm.tar.gz
+
+# 解压并进入
+tar -zvxf frp_0.33.0_linux_arm.tar.gz
+cd frp_0.33.0_linux_arm
+
+# 复制文件到指定目录
+sudo cp -r frpc /usr/bin/
+sudo mkdir /etc/frp
+sudo cp -r frpc.ini /etc/frp/
+sudo cp -r systemd/frpc.service /etc/systemd/system/
+
+# 编辑配置文件
+sudo nano /etc/frp/frpc.ini
+
+# 启动查看
+cd /etc/systemd/system/
+sudo systemctl start frpc.service
+# 查看运行状态
+sudo systemctl status frpc.service
+```
 
 ## 相关插件安装配置
 

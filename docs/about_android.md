@@ -2,6 +2,12 @@
 
 ---
 
+## 安装
+```bash
+sudo apt-get install android-tools-adb -y
+```
+
+
 ## 远程调试
 > 注意：需要先下载新版的adb调试器
 ```bash

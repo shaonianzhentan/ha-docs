@@ -15,7 +15,7 @@ sudo apt-get install tightvncserver xrdp -y
 
 ```bash
 # 安装依赖
-sudo apt install dnsmasq -y
+sudo apt install dnsmasq hostapd -y
 
 # 编译代码
 git clone https://github.com/oblique/create_ap
