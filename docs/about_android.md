@@ -82,6 +82,8 @@ adb shell am start -n com.qiyi.video/org.qiyi.android.video.MainActivity
 # 打开QQ
 adb shell am start -n com.tencent.mobileqq/.activity.SplashActivity
 
+# 打开KiwiBrowser
+adb shell am start -n com.kiwibrowser.browser/org.chromium.chrome.browser.ChromeTabbedActivity
 ```
 > 电视应用
 ```bash
