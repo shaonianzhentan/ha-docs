@@ -100,6 +100,7 @@
 
 !> 注意：`-`清除空格
 
-> 官方文档
+> 相关文档
 
 - https://www.home-assistant.io/docs/configuration/templating/
+- http://jinja.pocoo.org/docs/dev/templates/
