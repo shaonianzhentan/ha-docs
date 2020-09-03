@@ -4,9 +4,9 @@
 
 ---
 
-!> 注意：`-`清除空格
+> 模板介绍用例
 
-> 判断和获取实体状态
+- 判断和获取实体状态
 
 ```bash
 {% if is_state('binary_sensor.updater', 'on') %}
@@ -17,7 +17,7 @@
 {% endif %}
 ```
 
-> 判断和获取实体属性
+- 判断和获取实体属性
 
 ```bash
 {% if is_state_attr('binary_sensor.updater', 'newest_version', '0.114.4') %}
@@ -29,7 +29,7 @@
 {% endif %}
 ```
 
-> 遍历数据
+- 遍历数据
 
 ```bash
 {% for state in states.sensor %}
@@ -41,7 +41,7 @@
 {% endfor %}
 ```
 
-> 时间
+- 时间
 
 ```bash
 现在的时间是
@@ -65,7 +65,7 @@
 {{ strptime("2020-10-10 10:10:10", "%Y-%m-%d %H:%M:%S").strftime("%H:%M:%S") }}
 ```
 
-> 过滤器
+- 过滤器
 
 ```bash
 # 字符串转数字类型
@@ -86,7 +86,7 @@
 
 ```
 
-> 距离 `distance(纬度坐标, 经度坐标)`
+- 距离 `distance(纬度坐标, 经度坐标)`
 
 ```bash
 坐标与家的距离: {{ distance(123.45, 123.45) }}
@@ -97,5 +97,9 @@
 
 两个实体之间的距离：{{ distance('device_tracker.anne_therese', 'device_tracker.paulus') }}
 ```
+
+!> 注意：`-`清除空格
+
+> 官方文档
 
 - https://www.home-assistant.io/docs/configuration/templating/
