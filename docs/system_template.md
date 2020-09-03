@@ -54,13 +54,13 @@
 {%- else -%}
 晚上
 {%- endif -%}
-{{now().strftime("%I:%M")}}
+{{ now().strftime("%I:%M") }}
 ```
 ```bash
 # 12小时制
-{{now().strftime("%Y-%m-%d %I:%M:%S")}}
+{{ now().strftime("%Y-%m-%d %I:%M:%S") }}
 # 24小时制
-{{now().strftime("%Y-%m-%d %H:%M:%S")}}
+{{ now().strftime("%Y-%m-%d %H:%M:%S") }}
 # 格式化指定时间
 {{ strptime("2020-10-10 10:10:10", "%Y-%m-%d %H:%M:%S").strftime("%H:%M:%S") }}
 ```
