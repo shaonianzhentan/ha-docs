@@ -1,6 +1,6 @@
 # 模板
 
-*视频介绍：*
+*视频介绍：https://www.bilibili.com/video/BV1Jv41117T3/*
 
 ---
 

@@ -3,6 +3,8 @@
 # 电视信息
 http://xinqi.if.iqiyi.com/fenghuolun/v2?name=河神2
 
+# 剧集列表 `aid=album_id`
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=217146601&page=1&size=999&callback=
 
 # 获取剧集信息
 https://api.bilibili.com/pgc/web/season/section?season_id=33378

@@ -36,6 +36,7 @@
   - [HTTP接口请求](system_http_api.md)
   - [主题](system_theme.md)
   - [模板](system_template.md)
+  - [网络爬虫](system_scrape.md)
 
 - 插件配置
 
