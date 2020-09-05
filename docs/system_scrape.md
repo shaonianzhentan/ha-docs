@@ -2,7 +2,7 @@
 
 ---
 
-> 安装与配置
+> 官方配置
 
 ```yaml
 # 使用爬虫组件
@@ -22,6 +22,8 @@ sensor:
     headers:
       User-Agent: Mozilla/5.0
 ```
+
+!> 注意：状态的内容不能超过`255个字符`，否则报错
 
 > 相关文档
 - https://www.home-assistant.io/integrations/scrape/
