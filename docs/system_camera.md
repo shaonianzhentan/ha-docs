@@ -59,3 +59,11 @@ sudo systemctl status create_ap
 # 查看连接的网络
 arp -a
 ```
+
+## 摄像机控制
+
+```bash
+# 在Node-Red中安装以下依赖
+npm install node-red-contrib-onvif-nodes@0.0.1-beta.7
+```
+- 源码地址：https://github.com/bartbutenaers/node-red-contrib-onvif-nodes
