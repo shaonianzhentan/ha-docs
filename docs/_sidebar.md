@@ -72,6 +72,7 @@
 
 - 自动化场景
 
+  - [NFC碰碰贴](automation_nfc.md)
   - ~~[离家与回家](automation_home.md)~~
 
 - 资源网站
