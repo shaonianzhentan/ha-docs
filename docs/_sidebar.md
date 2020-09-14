@@ -64,11 +64,12 @@
   - [MQTT灯光](plug_dev_mqtt_light.md)
   - ~~[控制挂墙平板](plug_dev_pad.md)~~
 
-- 用户界面开发
+- 用户界面
 
   - [自定义Lovelace卡片](plug_dev_custom_card.md)
   - [自定义状态卡片](plug_dev_custom_state_card.md)
   - [自定义面板](plug_dev_custom_panel.md)
+  - [挂墙平板 - 磁贴界面](plug_dev_TileBoard.md)
 
 - 自动化场景
 
