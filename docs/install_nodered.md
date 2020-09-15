@@ -51,3 +51,19 @@ pm2 save
 # 加入开机启动项
 pm2 startup
 ```
+
+## 基本语法
+
+```bash
+# 当前上下文
+context.get
+context.set
+# 当前流
+flow.get
+flow.set
+# 全局
+global.get
+global.set
+```
+
+- https://blog.csdn.net/sos768/article/details/91351923
