@@ -20,7 +20,7 @@ sudo docker run -itd --net="host" --restart=always --name="music" binaryify/nete
 sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" nodered/node-red:1.0.1-10-minimal-arm32v6
 ```
 
-配置zigbee2mqtt
+### 配置zigbee2mqtt
 ```bash
 # 运行
 sudo docker run \
@@ -39,7 +39,7 @@ sudo docker run \
 sudo nano ~/homeassistant/zigbee2mqtt/configuration.yaml
 ```
 
-配置外网访问
+### 配置外网访问
 ```bash
 # 新建配置文件，配置必要信息
 sudo touch ~/homeassistant/frpc.ini
@@ -53,7 +53,7 @@ sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassist
 
 ## 原生环境
 
-安装PM2开机启动管理
+### 安装PM2开机启动管理
 ```bash
 # 安装淘宝npm
 npm install -g cnpm --registry=https://registry.npm.taobao.org
@@ -62,7 +62,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm i -g pm2
 ```
 
-网易云音乐API
+### 网易云音乐API
 ```bash
 cd ~/git
 git clone https://github.com.cnpmjs.org/Binaryify/NeteaseCloudMusicApi
@@ -71,7 +71,7 @@ cnpm i
 pm2 start app.js --name music
 ```
 
-安装Node-Red
+### 安装Node-Red
 ```bash
 cnpm install -g node-red
 # 进入NodeRed目录
@@ -82,7 +82,7 @@ npm install node-red-contrib-home-assistant-websocket
 pm2 start node-red
 ```
 
-配置WebSSH2
+### 配置WebSSH2
 
 ```bash
 cd ~/git
@@ -98,7 +98,7 @@ location /ssh/ {
 }
 ```
 
-安装zigbee2mqtt
+### 安装zigbee2mqtt
 ```bash
 # 下载安装
 cd ~/git
@@ -112,7 +112,7 @@ sudo nano data/configuration.yaml
 pm2 start index.js --name z2m
 ```
 
-安装frpc
+### 安装frpc
 ```bash
 # 下载程序
 wget https://github.com/fatedier/frp/releases/download/v0.33.0/frp_0.33.0_linux_arm.tar.gz
@@ -139,7 +139,7 @@ sudo systemctl status frpc.service
 
 ## 相关插件安装配置
 
-配置文件管理
+### 配置文件管理
 
 !> 这里一定要安装`pip install qiniu`不然跑不起来
 
@@ -160,7 +160,7 @@ sudo nano ~/homeassistant/configuration.yaml
 ha_file_explorer:
 ```
 
-配置网易云音乐
+### 配置网易云音乐
 ```yaml
 # 配置媒体播放器
 media_player:

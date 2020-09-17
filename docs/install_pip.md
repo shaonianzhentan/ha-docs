@@ -4,7 +4,7 @@
 
 ---
 !> 注意: 这里使用的是python3.7及之后的版本，请确保版本正确
-## pip安装（千万别自己编译，非常浪费时间）
+## python安装（千万别自己编译，非常浪费时间）
 ```bash
 # 如果系统中没有3.8以上，可以使用以下方式安装
 sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev -y
@@ -22,54 +22,38 @@ sudo make
 sudo make install
 ```
 
-## pip换源
-
-> 国外的源太慢了，需要换成国内的
+## pip 安装
 
 ```bash
-# 切换用户目录
-cd ~
-# 新建.pip目录
-mkdir .pip
-# 切换到.pip目录
-cd .pip
-# 创建pip.conf文件
-touch pip.conf
+# 安装相关依赖
+sudo apt install build-essential libssl-dev libffi-dev -y
+sudo apt install python3-pip python3-dev python3-setuptools python3-wheel -y
+sudo apt install python-pip python-dev python-setuptools python-wheel -y
 
-# 编辑pip.conf文件
-nano pip.conf
+# 换源
+pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
-```
-写入内容
-```pip.conf
-[global]
-index-url = http://mirrors.aliyun.com/pypi/simple/
-[install]
-trusted-host=mirrors.aliyun.com
-```
 > 国内开放的pip源
 * 阿里云 http://mirrors.aliyun.com/pypi/simple/ 
 * 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ 
 * 豆瓣(douban) http://pypi.douban.com/simple/ 
 * 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
 
-> windows换源
-
-```bash
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-```
-
 ## HomeAssistant安装
 
 > 安装方式
 
 ```bash
+
 # 安装
-pip install homeassistant
+pip3 install homeassistant
 
 # 安装成功后运行
 hass
 ```
-!> 安装指定的版本：pip install homeassistant==0.110.3
+!> 安装指定的版本：`pip install homeassistant==0.110.3`
+
+!> 升级到最新版本：`pip install homeassistant --upgrade`
 
 

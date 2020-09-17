@@ -20,7 +20,14 @@ nvm install 10.0.0
 > npm换源
 
 ```bash
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+# 换源
+npm config set registry https://registry.npm.taobao.org
+
+# 查看
+npm config get registry
+
+# 还原npm源
+npm config set registry https://registry.npmjs.org/
 ```
 官方文件：https://cnpmjs.org/
 
