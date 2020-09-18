@@ -51,8 +51,12 @@ sudo nano /etc/systemd/system/create_ap.service
 # 启动服务
 sudo systemctl start create_ap
 
+# 开机启动
+sudo systemctl enable create_ap
+
 # 查看服务状态
 sudo systemctl status create_ap
+ 
 ```
 
 ```bash
