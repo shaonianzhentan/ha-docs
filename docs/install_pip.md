@@ -29,6 +29,8 @@ sudo make install
 sudo apt install build-essential libssl-dev libffi-dev -y
 sudo apt install python3-pip python3-dev python3-setuptools python3-wheel -y
 sudo apt install python-pip python-dev python-setuptools python-wheel -y
+# Pillow图像处理需要以下依赖
+sudo apt-get install libjpeg-dev zlib1g-dev
 
 # 换源
 pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
