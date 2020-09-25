@@ -26,8 +26,18 @@ camera:
 # 安装FFmpeg
 sudo apt install ffmpeg -y
 
-# 保存录像到本地
+# 保存录像到本地（没声音）
 ffmpeg -i RTSP地址 -c copy -map 0 -f segment -segment_list 存放路径/playlist.m3u8 -segment_time 5 存放路径/output%09d.ts
+
+# 录制音视频到MP4文件（有声音）
+ffmpeg -y -i 带音频的RTSP地址 -c:v copy -c:a aac -strict experimental -f mp4 文件绝对路径
+
+ffmpeg -y -i rtsp://admin:123456@192.168.1.111:554/0/av0 -c:v copy -c:a aac -strict experimental -f mp4 /home/pi/homeassistant/media/test.mp4
+
+# 录制视频到MP4文件（没声音）
+ffmpeg -y -i RTSP地址 -vcodec copy -acodec copy -f mp4 文件绝对路径
+
+ffmpeg -y -i rtsp://admin:123456@192.168.1.111:554/ -vcodec copy -acodec copy -f mp4 /home/pi/homeassistant/media/test.mp4
 
 ```
 
