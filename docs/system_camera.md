@@ -81,3 +81,37 @@ arp -a
 npm install node-red-contrib-onvif-nodes@0.0.1-beta.7
 ```
 - 源码地址：https://github.com/bartbutenaers/node-red-contrib-onvif-nodes
+
+## 摄像头RTSP地址
+
+> 品牌型号：CloudCamera，Android应用 【[YCC365 plus](https://www.closeli.cn/app/1536546203748)】
+```bash
+# 没有声音
+rtsp://admin:123456@192.168.1.111:554/
+# 有声音
+rtsp://admin:123456@192.168.1.111:554/0/av0
+# 快照
+http://192.168.1.111:554/snapshot
+# 查看ONVIF设备
+http://192.168.1.111/onvif/device_service 
+
+# SSH服务： root/cxlinux
+# Telnet服务：root/cxlinux
+```
+
+> 品牌型号：辣鸡摄像头，Android应用【[有看头 yousee](http://app.mi.com/details?id=com.yoosee&ref=search)】
+```bash
+还在整理
+```
+
+> 博云刷机固件20200914
+```bash
+# 有声音
+rtsp://admin:boyun@192.168.1.111:554/live
+# RTSP密码修改： /etc/ipc.ini
+# WEB密码修改： /etc/httpd.conf
+
+# SSH服务：端口22，用户名root，密码boyun
+# Telnet服务：端口23，用户名root，密码boyun
+# Ftp服务：端口21，用户名root，密码boyun
+```
