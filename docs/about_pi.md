@@ -13,6 +13,8 @@ sudo apt-get install tightvncserver xrdp -y
 
 ## 创建AP热点
 
+- 视频教程：https://www.bilibili.com/video/BV1it4y1S7Ab/
+
 ```bash
 # 安装依赖
 sudo apt install dnsmasq hostapd -y

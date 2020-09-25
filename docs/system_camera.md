@@ -1,6 +1,6 @@
 # 摄像监控
 
-*视频介绍：*
+*视频介绍：[移动控制](https://www.bilibili.com/video/BV1bZ4y1N74q/)、[录制存储](https://www.bilibili.com/video/BV1kK4y1872d/)*
 
 ---
 
@@ -10,15 +10,29 @@
 # 从提供的流进行录制
 stream:
 
-# 摄像机
 camera:
+  # 通用摄像机
   - platform: generic
     still_image_url: http://192.168.1.111:554/snapshot
     stream_source: rtsp://admin:123456@192.168.1.111:554/
+  # FFmpeg摄像机
+  - platform: ffmpeg
+    input: rtsp://admin:123456@192.168.1.111:554/
+
+binary_sensor:
+  # 运动检测
+  - platform: ffmpeg_motion
+    input: rtsp://admin:123456@192.168.1.111:554/
+  # 声音检测
+  - platform: ffmpeg_noise
+    input: rtsp://admin:123456@192.168.1.111:554/
 ```
 
 - https://www.home-assistant.io/integrations/generic_ip_camera/
 - https://www.home-assistant.io/integrations/stream/
+- https://www.home-assistant.io/integrations/camera.ffmpeg/
+- https://www.home-assistant.io/integrations/ffmpeg_noise/
+- https://www.home-assistant.io/integrations/ffmpeg_motion/
 
 ## 使用命令录像存储
 
