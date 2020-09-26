@@ -24,13 +24,9 @@ netstat -anp|grep 1883
 
 ```bash
 # 安装MQTT服务
-sudo apt install mosquitto -y
-
 # 安装mosquitto开发包
-sudo apt-get install libmosquitto-dev
-
 # 安装mosquitto客户端
-sudo apt-get install mosquitto-clients
+sudo apt install mosquitto libmosquitto-dev mosquitto-clients -y
 
 # 查询mosquitto是否正确运行
 sudo service mosquitto status
