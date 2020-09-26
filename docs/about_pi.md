@@ -34,11 +34,23 @@ sudo nano /etc/create_ap.conf
 
 源码：https://github.com/oblique/create_ap
 
-## 挂载分区
+## 相关操作记录
+
+> 挂载分区
 ```bash
 # 挂载到/root目录
 mount /dev/mmcblk0p2 /root/
 # 查看当前运行的进程
 fuser -m -v /dev/mmcblk0p2
-
 ``` 
+
+> 备份系统到U盘
+```bash
+# 挂载目录
+mount /dev/sda1 /mnt/
+# 备份压缩系统到U盘
+sudo dd if=/dev/mmcblk0 bs=4M |gzip > /mnt/backup.img
+```
+- https://yanke.info/?id=124
+
+
