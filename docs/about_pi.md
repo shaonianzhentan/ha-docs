@@ -33,3 +33,12 @@ sudo nano /etc/create_ap.conf
 ```
 
 源码：https://github.com/oblique/create_ap
+
+## 挂载分区
+```bash
+# 挂载到/root目录
+mount /dev/mmcblk0p2 /root/
+# 查看当前运行的进程
+fuser -m -v /dev/mmcblk0p2
+
+``` 
