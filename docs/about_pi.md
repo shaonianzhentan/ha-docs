@@ -54,7 +54,7 @@ sudo dd conv=noerror if=/dev/mmcblk0 bs=4M |gzip > /mnt/backup.img
 # 查看进度（另开一个终端）
 watch -n 5 pkill -USR1 ^dd$
 
-# 还原系统到sd卡，请仔细仔细仔细的看文档，很重要很重要很重要
+# 还原系统到sd卡，请先仔细仔细仔细的看文档，很重要很重要很重要
 
 ```
 - https://yanke.info/?id=124
@@ -66,6 +66,9 @@ sudo su
 cd /
 # 压缩备份到存储卡里
 tar -cvpzf /mnt/backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys /
+
+# 还原文件到系统，请先仔细仔细仔细的看文档，很重要很重要很重要
+tar -xvpzf /mnt/backup.tgz -C /
 ```
 
 - https://www.cnblogs.com/lvdongjie/p/3835525.html
