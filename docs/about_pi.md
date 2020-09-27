@@ -53,7 +53,17 @@ sudo dd if=/dev/mmcblk0 bs=4M |gzip > /mnt/backup.img
 
 # 查看进度（另开一个终端）
 watch -n 5 pkill -USR1 ^dd$
+
 ```
 - https://yanke.info/?id=124
 
+> tar备份系统
+```bash
+# 详细操作，请看原文链接
+sudo su
+cd /
+# 压缩备份到存储卡里
+tar -cvpzf /mnt/backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys /
+```
 
+- https://www.cnblogs.com/lvdongjie/p/3835525.html
