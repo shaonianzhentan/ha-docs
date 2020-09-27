@@ -48,8 +48,8 @@ fuser -m -v /dev/mmcblk0p2
 ```bash
 # 挂载目录
 mount /dev/sda1 /mnt/
-# 备份压缩系统到U盘
-sudo dd if=/dev/mmcblk0 bs=4M |gzip > /mnt/backup.img
+# 备份压缩系统到U盘（即使错误也不停止：conv=noerror）
+sudo dd conv=noerror if=/dev/mmcblk0 bs=4M |gzip > /mnt/backup.img
 
 # 查看进度（另开一个终端）
 watch -n 5 pkill -USR1 ^dd$
