@@ -54,6 +54,8 @@ sudo dd conv=noerror if=/dev/mmcblk0 bs=4M |gzip > /mnt/backup.img
 # 查看进度（另开一个终端）
 watch -n 5 pkill -USR1 ^dd$
 
+# 还原系统到sd卡，请仔细仔细仔细的看文档，很重要很重要很重要
+
 ```
 - https://yanke.info/?id=124
 
