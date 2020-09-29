@@ -167,3 +167,33 @@ media_player:
   - platform: ha_cloud_music
     api_url: http://localhost:3000
 ```
+
+## OrangepiZero快速安装
+
+```bash
+# 换源
+# 更新
+apt update
+# 更新hosts（可同时进行）
+# apt安装MQTT（速度快）
+
+# 安装docker
+apt install docker.io
+# 安装docker管理器
+# docker拉取HomeAssistant（比pip编译速度快）
+# 进入到HA的终端，安装文件管理器相关依赖和文件
+
+# 安装npm
+apt install npm
+# npm换源
+npm config set registry https://registry.npm.taobao.org
+# 安装node管理模块
+npm i -g n
+# 安装node最新稳定版
+n stable
+# 安装相关模块
+npm i -g node-red pm2
+
+# git拉取安装webssh2、zigbee2mqtt
+# 安装AP热点
+```
