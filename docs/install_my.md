@@ -170,18 +170,16 @@ media_player:
 
 ## OrangepiZero快速安装
 
+- https://mirror.tuna.tsinghua.edu.cn/help/debian/
+
+> 来来来，下面的认真看起来，装机必备
+
 ```bash
 # 换源
 # 更新
 apt update
 # 更新hosts（可同时进行）
 # apt安装MQTT（速度快）
-
-# 安装docker
-apt install docker.io
-# 安装docker管理器
-# docker拉取HomeAssistant（比pip编译速度快）
-# 进入到HA的终端，安装文件管理器相关依赖和文件
 
 # 安装npm
 apt install npm
@@ -191,9 +189,33 @@ npm config set registry https://registry.npm.taobao.org
 npm i -g n
 # 安装node最新稳定版
 n stable
-# 安装相关模块
-npm i -g node-red pm2
 
+# 安装开机启动管理
+npm i -g pm2
+```
+
+> 内存超过512以上推荐`（辣鸡CPU、辣鸡内存就别装了，卡的要死）`
+
+```bash
+# 安装docker
+apt install docker.io
+# 安装docker管理器
+# docker拉取HomeAssistant（比pip编译速度快）
+# 进入到HA的终端，安装文件管理器相关依赖和文件
+
+# 安装相关模块
+npm i -g node-red
 # git拉取安装webssh2、zigbee2mqtt
 # 安装AP热点
+```
+
+> 辣鸡内存256，无力吐槽，告辞
+```bash
+# 算了算了，pip安装太慢了，还是使用docker安装
+
+# 辣鸡内存就别装node-red了
+# 辣鸡内存就别装webssh2了
+
+# 装个zigbee2mqtt算球
+# 勉强装个AP热点完事
 ```
