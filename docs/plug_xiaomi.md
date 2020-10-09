@@ -45,7 +45,5 @@ sudo pm2 startup
 ## 获取Token方法
 
 - 【修改版米家APP】 https://bbs.hassbian.com/thread-6717-1-1.html
-- 【抓包获取】 https://bbs.hassbian.com/thread-10290-1-1.html
 - 【需要米家指定版本】 https://bbs.hassbian.com/thread-6017-1-1.html
-- 【米家5.4.54版本下载地址】 https://bbs.hassbian.com/thread-9935-1-1.html
 - https://github.com/Maxmudjon/com.xiaomi-miio/blob/master/docs/obtain_token.md

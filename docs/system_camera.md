@@ -121,7 +121,7 @@ http://192.168.1.111/onvif/device_service
 > 博云刷机固件20200914
 ```bash
 # 有声音
-rtsp://admin:boyun@192.168.1.111:554/live
+rtsp://admin:boyun@192.168.12.88:554/live
 # RTSP密码修改： /etc/ipc.ini
 # WEB密码修改： /etc/httpd.conf
 
