@@ -51,7 +51,7 @@
 
 - 硬件设备插件配置
 
-  - ~~[智能音箱接入控制](plug_voice_box.md)~~
+  - [智能音箱接入控制](plug_voice_box.md)
   - ~~[易微联设备接入](plug_ewelink.md)~~
   - [小米设备接入](plug_xiaomi.md)
   - ~~[ESP系列设备接入](plug_esp.md)~~
