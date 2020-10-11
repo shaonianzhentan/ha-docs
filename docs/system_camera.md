@@ -113,10 +113,26 @@ http://192.168.1.111/onvif/device_service
 # Telnet服务：root/cxlinux
 ```
 
-> 品牌型号：辣鸡摄像头，Android应用【[有看头 yousee](http://app.mi.com/details?id=com.yoosee&ref=search)】
+---
+
+> 品牌型号：辣鸡摄像头，应用客户端【[有看头 yousee](http://yoosee.co/index.html)】
+
 ```bash
-还在整理
+# Onvif端口：5000
+
+# CMSClient客户端 - 用户名：admin 密码：00000000
+
+# 设备ID：摄像头底部的二维上有写
+# 设备密码：123
+# 设备RTSP密码：需要自己在APP里初始设置
+
+# 注意：如果不在APP里开启声音，这里是没有声音的
+# 主码流：onvif1  次码流：onvif2
+rtsp://admin:yoosee123456@192.168.12.161:554/onvif1
 ```
+!> 注意：默认随机生成RTSP密码，需要在APP里添加摄像头后，进入操作`连接硬盘录像机`-`开启连接` - 然后修改RTSP密码
+
+---
 
 > 博云刷机固件20200914
 ```bash
@@ -128,4 +144,13 @@ rtsp://admin:boyun@192.168.12.88:554/live
 # SSH服务：端口22，用户名root，密码boyun
 # Telnet服务：端口23，用户名root，密码boyun
 # Ftp服务：端口21，用户名root，密码boyun
+```
+
+## 测试支持协议
+
+```bash
+# 辣鸡yoosee摄像头不支持TCP
+ffmpeg -f rtsp -rtsp_transport tcp -i rtsp://admin:yoosee123456@192.168.1.114:554/onvif1 -an -f null -
+
+ffmpeg -f rtsp -rtsp_transport udp -i rtsp://admin:yoosee123456@192.168.1.114:554/onvif1 -an -f null -
 ```
