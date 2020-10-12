@@ -90,6 +90,8 @@ arp -a
 
 ## 摄像机控制
 
+!> 注意：在不能使用[官方插件ONVIF](https://www.home-assistant.io/integrations/onvif/)的情况下使用
+
 ```bash
 # 在Node-Red中安装以下依赖
 npm install node-red-contrib-onvif-nodes@0.0.1-beta.7
@@ -145,12 +147,49 @@ rtsp://admin:boyun@192.168.12.88:554/live
 # Telnet服务：端口23，用户名root，密码boyun
 # Ftp服务：端口21，用户名root，密码boyun
 ```
-
-## 测试支持协议
-
+---
+> 测试支持协议
 ```bash
 # 辣鸡yoosee摄像头不支持TCP
 ffmpeg -f rtsp -rtsp_transport tcp -i rtsp://admin:yoosee123456@192.168.1.114:554/onvif1 -an -f null -
 
 ffmpeg -f rtsp -rtsp_transport udp -i rtsp://admin:yoosee123456@192.168.1.114:554/onvif1 -an -f null -
+```
+
+## 自动化服务
+
+> 守护服务
+```yaml
+- id: '1602472118675'
+  alias: 摄像机画面监控停止时，重新启动
+  description: '保证画面监控一直启动'
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.ffmpeg_motion
+    to: unavailable
+  condition: []
+  action:
+  - service: ffmpeg.start
+    data: {}
+    entity_id: binary_sensor.ffmpeg_motion
+  mode: single
+```
+
+> 监控录像
+```yaml
+- id: '1602481256778'
+  alias: 摄像机画面监控变动时，录像
+  description: '录像视频默认30秒，可以自定义'
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.ffmpeg_motion
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - service: camera.record
+    data_template:
+      filename: '/home/pi/homeassistant/www/record_{{now().strftime("%Y-%m-%d %H:%M:%S")}}.mp4'
+    entity_id: camera.wo_shi_de_she_xiang
+  mode: single
 ```
