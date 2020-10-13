@@ -45,5 +45,36 @@ sudo pm2 startup
 ## 获取Token方法
 
 - 【修改版米家APP】 https://bbs.hassbian.com/thread-6717-1-1.html
-- 【需要米家指定版本】 https://bbs.hassbian.com/thread-6017-1-1.html
-- https://github.com/Maxmudjon/com.xiaomi-miio/blob/master/docs/obtain_token.md
+- 【获取米家设备令牌】 https://github.com/Maxmudjon/com.xiaomi-miio/blob/master/docs/obtain_token.md
+
+> 使用nodejs环境运行
+```bash
+# 随便新建一个文件夹
+mkdir mi
+# 切换到文件夹中
+cd mi
+
+# 安装依赖
+npm install node-mihome
+
+# 新建index.js文件
+nano index.js
+```
+
+```js
+const mihome = require('node-mihome');
+
+(async () => {
+    mihome.miioProtocol.init();
+    // 使用小米用户密码登录
+    const username = 'email@example.com';
+    const password = 'password';
+    await mihome.miCloudProtocol.login(username, password);
+
+    const options = { country: 'cn' };
+    // 获取所有设备信息
+    const devices = await mihome.miCloudProtocol.getDevices(null, options);
+    console.log(devices)
+})();
+
+```
