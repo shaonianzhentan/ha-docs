@@ -42,7 +42,7 @@ sudo pm2 startup
 > 官方网站
 - https://diandeng.tech/doc
 
-## 获取Token方法
+## 获取局域网通信密钥
 
 - 【修改版米家APP】 https://bbs.hassbian.com/thread-6717-1-1.html
 - 【获取米家设备令牌】 https://github.com/Maxmudjon/com.xiaomi-miio/blob/master/docs/obtain_token.md
@@ -78,3 +78,26 @@ const mihome = require('node-mihome');
 })();
 
 ```
+
+## 设备接入
+
+> 官方组件
+- https://www.home-assistant.io/integrations/#search/xiaomi
+- 小米设备：https://www.home-assistant.io/integrations/xiaomi_miio/
+- Aqara网关：https://www.home-assistant.io/integrations/xiaomi_aqara/
+
+> 第三方组件
+- 小米网关3：https://github.com/AlexxIT/XiaomiGateway3
+- 小米云服务：https://github.com/fineemb/xiaomi-cloud
+- 小米净化器和加湿器：https://github.com/syssi/xiaomi_airpurifier
+- 小米电饭煲：https://github.com/syssi/xiaomi_cooker
+- 小米电风扇：https://github.com/syssi/xiaomi_fan
+- 空调伴侣：https://github.com/syssi/xiaomi_airconditioningcompanion
+- 小米空调伴侣2：https://github.com/EugeneLiu/xiaomi_airconditioningcompanionMCN02
+
+> 卡片面板
+- 小米电风扇：https://github.com/fineemb/lovelace-fan-xiaomi
+- 空调：https://github.com/fineemb/lovelace-thermostat-card
+- 空气净化器：https://github.com/fineemb/lovelace-air-filter-card
+- 扫地机器人 https://github.com/TheLastProject/lovelace-valetudo-map-card
+- 扫地机器人 https://github.com/benct/lovelace-xiaomi-vacuum-card

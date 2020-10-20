@@ -49,14 +49,64 @@ server {
     server_name localhost;
 
     location / {
-            proxy_pass  http://localhost:8123;
+		proxy_pass  http://localhost:8123;
     }
 
     location /api/websocket {
-            proxy_pass  http://localhost:8123/api/websocket;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection "upgrade";
+		proxy_pass  http://localhost:8123/api/websocket;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
     }
+}
+```
+
+> 同时兼容http/websocket
+```nginx
+http {
+
+	map $http_upgrade $connection_upgrade {
+		default upgrade;
+		''   close;
+	}
+
+	server {
+		listen          80;
+		server_name localhost;
+
+		location / {
+			proxy_pass  http://localhost:8123;
+			proxy_set_header  Upgrade  $http_upgrade;
+			proxy_set_header  Connection  $connection_upgrade;
+		}
+	}
+
+}
+```
+
+## 相关配置
+
+> http强制跳转到https
+```nginx
+server {
+	listen          80;
+	server_name www.jiluxinqing.com;
+	
+	rewrite ^(.*)$ https://${server_name}$1 permanent;
+}
+```
+
+> 配置https证书
+```nginx
+server {
+	listen          443 ssl;
+	server_name www.jiluxinqing.com;
+	
+	ssl_certificate      ssl/jiluxinqing.crt;
+	ssl_certificate_key  ssl/jiluxinqing.key;
+
+	location / {
+			proxy_pass  http://localhost:5000;
+	}
 }
 ```
