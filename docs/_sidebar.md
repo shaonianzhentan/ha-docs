@@ -86,3 +86,4 @@
   - [Android小知识](about_android.md)
   - [GPIO接口](about_gpio.md)
   - [树莓派](about_pi.md)
+  - [Git](about_git.md)
