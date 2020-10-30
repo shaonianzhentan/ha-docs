@@ -34,6 +34,11 @@ sudo nano /etc/create_ap.conf
 
 源码：https://github.com/oblique/create_ap
 
+## 查看外网IP
+```bash
+curl ifconfig.me
+```
+
 ## 相关操作记录
 
 > 挂载分区
