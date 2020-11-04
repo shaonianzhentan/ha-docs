@@ -39,6 +39,18 @@ sudo nano /etc/create_ap.conf
 curl ifconfig.me
 ```
 
+## 设置系统音量
+```bash
+# 查看声卡
+amixer scontrols
+# 可能显示如下
+# Simple mixer control 'Master',0
+# Simple mixer control 'Capture',0
+
+# 调整音量到80%
+amixer set Master 80%
+```
+
 ## 相关操作记录
 
 > 挂载分区
