@@ -8,7 +8,13 @@
 ## 录屏
 
 ```bash
+# 显示设备
+ffmpeg -list_devices true -f dshow -i dummy
+
 # 录制桌面（30帧）
 ffmpeg -f gdigrab -framerate 30 -i desktop output.mkv
+
+# 录制桌面+声音
+ffmpeg -f gdigrab -framerate 30 -i desktop -f dshow -i audio="立体声混音 (Realtek(R) Audio)" output.mkv
 ```
 - https://trac.ffmpeg.org/wiki/Capture/Desktop
