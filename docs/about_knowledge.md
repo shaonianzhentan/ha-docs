@@ -11,3 +11,4 @@
 # 录制桌面（30帧）
 ffmpeg -f gdigrab -framerate 30 -i desktop output.mkv
 ```
+- https://trac.ffmpeg.org/wiki/Capture/Desktop
