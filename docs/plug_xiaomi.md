@@ -85,6 +85,7 @@ const mihome = require('node-mihome');
 - https://www.home-assistant.io/integrations/#search/xiaomi
 - 小米设备：https://www.home-assistant.io/integrations/xiaomi_miio/
 - Aqara网关：https://www.home-assistant.io/integrations/xiaomi_aqara/
+- 小米电视：https://www.home-assistant.io/integrations/xiaomi_tv/
 
 > 第三方组件
 - 小米网关3：https://github.com/AlexxIT/XiaomiGateway3
