@@ -45,6 +45,7 @@ sudo pm2 startup
 ## 获取局域网通信密钥
 
 - 【修改版米家APP】 https://bbs.hassbian.com/thread-6717-1-1.html
+- 【修改版米家APP】 https://bbs.iobroker.cn/t/topic/357
 - 【获取米家设备令牌】 https://github.com/Maxmudjon/com.xiaomi-miio/blob/master/docs/obtain_token.md
 
 > 使用nodejs环境运行
