@@ -19,4 +19,4 @@ ffmpeg -f gdigrab -framerate 30 -i desktop -f dshow -i audio="麦克风阵列 (R
 ```
 - https://trac.ffmpeg.org/wiki/Capture/Desktop
 
-!> 注意：视频播放推荐使用`VLC播放器`，如果`卡顿`建议`减少帧率`
+!> 注意：视频播放推荐使用`VLC播放器`，如果卡顿建议`减少帧率`
