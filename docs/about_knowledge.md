@@ -7,8 +7,6 @@
 
 ## 录屏
 
-!> 注意：视频播放推荐使用VLC播放器
-
 ```bash
 # 显示设备
 ffmpeg -list_devices true -f dshow -i dummy
@@ -20,3 +18,5 @@ ffmpeg -f gdigrab -framerate 30 -i desktop -f mp4 output.mp4
 ffmpeg -f gdigrab -framerate 30 -i desktop -f dshow -i audio="麦克风阵列 (Realtek(R) Audio)" -f mp4 output.mp4
 ```
 - https://trac.ffmpeg.org/wiki/Capture/Desktop
+
+!> 注意：视频播放推荐使用`VLC播放器`，如果`卡顿`建议`减少帧率`
