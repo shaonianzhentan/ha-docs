@@ -97,6 +97,7 @@ const mihome = require('node-mihome');
 - 空调伴侣：https://github.com/syssi/xiaomi_airconditioningcompanion
 - 小米空调伴侣2：https://github.com/EugeneLiu/xiaomi_airconditioningcompanionMCN02
 - 小米温湿度传感器：https://github.com/custom-components/sensor.mitemp_bt
+- Yeelink设备：https://github.com/al-one/hass-miio-yeelink
 
 > 卡片面板
 - 小米电风扇：https://github.com/fineemb/lovelace-fan-xiaomi
