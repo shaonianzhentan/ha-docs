@@ -69,6 +69,11 @@ adb shell dumpsys window windows
 adb shell dumpsys activity activities
 ```
 
+```bash
+# 下载到本地
+adb shell screencap /sdcard/screen.png && adb pull /sdcard/screen.png
+```
+
 ## 启动应用
 
 > 手机应用
