@@ -5,17 +5,18 @@
 ---
 !> 注意: 这里使用的是python3.7及之后的版本，请确保版本正确
 ## python安装（千万别自己编译，非常浪费时间）
+> 官方下载地址： https://www.python.org/downloads/
 ```bash
-# 如果系统中没有3.8以上，可以使用以下方式安装
+# 如果系统中没有3.8以上，可以使用以下方式安装最新版3.9
 sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev -y
 # 下载压缩包
-wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
+wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 # 解压文件
-tar zxvf Python-3.8.5.tgz
+tar zxvf Python-3.9.0.tgz
 # 进入目录
-cd Python-3.8.5
+cd Python-3.9.0
 # 配置
-sudo ./configure
+sudo ./configure --enable-optimizations
 # 编译
 sudo make
 # 安装
