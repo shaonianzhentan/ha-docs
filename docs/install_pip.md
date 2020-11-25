@@ -22,6 +22,13 @@ sudo make -j4
 # 安装
 sudo make install
 ```
+```bash
+# 在树莓派上编译安装，估计要90分钟左右，所以就需要批量操作，然后耐心等待即可
+sudo ./configure --enable-optimizations && sudo make -j4 && sudo make install
+
+# 如果以上没有啥问题，就可以进行验证了
+python3.9 --version
+```
 
 ## pip 安装
 
