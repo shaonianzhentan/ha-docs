@@ -17,8 +17,8 @@ tar zxvf Python-3.9.0.tgz
 cd Python-3.9.0
 # 配置
 sudo ./configure --enable-optimizations
-# 编译
-sudo make
+# 编译（使用4线程）
+sudo make -j4
 # 安装
 sudo make install
 ```
