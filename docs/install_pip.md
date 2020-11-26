@@ -11,25 +11,24 @@
 sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev -y
 # 下载压缩包
 wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
-# 解压文件
-tar zxvf Python-3.9.0.tgz
-# 进入目录
-cd Python-3.9.0
+# 解压文件并进入目录
+tar zxvf Python-3.9.0.tgz && cd Python-3.9.0
+
+# -------------------- 方法一：单条执行 --------------------
 # 配置
 sudo ./configure --enable-optimizations
 # 编译（使用4线程）
 sudo make -j4
 # 安装
 sudo make install
-```
-```bash
+
+# -------------------- 方法二：批量执行 --------------------
 # 在树莓派上编译安装，估计要90分钟左右，所以就需要批量操作，然后耐心等待即可
 sudo ./configure --enable-optimizations && sudo make -j4 && sudo make install
 
 # 如果以上没有啥问题，就可以进行验证了
 python3.9 --version
 ```
-
 ## pip 安装
 
 ```bash
