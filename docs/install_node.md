@@ -6,6 +6,13 @@
 
 !> 注意: 在安装完nvm时，需要在重新打开的终端中，执行`nvm命令`，不然会出现找不到命令的问题
 
+> nodejs安装方法一（树莓派zero系列千万别用这个）
+```bash
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+> nodejs安装方法二
 ```bash
 # 安装node管理器
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -16,6 +23,7 @@ nvm install --lts
 # 注意：在【树莓派zero】上千万别装12及以上版本，需要编译非常浪费时间
 nvm install 10.0.0
 ```
+
 
 > npm换源
 
