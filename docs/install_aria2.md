@@ -5,6 +5,9 @@
 ---
 
 ## 安装Aria2服务
+
+### 安装方法一
+
 ```bash
 # 安装Aria2
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh && chmod +x aria2.sh && bash aria2.sh
@@ -15,8 +18,47 @@ bash aria2.sh
 # 修改下载地址到/home/www/aria2
 ```
 
-!> 如果出现错误可以尝试修改`/etc/hosts`文件，添加`151.101.76.133 raw.githubusercontent.com
-`
+!> 如果出现错误可以尝试修改`/etc/hosts`文件，添加`151.101.76.133 raw.githubusercontent.com`
+
+### 安装方法二
+
+```bash
+# 安装Aria2
+sudo apt install aria2 -y
+
+# 编辑开机启动配置
+sudo nano /etc/systemd/system/aria2.service
+
+```
+!> 完整命令：`aria2c --enable-rpc --rpc-listen-all --rpc-secret=密码令牌`
+
+!> `WorkingDirectory=下载文件路径`，记得设置`可写权限`
+```ini
+[Unit]
+Description=aria2 service
+
+[Service]
+ExecStart=aria2c --enable-rpc --rpc-listen-all
+WorkingDirectory=/var/lib/minidlna
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+RestartSec=10
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+```
+```bash
+# 启用aria2开机自启服务
+sudo systemctl enable aria2
+
+# 开始运行aria2
+sudo systemctl start aria2
+
+# 查看状态
+systemctl status aria2.service
+```
 
 ## 安装Aria2管理面板 
 
