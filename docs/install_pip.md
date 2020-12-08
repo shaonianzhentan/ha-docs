@@ -17,14 +17,14 @@ tar zxvf Python-3.9.0.tgz && cd Python-3.9.0
 # -------------------- 方法一：单条执行 --------------------
 # 配置
 sudo ./configure --enable-optimizations
-# 编译（使用4线程）
+# 编译（使用4线程）（很慢，需要耐心等待）
 sudo make -j4
-# 安装
+# 安装（很快，预计几分钟）
 sudo make install
 
 # -------------------- 方法二：批量执行 --------------------
 # 在树莓派上编译安装，估计要90分钟左右，所以就需要批量操作，然后耐心等待即可
-sudo ./configure --enable-optimizations && sudo make -j4 && sudo make install
+sudo ./configure --enable-optimizations && sudo make && sudo make install
 
 # 如果以上没有啥问题，就可以进行验证了
 python3.9 --version
