@@ -1,6 +1,6 @@
 # HomeAssistant学习笔记
 
-玩转HomeAssistant遇到的各自问题与解决方案
+玩转HomeAssistant遇到的各种问题与解决方案
 
 ```
 # 下载源码
