@@ -65,4 +65,15 @@ hass
 
 !> 升级到最新版本：`pip install homeassistant --upgrade`
 
+## 指定Python版本运行
 
+```bash
+# 查看hass路径
+whereis hass
+# 查看Python3.9路径
+whereis python3.9
+
+# 安装最新版HA
+python3.9 -m pip install homeassistant --upgrade
+
+```
