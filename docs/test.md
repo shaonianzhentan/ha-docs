@@ -16,3 +16,5 @@ https://api.bilibili.com/pgc/player/web/playurl?cid=183362119&avid=710444604&qn=
 # 番剧搜索
 https://api.bilibili.com/x/web-interface/search/type?context=&search_type=media_bangumi&order=&keyword=名侦探柯南
 
+# 资源搜索
+https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&wd=大秦赋
