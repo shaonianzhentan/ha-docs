@@ -21,3 +21,12 @@ network={
 > 树莓派原生系统：默认账号`pi`和密码`raspberry`
 
 树莓派系统换源：https://mirror.tuna.tsinghua.edu.cn/help/raspbian/
+
+> 更换时区
+```bash
+# 查看系统时间
+date
+
+# 设置时区为上海
+sudo timedatectl set-timezone 'Asia/Shanghai'
+```
