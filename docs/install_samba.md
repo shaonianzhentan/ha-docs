@@ -1,4 +1,4 @@
-# samba的安装（没有测试通过）
+# samba的安装
 
 *视频介绍：*
 
@@ -10,27 +10,21 @@ sudo apt-get install samba samba-common-bin -y
 
 # 修改配置
 sudo nano /etc/samba/smb.conf
-
 ```
+
 > 配置内容`/etc/samba/smb.conf`, 加到最底下
 ```conf
-[share]
-    comment = Share
-    path = /home/pi/
-    browseable = yes
-    writable = yes
-    guest ok = yes
-    create mask = 0664
-    directory mask = 0775
+[share]                   #共享文件的名称， 将在网络上以此名称显示
+  path = /home/pi         #共享文件的路径
+  browseable = yes        #允许浏览
+  public = yes            #共享开放
+  writable = yes          #可写
 ```
 
 ```bash
-# 验证错误
-testparm
-
-# 设置pi的密码
-# sudo smbpasswd -a pi
-
-# 重新服务
+# 重启服务
 sudo samba restart
+
+# 注意：如果文件夹不能写，则给予最高权限
+sudo chmod 777 /home/pi
 ```
