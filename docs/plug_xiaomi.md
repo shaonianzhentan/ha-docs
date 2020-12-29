@@ -94,9 +94,10 @@ const mihome = require('node-mihome');
 - 小米净化器和加湿器：https://github.com/syssi/xiaomi_airpurifier
 - 小米电饭煲：https://github.com/syssi/xiaomi_cooker
 - 小米电风扇：https://github.com/syssi/xiaomi_fan
-- 空调伴侣：https://github.com/syssi/xiaomi_airconditioningcompanion
+- 小米飞利浦灯：https://github.com/syssi/philipslight
+- 米家空调伴侣：https://github.com/syssi/xiaomi_airconditioningcompanion
 - 小米空调伴侣2：https://github.com/EugeneLiu/xiaomi_airconditioningcompanionMCN02
-- 小米温湿度传感器：https://github.com/custom-components/sensor.mitemp_bt
+- 小米温湿度传感器：https://github.com/custom-components/ble_monitor
 - Yeelink设备：https://github.com/al-one/hass-miio-yeelink
 
 > 卡片面板
