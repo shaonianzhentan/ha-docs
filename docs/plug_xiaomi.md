@@ -106,3 +106,6 @@ const mihome = require('node-mihome');
 - 空气净化器：https://github.com/fineemb/lovelace-air-filter-card
 - 扫地机器人 https://github.com/TheLastProject/lovelace-valetudo-map-card
 - 扫地机器人 https://github.com/benct/lovelace-xiaomi-vacuum-card
+
+> 使用`python-miio`可以自己开发自定义组件
+- https://github.com/rytilahti/python-miio
