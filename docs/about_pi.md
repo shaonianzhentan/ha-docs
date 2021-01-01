@@ -51,6 +51,28 @@ amixer scontrols
 amixer set Master 80%
 ```
 
+## 自动挂载USB存储设备
+```bash
+# 添加USB存储规则
+sudo nano /etc/udev/rules.d/10-usbstorage.rules
+```
+将以下内容写入后，重新插入USB存储设备即可
+```txt
+KERNEL!="sd*", GOTO="media_by_label_auto_mount_end"
+SUBSYSTEM!="block",GOTO="media_by_label_auto_mount_end"
+IMPORT{program}="/sbin/blkid -o udev -p %N"
+ENV{ID_FS_TYPE}=="", GOTO="media_by_label_auto_mount_end"
+ENV{ID_FS_LABEL}!="", ENV{dir_name}="%E{ID_FS_LABEL}"
+ENV{ID_FS_LABEL}=="", ENV{dir_name}="Untitled-%k"
+ACTION=="add", ENV{mount_options}="relatime,sync"
+ACTION=="add", ENV{ID_FS_TYPE}=="vfat", ENV{mount_options}="iocharset=utf8,umask=000"
+ACTION=="add", ENV{ID_FS_TYPE}=="ntfs", ENV{mount_options}="iocharset=utf8,umask=000"
+ACTION=="add", RUN+="/bin/mkdir -p /media/%E{dir_name}", RUN+="/bin/mount -o $env{mount_options} /dev/%k /media/%E{dir_name}"
+ACTION=="remove", ENV{dir_name}!="", RUN+="/bin/umount -l /media/%E{dir_name}", RUN+="/bin/rmdir /media/%E{dir_name}" 
+LABEL="media_by_label_auto_mount_end"
+```
+原文链接：https://blog.csdn.net/u012589578/article/details/77703794
+
 ## 相关操作记录
 
 > 挂载分区
