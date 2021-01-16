@@ -4,4 +4,4 @@
 
 > Aqara Opple 无线开关
 
-https://shaonianzhentan.github.io/ha-docs/blueprint/aqara_opple_switch.yaml
+https://github.com/shaonianzhentan/ha-docs/blob/master/docs/blueprint/aqara_opple_switch.yaml

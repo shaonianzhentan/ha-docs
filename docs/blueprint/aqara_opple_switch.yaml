@@ -2,6 +2,7 @@ blueprint:
   name: Aqara Opple 无线开关
   description: 'ZigBee2Mqtt里的Aqara Opple 6键开关的操作'
   domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-docs/blob/master/docs/blueprint/aqara_opple_switch.yaml
   input:
     switch:
       name: Aqara switch
@@ -15,69 +16,9 @@ blueprint:
       default: []
       selector:
         action: {}
-    button_2_single:
-      name: Button 2 - single click
-      description: 键2单击
-      default: []
-      selector:
-        action: {}
-    button_3_single:
-      name: Button 3 - single click
-      description: 键3单击
-      default: []
-      selector:
-        action: {}
-    button_4_single:
-      name: Button 4 - single click
-      description: 键4单击
-      default: []
-      selector:
-        action: {}
-    button_5_single:
-      name: Button 5 - single click
-      description: 键5单击
-      default: []
-      selector:
-        action: {}
-    button_6_single:
-      name: Button 6 - single click
-      description: 键6单击
-      default: []
-      selector:
-        action: {}
     button_1_double:
       name: Button 1 - double click
       description: 键1双击
-      default: []
-      selector:
-        action: {}
-    button_2_double:
-      name: Button 2 - double click
-      description: 键2双击
-      default: []
-      selector:
-        action: {}
-    button_3_double:
-      name: Button 3 - double click
-      description: 键3双击
-      default: []
-      selector:
-        action: {}
-    button_4_double:
-      name: Button 4 - double click
-      description: 键4双击
-      default: []
-      selector:
-        action: {}
-    button_5_double:
-      name: Button 5 - double click
-      description: 键5双击
-      default: []
-      selector:
-        action: {}
-    button_6_double:
-      name: Button 6 - double click
-      description: 键6双击
       default: []
       selector:
         action: {}
@@ -87,69 +28,9 @@ blueprint:
       default: []
       selector:
         action: {}
-    button_2_triple:
-      name: Button 2 - triple click
-      description: 键2三连击
-      default: []
-      selector:
-        action: {}
-    button_3_triple:
-      name: Button 3 - triple click
-      description: 键3三连击
-      default: []
-      selector:
-        action: {}
-    button_4_triple:
-      name: Button 4 - triple click
-      description: 键4三连击
-      default: []
-      selector:
-        action: {}
-    button_5_triple:
-      name: Button 5 - triple click
-      description: 键5三连击
-      default: []
-      selector:
-        action: {}
-    button_6_triple:
-      name: Button 6 - triple click
-      description: 键6三连击
-      default: []
-      selector:
-        action: {}
     button_1_hold:
       name: Button 1 - hold click
       description: 键1长按
-      default: []
-      selector:
-        action: {}
-    button_2_hold:
-      name: Button 2 - hold click
-      description: 键2长按
-      default: []
-      selector:
-        action: {}
-    button_3_hold:
-      name: Button 3 - hold click
-      description: 键3长按
-      default: []
-      selector:
-        action: {}
-    button_4_hold:
-      name: Button 4 - hold click
-      description: 键4长按
-      default: []
-      selector:
-        action: {}
-    button_5_hold:
-      name: Button 5 - hold click
-      description: 键5长按
-      default: []
-      selector:
-        action: {}
-    button_6_hold:
-      name: Button 6 - hold click
-      description: 键6长按
       default: []
       selector:
         action: {}
@@ -159,9 +40,57 @@ blueprint:
       default: []
       selector:
         action: {}
+    button_2_single:
+      name: Button 2 - single click
+      description: 键2单击
+      default: []
+      selector:
+        action: {}
+    button_2_double:
+      name: Button 2 - double click
+      description: 键2双击
+      default: []
+      selector:
+        action: {}
+    button_2_triple:
+      name: Button 2 - triple click
+      description: 键2三连击
+      default: []
+      selector:
+        action: {}
+    button_2_hold:
+      name: Button 2 - hold click
+      description: 键2长按
+      default: []
+      selector:
+        action: {}
     button_2_release:
       name: Button 2 - release click
       description: 键2放开
+      default: []
+      selector:
+        action: {}
+    button_3_single:
+      name: Button 3 - single click
+      description: 键3单击
+      default: []
+      selector:
+        action: {}
+    button_3_double:
+      name: Button 3 - double click
+      description: 键3双击
+      default: []
+      selector:
+        action: {}
+    button_3_triple:
+      name: Button 3 - triple click
+      description: 键3三连击
+      default: []
+      selector:
+        action: {}
+    button_3_hold:
+      name: Button 3 - hold click
+      description: 键3长按
       default: []
       selector:
         action: {}
@@ -171,15 +100,87 @@ blueprint:
       default: []
       selector:
         action: {}
+    button_4_single:
+      name: Button 4 - single click
+      description: 键4单击
+      default: []
+      selector:
+        action: {}
+    button_4_double:
+      name: Button 4 - double click
+      description: 键4双击
+      default: []
+      selector:
+        action: {}
+    button_4_triple:
+      name: Button 4 - triple click
+      description: 键4三连击
+      default: []
+      selector:
+        action: {}
+    button_4_hold:
+      name: Button 4 - hold click
+      description: 键4长按
+      default: []
+      selector:
+        action: {}
     button_4_release:
       name: Button 4 - release click
       description: 键4放开
       default: []
       selector:
         action: {}
+    button_5_single:
+      name: Button 5 - single click
+      description: 键5单击
+      default: []
+      selector:
+        action: {}
+    button_5_double:
+      name: Button 5 - double click
+      description: 键5双击
+      default: []
+      selector:
+        action: {}
+    button_5_triple:
+      name: Button 5 - triple click
+      description: 键5三连击
+      default: []
+      selector:
+        action: {}
+    button_5_hold:
+      name: Button 5 - hold click
+      description: 键5长按
+      default: []
+      selector:
+        action: {}
     button_5_release:
       name: Button 5 - release click
       description: 键5放开
+      default: []
+      selector:
+        action: {}
+    button_6_single:
+      name: Button 6 - single click
+      description: 键6单击
+      default: []
+      selector:
+        action: {}
+    button_6_double:
+      name: Button 6 - double click
+      description: 键6双击
+      default: []
+      selector:
+        action: {}
+    button_6_triple:
+      name: Button 6 - triple click
+      description: 键6三连击
+      default: []
+      selector:
+        action: {}
+    button_6_hold:
+      name: Button 6 - hold click
+      description: 键6长按
       default: []
       selector:
         action: {}
