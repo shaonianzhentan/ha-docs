@@ -37,6 +37,7 @@
   - [主题](system_theme.md)
   - [模板](system_template.md)
   - [网络爬虫](system_scrape.md)
+  - [蓝图](system_blueprint.md)
 
 - 插件配置
 
