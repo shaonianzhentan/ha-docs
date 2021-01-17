@@ -13,3 +13,4 @@
 
 > 测试平台
 - [阿里生活物联网平台](https://living.aliyun.com/)
+- [电脑桌面版小爱同学](https://www.mi.com/service/bijiben/drivers/Smart-Mouse)

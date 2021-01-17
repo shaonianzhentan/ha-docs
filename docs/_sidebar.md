@@ -67,6 +67,7 @@
 
 - 用户界面
 
+  - [卡片集合](plug_dev_card.md)
   - [自定义Lovelace卡片](plug_dev_custom_card.md)
   - [自定义状态卡片](plug_dev_custom_state_card.md)
   - [自定义面板](plug_dev_custom_panel.md)
