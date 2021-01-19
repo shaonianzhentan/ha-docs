@@ -24,4 +24,7 @@ ffmpeg -f gdigrab -framerate 15 -i desktop -f dshow -i audio="麦克风阵列 (R
 ```
 - https://trac.ffmpeg.org/wiki/Capture/Desktop
 
-!> 注意：视频播放推荐使用`VLC播放器`，如果卡顿建议`减少帧率`
+!> 注意事项：
+<br/>录完了的视频打不开，推荐使用`VLC播放器`打开，如果卡顿建议`减少帧率`
+<br/>也可以使用`格式转换工具`进行转码操作 [Windows应用 - 格式工厂](https://www.microsoft.com/zh-cn/p/%e6%a0%bc%e5%bc%8f%e5%b7%a5%e5%8e%82-%e8%a7%86%e9%a2%91%e5%89%aa%e8%be%91%e6%a0%bc%e5%bc%8f%e5%b7%a5%e5%8e%82%e6%a0%bc%e5%bc%8f%e8%bd%ac%e6%8d%a2/9npsx9n4t3tj#activetab=pivot:overviewtab)
+
