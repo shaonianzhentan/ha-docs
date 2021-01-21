@@ -78,14 +78,10 @@
   - [NFC碰碰贴](automation_nfc.md)
   - ~~[离家与回家](automation_home.md)~~
 
-- 资源网站
-
-  - [MDI图标](website_icon.md)
-  - [GitHub慢慢慢](website_github520.md)
-
-- 相关小知识
+- 更多知识
   
-  - [Android小知识](about_android.md)
-  - [GPIO接口](about_gpio.md)
+  - [Android](about_android.md)
   - [树莓派](about_pi.md)
+  - [GitHub](about_github.md)
+  - [MDI图标](website_icon.md)
   - [小知识](about_knowledge.md)
