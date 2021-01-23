@@ -1,10 +1,7 @@
 # 智能音箱接入控制
-
-*视频介绍：*
+https://www.bilibili.com/video/BV19h411f7dp
 
 ---
-> 智能音箱HomeAssistant插件
-- https://github.com/cnk700i/havcs
 
 > 智能音箱开放平台
 - [小度音箱](https://dueros.baidu.com/dbp/main/console)
@@ -14,3 +11,10 @@
 > 测试平台
 - [阿里生活物联网平台](https://living.aliyun.com/)
 - [电脑桌面版小爱同学](https://www.mi.com/service/bijiben/drivers/Smart-Mouse)
+
+## 小度音箱和天猫精灵接入
+- 视频介绍：https://www.bilibili.com/video/BV1G54y1C7KW
+- 插件：https://github.com/cnk700i/havcs
+
+## 小爱音箱接入
+- 视频介绍：https://www.bilibili.com/video/BV19h411f7dp
