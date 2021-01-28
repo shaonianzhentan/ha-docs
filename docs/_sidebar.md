@@ -85,3 +85,4 @@
   - [GitHub](about_github.md)
   - [MDI图标](website_icon.md)
   - [小知识](about_knowledge.md)
+  - [MonoForAndroid](about_mono.md)
