@@ -35,11 +35,13 @@ sudo nano /etc/create_ap.conf
 源码：https://github.com/oblique/create_ap
 
 ## 查看外网IP
-```bash
-curl ifconfig.me
-```
+https://www.ip.cn/api/index?ip=&type=0
 
 ## 设置系统音量
+```bash
+# 图形化设置音量
+alsamixer
+```
 ```bash
 # 查看声卡
 amixer scontrols
@@ -49,6 +51,21 @@ amixer scontrols
 
 # 调整音量到80%
 amixer set Master 80%
+```
+!> 如果使用了`PulseAudio`服务`amixer`可能会无法控制`PCM`
+```bash
+# 在使用PulseAudio服务时，可以通过以下命令控制
+
+# 查看Sink序号方法一
+pactl list sinks
+# 查看Sink序号方法二
+pacmd list-sinks
+
+# 设置音量
+# pactl set-sink-volume sink序号 音量
+pactl set-sink-volume 1 50%
+# 通过+-设置相对值
+pactl set-sink-volume 1 +5%
 ```
 
 ## 自动挂载USB存储设备
