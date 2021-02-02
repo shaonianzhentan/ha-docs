@@ -42,6 +42,7 @@ https://www.ip.cn/api/index?ip=&type=0
 # 图形化设置音量
 alsamixer
 ```
+!> 使用命令行控制音量，请注意相关服务的安装
 ```bash
 # 查看声卡
 amixer scontrols

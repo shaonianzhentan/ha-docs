@@ -79,9 +79,22 @@ Settings.System.PutInt(this.ContentResolver, Settings.System.ScreenBrightness, b
 AudioManager audioManager = this.GetSystemService(Context.AudioService) as AudioManager;
 // 音乐音量
 int musicVolume = audioManager.GetStreamVolume(Stream.Music);
-// 音乐音量设置
-int musicVolume = 100;
+// 设置音量到最大
+int musicVolume = audioManager.GetStreamMaxVolume(Android.Media.Stream.Music);
 audioManager.SetStreamVolume(Stream.Music, musicVolume, VolumeNotificationFlags.PlaySound);
+
+// 系统音量
+int systemVolume = audioManager.GetStreamVolume(Stream.System);
+// 设置音量到最大
+int systemVolume = audioManager.GetStreamMaxVolume(Android.Media.Stream.System);
+audioManager.SetStreamVolume(Stream.System, systemVolume, VolumeNotificationFlags.PlaySound);
+
+// 闹钟音量
+int alarmVolume = audioManager.GetStreamVolume(Stream.Alarm);
+// 设置音量到最大
+int alarmVolume = audioManager.GetStreamMaxVolume(Android.Media.Stream.Alarm);
+audioManager.SetStreamVolume(Stream.Alarm, alarmVolume, VolumeNotificationFlags.PlaySound);
+
 ```
 
 ### WiFi管理
@@ -110,7 +123,7 @@ string ip = System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfac
 
 ## 文本转语音TTS
 ```csharp
-void Speak(value){
+void Speak(string value){
     // 主线程异步调用方法
     MainThread.BeginInvokeOnMainThread(async () => {
         await Xamarin.Essentials.TextToSpeech.SpeakAsync(value);
@@ -223,4 +236,15 @@ async void ConnectMQTT(string host, int port = 1883)
     // 开始连接...
     await mqttClient.ConnectAsync(options.Build(), CancellationToken.None);
 }
+```
+
+## JSON转换
+```csharp
+// 字典对象转字符串
+Dictionary<string, object> dict = new Dictionary<string, object>();
+dict.Add("update_time", System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+string jsonStr = JsonConvert.SerializeObject(dict);
+
+// json字符串转字典
+Dictionary<string, object> dict = JsonConvert.DeserializeObject<Dictionary<string, object>>(jsonStr);
 ```
