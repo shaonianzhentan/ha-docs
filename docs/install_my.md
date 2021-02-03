@@ -219,3 +219,72 @@ npm i -g node-red
 # 装个zigbee2mqtt算球
 # 勉强装个AP热点完事
 ```
+
+## 我的Nginx配置
+
+```nginx
+map $http_upgrade $connection_upgrade {
+  default upgrade;
+  ''   close;
+}
+
+upstream homeassistant { 
+  server 192.168.1.101:8123;
+}
+
+upstream webssh { 
+  server 192.168.1.101:2222;
+}
+
+server {
+
+    location / {
+        proxy_pass  http://homeassistant;
+        proxy_set_header  Upgrade  $http_upgrade;
+        proxy_set_header  Connection  $connection_upgrade;
+    }
+
+    location /ssh/ {
+        proxy_pass http://webssh;
+    }
+
+    location /html/ {
+        root /var/www;
+    }
+
+    location /html/tile/config.js {
+        proxy_pass  http://homeassistant/local/TileBoard/config.js;
+    }
+
+    location /html/tile/styles/custom.css {
+        proxy_pass  http://homeassistant/local/TileBoard/custom.css;
+    }
+
+}
+```
+> 安装Aria2下载面板
+```bash
+# 设置最高权限
+cd /var/www && sudo chmod 777 html
+# 创建aria2目录
+cd html && mkdir aria2 && cd aria2
+# 拉取指定目录
+git init
+git remote add -f origin https://github.com.cnpmjs.org/ziahamza/webui-aria2
+git config core.sparsecheckout true
+echo "docs" >> .git/info/sparse-checkout
+git pull origin master
+echo 'success'
+```
+> 安装TileBoard磁贴面板
+```bash
+# 设置最高权限
+cd /var/www && sudo chmod 777 html
+# 创建tile目录
+cd html && mkdir tile && cd tile
+# 拉取指定目录
+wget https://github.com/resoai/TileBoard/releases/download/v2.1.3/TileBoard.zip
+unzip TileBoard.zip
+rm -rf TileBoard.zip
+echo 'success'
+```
