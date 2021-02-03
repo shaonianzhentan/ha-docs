@@ -40,3 +40,7 @@ curl -X POST -H "Authorization: Bearer 令牌凭据" \
   http://192.168.1.101:8123/api/services/conversation/process
 ```
 !> 注意：各个系统换行符标识`\`可能会有区别，在运行时一定要注意
+
+## 网站收集
+
+- 文件临时下载： https://d.serctl.com/
