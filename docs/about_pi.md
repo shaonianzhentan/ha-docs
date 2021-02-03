@@ -2,6 +2,23 @@
 
 ---
 
+## 修改hostname使用主机名访问
+!> 注意：树莓派默认主机名为raspberrypi，多个设备可能冲突
+```bash
+# 判断是否能ping通
+ping homeassistant.local
+
+# 修改主机名称为homeassistant
+sudo nano /etc/hostname
+
+# 修改主机指向
+# 127.0.1.1                     homeassistant
+sudo nano /etc/hosts
+
+# 重启后应该就能ping通了
+sudo reboot
+```
+
 ## 配置Windows远程访问服务
 
 ```bash
