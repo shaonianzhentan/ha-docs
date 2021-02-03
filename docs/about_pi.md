@@ -160,3 +160,9 @@ tar -xvpzf /mnt/backup.tgz -C /
     </div>
 </div>
 <img src="./img/pi-gpio.jpeg" />
+
+## 一些命令
+```bash
+# CPU占用最多的前10个进程
+ps auxw|head -1;ps auxw|sort -rn -k3|head -10
+```
