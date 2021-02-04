@@ -6,7 +6,9 @@
 
 ```bash
 # 安装相关依赖
-sudo apt-get install libmariadbclient-dev default-libmysqlclient-dev libssl-dev
+sudo apt-get install libmariadbclient-dev default-libmysqlclient-dev libssl-dev -y
+
+pip3 install mysqlclient
 ```
 
 ```yaml
