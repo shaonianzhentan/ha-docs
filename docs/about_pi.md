@@ -165,4 +165,10 @@ tar -xvpzf /mnt/backup.tgz -C /
 ```bash
 # CPU占用最多的前10个进程
 ps auxw|head -1;ps auxw|sort -rn -k3|head -10
+
+# 查看目录下文件目录大小
+sudo du -ah --max-depth=1 ./
+
+# 查看文件大小
+ls -lh
 ```
