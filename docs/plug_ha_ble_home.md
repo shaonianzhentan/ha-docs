@@ -33,7 +33,12 @@ systemctl restart room-assistant.service
 systemctl status room-assistant.service
 # 激活蓝牙
 hciconfig hci0 up
-
+# 关闭蓝牙
+hciconfig hci0 down
+# 扫描蓝牙
+hcitool scan
+# 查看蓝牙设备信息
+hciconfig
 ```
 
 
