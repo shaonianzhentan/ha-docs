@@ -16,5 +16,21 @@ https://www.bilibili.com/video/BV19h411f7dp
 - 视频介绍：https://www.bilibili.com/video/BV1G54y1C7KW
 - 插件：https://github.com/cnk700i/havcs
 
+> 我的配置
+```yaml
+havcs:
+  platform:                               
+    - aligenie
+    - dueros
+  http:
+    clients:
+      dueros: wusuowei
+      aligenie: wusuowei
+      aligenie_ignore: ignore
+    ha_url: https://xxx.com
+    expire_in_hours: 8760
+  device_config: ui
+```
+
 ## 小爱音箱接入
 - 视频介绍：https://www.bilibili.com/video/BV19h411f7dp
