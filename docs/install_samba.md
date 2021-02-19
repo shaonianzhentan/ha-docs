@@ -20,6 +20,14 @@ sudo nano /etc/samba/smb.conf
   public = yes            #共享开放
   writable = yes          #可写
 ```
+方便复制
+```conf
+[share]
+  path = /home/pi
+  browseable = yes
+  public = yes
+  writable = yes
+```
 
 ```bash
 # 重启服务
