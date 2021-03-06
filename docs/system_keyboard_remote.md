@@ -14,7 +14,7 @@ keyboard_remote:
 
 ```
 
-- https://www.home-assistant.io/integrations/system_keyboard_remote
+- https://www.home-assistant.io/integrations/keyboard_remote
 
 > 测试键盘设备
 ```bash
