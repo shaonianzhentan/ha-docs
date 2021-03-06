@@ -2,7 +2,7 @@ blueprint:
   name: Aqara Opple 无线开关
   description: 'ZigBee2Mqtt里的Aqara Opple 6键开关的操作'
   domain: automation
-  source_url: https://github.com/shaonianzhentan/ha-docs/blob/master/docs/blueprint/aqara_opple_switch.yaml
+  source_url: https://github.com/shaonianzhentan/ha-docs/blob/master/blueprint/aqara_opple_switch.yaml
   input:
     switch:
       name: Aqara switch
