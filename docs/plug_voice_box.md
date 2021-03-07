@@ -9,7 +9,6 @@ https://www.bilibili.com/video/BV19h411f7dp
 - [小爱同学](https://developers.xiaoai.mi.com/skills/create/list)
 
 > 测试平台
-- [阿里生活物联网平台](https://living.aliyun.com/)
 - [电脑桌面版小爱同学](https://www.mi.com/service/bijiben/drivers/Smart-Mouse)
 
 ## 小度音箱和天猫精灵接入
@@ -34,3 +33,12 @@ havcs:
 
 ## 小爱音箱接入
 - 视频介绍：https://www.bilibili.com/video/BV19h411f7dp
+
+## 天猫精灵无公网接入
+
+> 开发者平台
+- [阿里生活物联网平台](https://living.aliyun.com/)
+
+> 参考链接
+- https://bbs.hassbian.com/thread-11927-1-1.html
+- https://bbs.iobroker.cn/t/topic/6337/2
