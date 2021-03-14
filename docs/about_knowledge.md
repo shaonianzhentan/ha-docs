@@ -43,4 +43,10 @@ curl -X POST -H "Authorization: Bearer 令牌凭据" \
 
 ## 网站收集
 
-- 文件临时下载： https://d.serctl.com/
+> 文件临时下载
+- https://d.serctl.com/
+- http://toolwa.com/github/
+- https://gh.api.99988866.xyz/
+- https://ghproxy.com/
+- http://gitd.cc/
+- https://github.zhlh6.cn/
