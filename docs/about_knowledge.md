@@ -50,3 +50,26 @@ curl -X POST -H "Authorization: Bearer 令牌凭据" \
 - https://ghproxy.com/
 - http://gitd.cc/
 - https://github.zhlh6.cn/
+
+## Android通知转发
+
+> 标题`title: %TITLE`，内容`content: $CONTENT`
+- https://www.coolapk.com/apk/com.example.junnan.xiaozhuanfa
+
+!> URL地址：http://192.168.1.101:8123/api/webhook/123456 ，这里的`123456`是自动化里配置的
+
+> 配置自动化
+```yaml
+- id: '1616035392522'
+  alias: Android通知转发地址
+  description: ''
+  trigger:
+  - platform: webhook
+    webhook_id: '123456'
+  condition: []
+  action:
+  - service: persistent_notification.create
+    data:
+      message: '{% for key in  trigger.data -%}{{ key }}:{{ trigger.data[key] }},{%- endfor %}'
+  mode: single
+```
