@@ -3,8 +3,10 @@
 ---
 
 ## 安装
+- 官方文档：https://developer.android.com/studio/command-line/adb?hl=zh-cn
 ```bash
 sudo apt-get install android-tools-adb -y
+
 ```
 
 
@@ -111,4 +113,39 @@ am start org.xbmc.kodi/.Splash
 ```
 # 使用Kodi播放指定视频
 am start -a android.intent.action.VIEW -d "http://192.168.1.101/kodi/河神2/第23集/index.m3u8" -t "video/*" -n "org.xbmc.kodi/.Splash"
+```
+
+
+> 奇异果
+```bash
+com.gala.video.app.albumdetail.AlbumDetailActivity
+
+com.gala.video.app.epg.ui.search.QSearchActivity
+
+com.gala.video.app.albumdetail.MultiProcAlbumDetailActivity
+
+com.gala.video.app.epg.ui.allview.AllViewActivity
+
+com.gala.video.app.epg.ui.sl.SLVideoActivity
+
+com.gala.video.app.epg.ui.supermovie.SuperMovieActivity
+
+com.gala.video.app.epg.uikit.ui.multisubject.MultiSubjectActivity
+
+com.gala.video.cp.RemoteContentProvider
+
+igala://com.gala.video/detail
+
+
+adb broadcast -a com.gitvdemo.video.action.ACTION_LIVE_PLAYER -c android.intent.category.DEFAULT -d gala://page
+
+```
+
+##  APK反编译工具
+```bash
+# APK反编译工具
+sudo apt install apktool -y
+
+# 反编译apk文件
+apktool d xxx.apk
 ```
