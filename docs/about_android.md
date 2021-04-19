@@ -3,13 +3,18 @@
 ---
 
 ## 安装
+
+- 官方文档：https://developer.android.com/studio/command-line/adb?hl=zh-cn
+
 ```bash
 sudo apt-get install android-tools-adb -y
 ```
 
 
 ## 远程调试
+
 > 注意：需要先下载新版的adb调试器
+
 ```bash
 # 查看当前连接设备
 adb devices
@@ -37,6 +42,8 @@ adb shell input keyevent 66
 
 ## 应用程序操作
 ```bash
+# 模拟输入文本
+adb shell input text hello
 
 # 查看手机屏幕分辨率
 adb shell wm size
@@ -153,6 +160,51 @@ adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youk
 
 adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.detail.activity.DetailActivity -d yunostv_yingshi://yingshi_detail/?id=226555&showType=3&from=tvsearch&sourceFrom=9&from_self=com.yunos.tv.universalsearch
 
-adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.detail.activity.DetailActivity -d yunostv_yingshi://yingshi_detail/?id=226555
+adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.detail.activity.DetailActivity -d yunostv_yingshi://yingshi_detail/?id=1284299142
 
+> 奇异果
+
+```bash
+
+adb shell am start -a android.intent.action.MAIN -n com.gitvdideo.aliapp/com.gala.video.app.epg.HomeActivity
+
+# 搜索
+adb shell am start -a android.intent.action.MAIN -n com.gitvdideo.aliapp/com.gala.video.app.epg.ui.search.QSearchActivity
+
+com.gala.video.app.albumdetail.AlbumDetailActivity
+
+com.gala.video.app.epg.ui.search.QSearchActivity
+
+com.gala.video.app.albumdetail.MultiProcAlbumDetailActivity
+
+com.gala.video.app.epg.ui.allview.AllViewActivity
+
+com.gala.video.app.epg.ui.sl.SLVideoActivity
+
+com.gala.video.app.epg.LoadingActivity
+
+com.gala.video.app.epg.ui.supermovie.SuperMovieActivity
+
+com.gala.video.app.epg.uikit.ui.multisubject.MultiSubjectActivity
+
+com.gala.video.cp.RemoteContentProvider
+
+adb shell am start -a android.intent.action.MAIN -n com.gitvdideo.aliapp/com.gala.video.app.epg.HomeActivity -d igala://com.gala.video/detail?id=2258
+
+
+adb shell am broadcast -a com.gitvdemo.video.action.ACTION_ENTER -c android.intent.category.DEFAULT -d igala://com.gala.video/detail?id=3517998595930601
+
+http://itv.ptqy.gitv.tv/api/suggest?u=tv_32ad0e58dc7b1a8d481cf0904f1e3ef9&pu=&key=ST
+
+
+adb shell am start -a android.intent.action.VIEW -d "iqiyi://mobile/player?tvid=8891707610250800"
+```
+
+##  APK反编译工具
+```bash
+# APK反编译工具
+sudo apt install apktool -y
+
+# 反编译apk文件
+apktool d xxx.apk
 ```
