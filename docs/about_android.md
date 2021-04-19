@@ -112,3 +112,47 @@ am start org.xbmc.kodi/.Splash
 # 使用Kodi播放指定视频
 am start -a android.intent.action.VIEW -d "http://192.168.1.101/kodi/河神2/第23集/index.m3u8" -t "video/*" -n "org.xbmc.kodi/.Splash"
 ```
+
+天猫魔盒
+```bash
+
+# 天猫魔盒主页
+adb shell am start com.youku.taitan.tv/com.youku.tv.home.activity.HomeActivity
+
+# 天气应用
+adb shell am start com.youku.taitan.tv/com.youku.tv.smartHome.weather.WeatherActivity
+
+
+adb shell am start com.youku.taitan.tv/com.youku.tv.smartHome.SmartHomeActivity
+
+adb shell am start com.youku.taitan.tv/com.youku.tv.iot.activity.IoTInfoActivity
+
+# 观看历史
+adb shell am start com.youku.taitan.tv/com.youku.tv.userdata.MyYingshiActivity
+
+# 随机播放电视
+adb shell am start com.youku.taitan.tv/com.youku.tv.carouse.CarouselDetailActivity
+
+# 应用中心
+adb shell am start com.youku.taitan.tv/com.youku.tv.yingshi.boutique.bundle.appstore.activity.AppHomeActivity
+
+# 搜索
+adb shell am start com.youku.taitan.tv/com.yunos.tv.yingshi.activity.SearchActivity
+
+# 热播
+adb shell am start com.youku.taitan.tv/com.youku.tv.hotList.activity.HotListActivity
+
+# 奇怪的调试界面
+adb shell am start com.youku.taitan.tv/com.yunos.tv.app.remotecontrolserver.diagnostic.ui.DiagActivity
+
+
+
+adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.detail.activity.DetailActivity -d yunostv_yingshi://yingshi_detail/?id=233508&showType=4&showStrId=cbcb9fd84b0e4cdebf60&isfull=false&title=我是女演员&from=9&subItem=20210417&isBackYingHome=false&isBackLastActivity=false&fromApp=com.youku.taitan.tv
+
+adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.home.activity.HomeActivity -d yunostv_yingshi://yingshi_home -f 0x10000000
+
+adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.detail.activity.DetailActivity -d yunostv_yingshi://yingshi_detail/?id=226555&showType=3&from=tvsearch&sourceFrom=9&from_self=com.yunos.tv.universalsearch
+
+adb shell am start -a android.intent.action.MAIN -n com.youku.taitan.tv/com.youku.tv.detail.activity.DetailActivity -d yunostv_yingshi://yingshi_detail/?id=226555
+
+```
