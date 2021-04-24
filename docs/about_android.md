@@ -207,4 +207,6 @@ sudo apt install apktool -y
 
 # 反编译apk文件
 apktool d xxx.apk
+
+adb logcat
 ```

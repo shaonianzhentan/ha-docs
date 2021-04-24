@@ -6,6 +6,7 @@ https://www.bilibili.com/video/BV19h411f7dp
 > 智能音箱开放平台
 - [小度音箱](https://dueros.baidu.com/dbp/main/console)
 - [天猫精灵](https://iap.aligenie.com/console/skill/list)
+- [天猫精灵2.0](https://iot.aligenie.com/home)
 - [小爱同学](https://developers.xiaoai.mi.com/skills/create/list)
 
 > 测试平台
