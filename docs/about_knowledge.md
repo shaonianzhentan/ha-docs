@@ -73,3 +73,19 @@ curl -X POST -H "Authorization: Bearer 令牌凭据" \
       message: '{% for key in  trigger.data -%}{{ key }}:{{ trigger.data[key] }},{%- endfor %}'
   mode: single
 ```
+
+## 解决HACS下载很慢的问题
+
+> hacs/helpers/functions/download.py `_LOGGER.debug("Downloading %s", url)`
+```python
+    if "https://raw.githubusercontent.com" in url:
+        arr = url.replace("https://raw.githubusercontent.com/", "").split('/')
+        arr[1] = arr[1] + '@' + arr[2]
+        arr[2] = ''
+        _list = ["https://cdn.jsdelivr.net/gh"]
+        for item in arr:
+            if item != '':
+                _list.append(item)
+        url = '/'.join(_list)
+        _LOGGER.debug("下载链接： %s", url)
+```
