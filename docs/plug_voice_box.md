@@ -8,6 +8,7 @@ https://www.bilibili.com/video/BV19h411f7dp
 - [天猫精灵](https://iap.aligenie.com/console/skill/list)
 - [天猫精灵2.0](https://iot.aligenie.com/home)
 - [小爱同学](https://developers.xiaoai.mi.com/skills/create/list)
+- [华为音箱](https://developer.huawei.com/consumer/cn/doc/development/smarthome-Guides/yunprotocol-0000001075545823)
 
 > 测试平台
 - [电脑桌面版小爱同学](https://www.mi.com/service/bijiben/drivers/Smart-Mouse)
