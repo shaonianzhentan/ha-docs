@@ -5,22 +5,22 @@
 安装相关服务
 ```bash
 # 安装Docker管理
-sudo docker run -itd --net="host" --restart=always --name="portainer" docker.io/portainer/portainer
-
-# 安装EMQX
-sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
+sudo docker run -itd --net="host" --restart=always --name="portainer" -v /var/run/docker.sock:/var/run/docker.sock docker.io/portainer/portainer
 
 # 安装HomeAssistant
 sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" -v ~/homeassistant:/config -e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
 
-# 网易云音乐API
-sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
+# 安装EMQX
+sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
 
 # 安装Node-Red
 sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red
 
-# 设备配置低，使用下面这个
-sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red:1.0.1-10-minimal-arm32v6
+# 安装webssh2
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="ssh" ilteoood/webssh2:latest
+
+# 网易云音乐API
+sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
 ```
 
 ### 配置zigbee2mqtt
@@ -232,11 +232,23 @@ map $http_upgrade $connection_upgrade {
 }
 
 upstream homeassistant { 
-  server 192.168.1.101:8123;
+  server 127.0.0.1:8123;
 }
 
 upstream webssh { 
-  server 192.168.1.101:2222;
+  server 127.0.0.1:2222;
+}
+
+upstream nodered {
+  server 127.0.0.1:1880;
+}
+
+upstream portainer {
+  server 127.0.0.1:9000;
+}
+
+upstream aria2c {
+  server 127.0.0.1:6800;
 }
 
 server {
@@ -249,6 +261,26 @@ server {
 
     location /ssh/ {
         proxy_pass http://webssh;
+        proxy_set_header  Upgrade  $http_upgrade;
+        proxy_set_header  Connection  $connection_upgrade;
+    }
+
+    location /node-red/ {
+        proxy_pass http://nodered;
+        proxy_set_header  Upgrade  $http_upgrade;
+        proxy_set_header  Connection  $connection_upgrade;
+    }
+
+    location /docker-portainer/ {
+        proxy_pass http://portainer/;
+        proxy_set_header  Upgrade  $http_upgrade;
+        proxy_set_header  Connection  $connection_upgrade;
+    }
+
+    location /jsonrpc {
+        proxy_pass http://aria2c;
+        proxy_set_header  Upgrade  $http_upgrade;
+        proxy_set_header  Connection  $connection_upgrade;
     }
 
     location /html/ {
