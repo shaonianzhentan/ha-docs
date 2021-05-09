@@ -5,7 +5,7 @@
 安装相关服务
 ```bash
 # 安装Docker管理
-sudo docker run -itd --net="host" --restart=always --name="prtainer-demo" docker.io/portainer/portainer
+sudo docker run -itd --net="host" --restart=always --name="portainer" docker.io/portainer/portainer
 
 # 安装EMQX
 sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
@@ -17,7 +17,10 @@ sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha"
 sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
 
 # 安装Node-Red
-sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" nodered/node-red:1.0.1-10-minimal-arm32v6
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red
+
+# 设备配置低，使用下面这个
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red:1.0.1-10-minimal-arm32v6
 ```
 
 ### 配置zigbee2mqtt
