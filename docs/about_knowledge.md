@@ -89,3 +89,8 @@ curl -X POST -H "Authorization: Bearer 令牌凭据" \
         url = '/'.join(_list)
         _LOGGER.debug("下载链接： %s", url)
 ```
+
+## 启动ssh服务 
+```bash
+sudo service ssh start
+```
