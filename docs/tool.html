@@ -13,13 +13,20 @@
         GitHub地址：<input type="text" v-model.trim="githubUrl" />
         <br />
         CDN地址：<a :href="jsdelivrUrl" target="_blank">{{jsdelivrUrl}}</a>
+
+        <h2>Node-RED密码生成</h2>
+        明文密码：<input type="text" v-model.trim="NodeRedPassword" />
+        <br />
+        密文：<mark>{{bcryptNodeRedPassword}}</mark>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/dcodeIO/bcrypt.js@master/dist/bcrypt.min.js"></script>
     <script>
         const app = new Vue({
             el: '#app',
             data() {
                 return {
-                    githubUrl: ""
+                    githubUrl: "",
+                    NodeRedPassword: ""
                 }
             },
             computed: {
@@ -27,10 +34,23 @@
                     return this.githubUrl
                         .replace("https://github.com", "https://cdn.jsdelivr.net/gh")
                         .replace("/blob/", "@");
+                },
+                bcryptNodeRedPassword() {
+                    const { NodeRedPassword } = this
+                    if (NodeRedPassword) return dcodeIO.bcrypt.hashSync(NodeRedPassword, 8)
+                }
+            },
+            methods: {
+                // 明文与密文比较
+                compare(pwd1, pwd2) {
+                    dcodeIO.bcrypt.compare(pwd1, pwd2, function (err, res) {
+                        console.log(res)
+                    });
                 }
             }
         })
     </script>
+
 </body>
 
 </html>

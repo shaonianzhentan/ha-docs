@@ -27,3 +27,19 @@ C:\Windows\System32\drivers\etc\hosts
 ## 相关api
 
 - 接口信息：https://api.github.com/repos/shaonianzhentan/ha_cloud_music/releases/latest
+
+## 提交代码命令
+```bash
+# 查看仓库状态
+git status -s
+# 暂存更改文件
+git add .
+# 查看仓库状态
+git status -s
+
+git commit -m "更改信息"
+# 拉取合并
+git pull
+# 推送到远程仓库
+git push
+```
