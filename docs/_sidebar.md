@@ -86,3 +86,10 @@
   - [MDI图标](website_icon.md)
   - [小知识](about_knowledge.md)
   - [MonoForAndroid](about_mono.md)
+
+- 我的配置
+
+  - [配置](my_configuration.md)
+  - [自动化](my_automations.md)
+  - [脚本](my_scripts.md)
+  - [分组](my_groups.md)
