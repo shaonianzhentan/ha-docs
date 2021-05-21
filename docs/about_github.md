@@ -24,6 +24,12 @@ C:\Windows\System32\drivers\etc\hosts
 
 例子：https://github.com.cnpmjs.org/shaonianzhentan/ha-docs/blob/master/README.md
 
+格式：`github.com`更换为`hub.fastgit.org`
+
+例子：https://hub.fastgit.org/shaonianzhentan/ha-docs/blob/master/README.md
+
+原始文件：https://raw.fastgit.org/shaonianzhentan/ha-docs/master/README.md
+
 ## 相关api
 
 - 接口信息：https://api.github.com/repos/shaonianzhentan/ha_cloud_music/releases/latest
