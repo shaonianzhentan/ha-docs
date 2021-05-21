@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf8" />
     <title>工具箱</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
 </head>
-
 <body>
     <div id="app">
         <h2>GitHub地址转CDN</h2>
         GitHub地址：<input type="text" v-model.trim="githubUrl" />
         <br />
         CDN地址：<a :href="jsdelivrUrl" target="_blank">{{jsdelivrUrl}}</a>
-
+        <hr />
         <h2>Node-RED密码生成</h2>
         明文密码：<input type="text" v-model.trim="NodeRedPassword" />
         <br />
