@@ -25,7 +25,8 @@ tian_qi_yu_bao:
   mode: single
   sequence:
   - data:
-      message: {% set state = state_attr(''weather.tian_qi'', ''forecast'')%}
+      message: ->
+        {% set state = state_attr(''weather.tian_qi'', ''forecast'') %}
         今天的天气是{{state[0].condition_cn}}，最高温度：{{state[0].temperature}}度，最低温度：{{state[0].templow}}度，
         明天的天气是{{state[1].condition_cn}}，最高温度：{{state[1].temperature}}度，最低温度：{{state[1].templow}}度，
         后天的天气是{{state[2].condition_cn}}，最高温度：{{state[2].temperature}}度，最低温度：{{state[2].templow}}度
