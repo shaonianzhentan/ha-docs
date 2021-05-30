@@ -21,6 +21,7 @@ sudo docker run -itd --net="host" --restart=always --privileged=true --name="ssh
 
 # 网易云音乐API
 sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
+
 ```
 
 ### 配置zigbee2mqtt

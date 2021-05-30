@@ -65,3 +65,18 @@ server {
 
 }
 ```
+
+## 使用Docker安装
+
+```bash
+# 安装可道云(数据目录为/mnt/kodbox，端口为89)
+sudo docker run -itd -p 89:80 -v /mnt/kodbox:/var/www/html --restart=always --name="kodbox" kodcloud/kodbox:v1.19
+# 切换目录安装网页文件
+cd /mnt/kodbox
+# 获取源代码
+wget https://static.kodcloud.com/update/download/kodbox.1.20.zip
+# 解压到当前目录之中
+unzip kodbox.1.20.zip
+# 删除当前压缩文件
+rm -rf kodbox.1.20.zip
+```

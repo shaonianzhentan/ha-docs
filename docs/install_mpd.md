@@ -56,6 +56,14 @@ alsamixer
 # 修改mixer_control控制
 sudo nano /etc/mpd.conf
 
+aplay -l
+aplay -L
+# 查看默认音频设备
+amixer
+
+# 查看指定声卡
+amixer -c 3
+
 ```
 找到音频输出配置，然后将`mixer_control`修改为指定的值
 ```nginx
@@ -70,4 +78,14 @@ audio_output {
 #       mixer_index     "0"             # optional
 }
 
+```
+
+在香橙派中安装了原装系统，这里使用软件控制音量
+```nginx
+audio_output {
+        type            "alsa"
+        name            "My ALSA Device"
+        device          "hw:3,0"        # optional
+        mixer_type      "software"      # optional
+}
 ```
