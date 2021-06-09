@@ -89,24 +89,20 @@ http {
 > http强制跳转到https
 ```nginx
 server {
-	listen          80;
-	server_name www.jiluxinqing.com;
-	
-	rewrite ^(.*)$ https://${server_name}$1 permanent;
-}
-```
 
-> 配置https证书
-```nginx
-server {
-	listen          443 ssl;
-	server_name www.jiluxinqing.com;
-	
-	ssl_certificate      ssl/jiluxinqing.crt;
-	ssl_certificate_key  ssl/jiluxinqing.key;
-
-	location / {
-			proxy_pass  http://localhost:5000;
-	}
-}
+    listen 80;
+    listen 443 ssl;
+    server_name www.jiluxinqing.com jiluxinqing.com;
+    ssl_certificate      ssl/jiluxinqing.crt;
+    ssl_certificate_key  ssl/jiluxinqing.key;
+    
+    if ($server_port !~ 443) {
+        rewrite ^(/.*)$ https://$host$1 permanent;
+    }
+    
+    location / {
+        proxy_pass  http://localhost:5000;
+    }	  
+    
+}	
 ```
