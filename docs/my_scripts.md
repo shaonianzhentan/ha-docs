@@ -296,7 +296,7 @@ wang_yi_dian_tai_song_yu_xuan_du:
   mode: single
   icon: mdi:music-circle
 wang_yi_dian_tai_qing_song_yi_ke:
-  alias: 网易电台宋宇选读
+  alias: 网易电台轻松一刻
   sequence:
   - service: ha_cloud_music.load
     data:
