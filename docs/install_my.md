@@ -13,15 +13,14 @@ sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha"
 # 安装EMQX
 sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
 
-# 安装Node-Red
-sudo docker run -itd --net="host" --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red
-
 # 安装webssh2
 sudo docker run -itd --net="host" --restart=always --privileged=true --name="ssh" ilteoood/webssh2:latest
 
 # 网易云音乐API
 sudo docker run -itd --net="host" --restart=always --name="music" binaryify/netease_cloud_music_api
 
+# 安装HomeKit服务
+docker run -itd --net=host --restart=always --name=homebridge -v ~/homeassistant/homebridge:/homebridge oznu/homebridge:latest
 ```
 
 ### 配置zigbee2mqtt
@@ -53,6 +52,18 @@ sudo nano ~/homeassistant/frpc.ini
 
 # frpc服务
 sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
+```
+
+### 安装NodeRed
+```bash
+# 安装Node-Red
+sudo docker run -itd --net="host"  --restart=always --privileged=true --name="nodered" -v ~/homeassistant/nodered:/data nodered/node-red
+
+# 进入终端
+docker exec -it --user root nodered /bin/bash
+# 安装ffmpeg
+apk add ffmpeg
+
 ```
 
 ## 原生环境

@@ -2,7 +2,7 @@
 
 > 替换hosts文件
 
-项目地址：https://github.com.cnpmjs.org/521xueweihan/GitHub520
+项目地址：https://hub.fastgit.org/521xueweihan/GitHub520
 
 ```bash
 # Linux编辑hosts
