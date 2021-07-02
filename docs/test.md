@@ -18,3 +18,15 @@ https://api.bilibili.com/x/web-interface/search/type?context=&search_type=media_
 
 # 资源搜索
 https://api.okzy.tv/api.php/provide/vod/at/json/?ac=detail&wd=大秦赋
+
+
+
+是dns解析问题，在/etc/resolv.conf中，添加我的网关：192.168.100.1
+
+在文件中添加：
+
+nameserver 192.168.100.1
+
+现在再ping baidu.com
+
+https://www.cnblogs.com/vastiny/p/3900204.html
