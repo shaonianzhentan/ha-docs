@@ -85,6 +85,7 @@
   - [MDI图标](website_icon.md)
   - [小知识](about_knowledge.md)
   - [MonoForAndroid](about_mono.md)
+  - [Python](about_python.md)
 
 - 我的配置
 
