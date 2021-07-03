@@ -3,6 +3,9 @@
 *视频介绍：*
 
 ---
+
+## 树莓派RaspberryPi
+
 > 如果使用Wifi连接，则镜像烧录后，打开内存卡在`boot`目录下新建`wpa_supplicant.conf`文件，写入以下内容
 ```nginx
 country=CN 
@@ -29,4 +32,30 @@ date
 
 # 设置时区为上海
 sudo timedatectl set-timezone 'Asia/Shanghai'
+```
+
+## 香橙派OrangePi
+
+> 连接WiFi
+
+
+- 方式一：配置中选择WiFi
+
+```bash
+armbian-config
+```
+- 方式二：命令行连接
+
+```bash
+# 查看设备状态
+nmcli device status
+
+# 检查 radio
+nmcli radio
+
+# 查看附近无线网络信号
+nmcli dev wifi list
+
+# 连上 AP 热点
+nmcli device wifi connect WiFi名称 password WiFi密码
 ```
