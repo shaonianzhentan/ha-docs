@@ -81,6 +81,7 @@
   
   - [Android](about_android.md)
   - [树莓派](about_pi.md)
+  - [香橙派](about_orangepi.md)
   - [GitHub](about_github.md)
   - [MDI图标](website_icon.md)
   - [小知识](about_knowledge.md)

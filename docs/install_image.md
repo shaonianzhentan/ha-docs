@@ -4,7 +4,7 @@
 
 ---
 
-## 树莓派RaspberryPi
+!> 在`boot`目录下新建`ssh`文件开启ssh服务
 
 > 如果使用Wifi连接，则镜像烧录后，打开内存卡在`boot`目录下新建`wpa_supplicant.conf`文件，写入以下内容
 ```nginx
@@ -19,8 +19,6 @@ network={
 }
 ```
 
-> 在`boot`目录下新建`ssh`文件开启ssh服务
-
 > 树莓派原生系统：默认账号`pi`和密码`raspberry`
 
 树莓派系统换源：https://mirror.tuna.tsinghua.edu.cn/help/raspbian/
@@ -32,30 +30,4 @@ date
 
 # 设置时区为上海
 sudo timedatectl set-timezone 'Asia/Shanghai'
-```
-
-## 香橙派OrangePi
-
-> 连接WiFi
-
-
-- 方式一：配置中选择WiFi
-
-```bash
-armbian-config
-```
-- 方式二：命令行连接
-
-```bash
-# 查看设备状态
-nmcli device status
-
-# 检查 radio
-nmcli radio
-
-# 查看附近无线网络信号
-nmcli dev wifi list
-
-# 连上 AP 热点
-nmcli device wifi connect WiFi名称 password WiFi密码
 ```
