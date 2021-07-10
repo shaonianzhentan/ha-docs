@@ -31,6 +31,8 @@ xiaomiMi:
 systemctl restart room-assistant.service
 # 查看服务状态
 systemctl status room-assistant.service
+
+
 # 激活蓝牙
 hciconfig hci0 up
 # 关闭蓝牙
@@ -41,6 +43,9 @@ hcitool scan
 hciconfig
 ```
 
+```bash
+rfcomm bind /dev/rfcomm0 50:D2:F5:56:2D:DB
+```
 
 ## 蓝牙在家（不推荐）
 
