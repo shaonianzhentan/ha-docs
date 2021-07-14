@@ -49,3 +49,8 @@ git pull
 # 推送到远程仓库
 git push
 ```
+
+```bash
+# 更换源地址
+git remote set-url origin git@github.com:shaonianzhentan/MiPadAndroid.git
+```
