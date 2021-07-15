@@ -171,4 +171,10 @@ sudo du -ah --max-depth=1 ./
 
 # 查看文件大小
 ls -lh
+
+# 查询端口号占用
+lsof -i:1880
+
+# 强制关闭进程
+kill -9 PID
 ```
