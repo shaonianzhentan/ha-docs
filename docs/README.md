@@ -11,7 +11,8 @@
 ## 小工具
 <iframe src="tool.html" style="height:400px;"></iframe>
 
-?> 如果你觉得这些笔记文档对你有帮助，欢迎打赏与点赞，谢谢你
-<br><br>
-<img src="./img/wechat.png" alt="微信支付" title="微信" width="200" align="bottom" />
-<img src="./img/alipay.jpg" alt="支付宝" title="支付宝" width="200" align="right" />
+
+## 如果你觉得这些笔记文档对你有帮助，欢迎请我喝杯<del><small>咖啡</small></del><b>奶茶</b>😘
+|支付宝|微信|
+|---|---|
+<img src="./img/alipay.png" align="left" height="160" width="160"  alt="微信支付" title="微信">  |  <img src="./img/wechat.png" align="left" height="160" width="160" alt="支付宝" title="支付宝">
