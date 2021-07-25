@@ -8,14 +8,14 @@
 
 > nodejs安装方法一（树莓派zero系列千万别用这个）
 ```bash
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
 > nodejs安装方法二
 ```bash
 # 安装node管理器
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # 安装最新版的node
 nvm install --lts

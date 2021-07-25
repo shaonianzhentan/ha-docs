@@ -80,6 +80,19 @@ audio_output {
 
 ```
 
+在新版树莓派中的配置
+```nginx
+audio_output {
+        type            "alsa"
+        name            "My ALSA Device"
+        device          "hw:0,0"
+#       mixer_type      "hardware"      # optional
+#       mixer_device    "default"       # optional
+        mixer_control   "Headphone"
+        mixer_index     "0"             
+}
+```
+
 在香橙派中安装了原装系统，这里使用软件控制音量
 ```nginx
 audio_output {

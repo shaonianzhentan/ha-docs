@@ -31,3 +31,25 @@ date
 # 设置时区为上海
 sudo timedatectl set-timezone 'Asia/Shanghai'
 ```
+
+## 镜像功能
+
+- [x] `HomeAssistant`智能家居系统
+    - [x] HACS
+    - [x] 文件管理器
+    - [x] 易微联集成
+    - [x] 小米集成
+    - [x] 系统监控
+    - [x] 侧边栏管理
+    - [x] 离线下载管理
+- [x] `NodeRed`可视化编程
+- [x] `Samba`局域网共享 - 已赋予最高权限
+- [x] `Windows`远程连接
+- [x] `Docker`管理器
+- [x] `Kodbox`私人云盘
+- [x] `Aria2`下载管理
+- [x] `ffmpeg`视频处理服务
+- [x] `MQTT`服务
+- [x] `MPD`音乐服务
+- [x] `DLNA`流媒体服务器
+- [x] `Frpc`内网穿透服务

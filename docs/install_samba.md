@@ -34,5 +34,5 @@ sudo nano /etc/samba/smb.conf
 sudo samba restart
 
 # 注意：如果文件夹不能写，则给予最高权限
-sudo chmod 777 /home/pi
+sudo chmod -Rf 777 /home/pi
 ```
