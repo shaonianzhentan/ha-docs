@@ -53,3 +53,15 @@ sudo timedatectl set-timezone 'Asia/Shanghai'
 - [x] `MPD`音乐服务
 - [x] `DLNA`流媒体服务器
 - [x] `Frpc`内网穿透服务
+
+> 自签名证书
+
+```nginx
+listen 443 ssl default_server;
+listen [::]:443 ssl default_server;
+
+server_name raspberry.local;
+
+ssl_certificate      ssl/pi.crt;
+ssl_certificate_key  ssl/pi.key;
+```
