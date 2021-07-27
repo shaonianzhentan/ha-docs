@@ -102,3 +102,15 @@ server
 	}
 }
 ```
+
+## 常见问题
+
+> 如果无法运行，依赖损坏，可以重装安装相关依赖
+```bash
+
+sudo apt reinstall libaria2-0
+
+sudo apt reinstall libaria2
+
+systemctl status aria2.service
+```
