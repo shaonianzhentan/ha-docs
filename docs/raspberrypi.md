@@ -95,7 +95,7 @@ data:
   latitude: GPS纬度
   longitude: GPS经度
 ```
-- 启动`内网穿透服务`之前请先在`文件管理器`里修改`frpc.ini`配置，如果你没有自己的服务器，可联系我
+- 启动`内网穿透服务`之前请先在`文件管理器`里修改`frpc.ini`配置，如果没有自己的服务器，可联系我
 
 ```bash
 sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
