@@ -39,10 +39,6 @@
 
 > 下载管理：`ha123456`
 
-## 设置坐标
-
-## NodeRed密码修改
-
 ## 更新日志
 
 > 2021-9-1
@@ -74,3 +70,36 @@
 - 增加整点报时自动化
 - 增加周一至周五早上8点10分早安闹钟自动化
 - 过滤了云音乐和部分实体重复的记录，减少数据库大小
+
+## 注意事项
+
+- 如果`没有插网线`的环境，可以使用`WiFi配置连接`，具体方法请点击[这里](/install_image)
+- 如果想使用`树莓派桌面`操作，可以`Windows`上使用远程桌面方式登录 [操作看视频](https://www.bilibili.com/video/BV1UK4y1j7cE/)
+- 如果`开启外网访问`，请务必修改以下初始密码：`HomeAssistant`、`NodeRed`、`Docker管理器`、`下载管理`
+- 初次使用，请将`configuration.yaml`文件里的`DLNA设备自动发现`开启（删除前面的#号）
+
+```yaml
+# 自动发现
+discovery:
+  enable:
+    - dlna_dmr
+```
+- 默认定位为上海，可以通过调用服务设置，在百度地图里取的坐标值需要转换为GPS坐标
+  [坐标拾取](https://www.toolnb.com/tools/getbaidupoint.html)
+  [坐标转换](https://tool.lu/coordinate/) `WGS84坐标系 = GPS坐标`
+
+```yaml
+# 设置HomeAssistant位置
+service: homeassistant.set_location
+data:
+  latitude: GPS纬度
+  longitude: GPS经度
+```
+- 启动`内网穿透服务`之前请先在`文件管理器`里修改`frpc.ini`配置，如果你没有自己的服务器，可联系我
+
+```bash
+sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
+```
+
+- 关于`TileBoard磁贴`相关视频：https://www.bilibili.com/video/BV15a4y1a7tF/
+- `自动备份、小米电视接入、小米网关收音机接入、小米设备接入、智能音箱接入`或者有`特殊需求`或`其他功能`，都可以联系我
