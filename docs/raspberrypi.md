@@ -42,16 +42,18 @@
 ## 更新日志
 
 > 2021-9-1
-- Tileboard增加全屏显示操作
-- 解决Tileboard浏览器默认翻译中文提示
-- 修复Tileboard部分天气图标不显示的问题
-- HomeAssistant升级到2021.8.0版本
-- 增加浏览器语音唤醒识别功能
-- 增加MQTT订阅：执行系统命令
-- 增加蓝图：检测激活开关
-- 增加自动化：定时备份
-- 增加自动化：智能家居系统启动
-- 增加自动化：回家离家
+- Tileboard：增加`全屏显示`操作
+- Tileboard：修复浏览器默认翻译中文提示
+- Tileboard：修复部分`天气图标不显示`的问题
+- Tileboard：新增事件 `页面刷新`、`声音播放`、`屏幕保护`
+- HomeAssistant：升级到`2021.8.2`版本
+- HomeAssistant：增加`浏览器语音唤醒识别`功能
+- HomeAssistant：增加`检测激活开关`蓝图
+- HomeAssistant：增加`定时备份`自动化
+- HomeAssistant：增加`智能家居系统启动`自动化
+- HomeAssistant：增加`回家离家`自动化
+- NodeRED：新增`MQTT订阅``最高权限命令`
+- NodeRED：新增`一键备份、还原`
 
 > 2021-7-31
 
