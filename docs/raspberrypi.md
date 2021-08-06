@@ -74,6 +74,8 @@
 ## 注意事项
 
 - 如果`没有插网线`的环境，可以使用`WiFi配置连接`，具体方法请点击[这里](/install_image)
+- 请勿使用`:8123`端口进入HomeAssistant，可直接使用IP进入
+- 如果不知道IP，可使用`http://raspberrypi.local`进入
 - 如果想使用`树莓派桌面`操作，可以`Windows`上使用远程桌面方式登录 [操作看视频](https://www.bilibili.com/video/BV1UK4y1j7cE/)
 - 如果`开启外网访问`，请务必修改以下初始密码：`HomeAssistant`、`NodeRed`、`Docker管理器`、`下载管理`
 - 初次使用，请将`configuration.yaml`文件里的`DLNA设备自动发现`开启（删除前面的#号）
