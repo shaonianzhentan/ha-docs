@@ -178,3 +178,21 @@ lsof -i:1880
 # 强制关闭进程
 kill -9 PID
 ```
+
+## 安装DLNA播放器
+```bash
+cd /usr/share/keyrings/
+sudo wget https://www.lesbonscomptes.com/pages/lesbonscomptes.gpg
+
+cd /etc/apt/sources.list.d
+sudo wget https://www.lesbonscomptes.com/upmpdcli/pages/upmpdcli-rbuster.list
+
+sudo apt-get update
+sudo apt-get install upmpdcli
+
+sudo nano /etc/upmpdcli.conf
+
+sudo systemctl restart upmpdcli
+
+sudo systemctl status upmpdcli
+```

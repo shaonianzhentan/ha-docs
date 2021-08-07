@@ -21,6 +21,9 @@ sudo docker run -itd --net="host" --restart=always --name="music" binaryify/nete
 
 # 安装HomeKit服务
 docker run -itd --net=host --restart=always --name=homebridge -v ~/homeassistant/homebridge:/homebridge oznu/homebridge:latest
+
+# 安装AirPlay服务
+docker run -itd --net=host --restart=always --name=airplay 1activegeek/airconnect
 ```
 
 ### 配置zigbee2mqtt
