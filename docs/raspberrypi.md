@@ -54,6 +54,9 @@
 - HomeAssistant：增加`回家离家`自动化
 - NodeRED：新增`MQTT订阅``最高权限命令`
 - NodeRED：新增`一键备份、还原`
+- 支持Nginx大文件上传，最高支持100MB
+- 增加Airplay服务
+- 增加MPD-DLNA播放器服务
 
 > 2021-7-31
 

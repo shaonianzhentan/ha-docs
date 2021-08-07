@@ -32,43 +32,8 @@ nameserver 192.168.100.1
 https://www.cnblogs.com/vastiny/p/3900204.html
 
 
-
-
-## 连接蓝牙音箱
-
-https://raspberrypi.stackexchange.com/questions/48140/raspberry-pi-3-connecting-to-bluetooth-audio-device-on-raspbian-jessie/116953
-
 ```bash
-bluetoothctl
-
-power on
-
-agent on
-
-default-agent
-
-scan on
-
-pair D4:60:75:CA:DF:A7
-
-trust D4:60:75:CA:DF:A7
-
-connect D4:60:75:CA:DF:A7
-
-# 移除设备
-remove D4:60:75:CA:DF:A7
-
-# 显示设备信息
-info D4:60:75:CA:DF:A7 
-
-# 显示设备
-devices
-
-
-# 显示蓝牙音箱
-pactl list sinks
-
-
-
-pactl set-default-sink bluez_sink.D4_60_75_CA_DF_A7.a2dp_sink
+sudo cp /home/pi/homeassistant/backup/nodered/flows.json /root/.node-red/flows.json 
+sudo cp /home/pi/homeassistant/backup/nodered/settings.js /root/.node-red/settings.js
+sudo cp /home/pi/homeassistant/backup/nodered/flows_cred.json /root/.node-red/flows_cred.json
 ```
