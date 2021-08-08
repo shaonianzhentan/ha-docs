@@ -46,14 +46,13 @@
 - Tileboard：修复浏览器默认翻译中文提示
 - Tileboard：修复部分`天气图标不显示`的问题
 - Tileboard：新增事件 `页面刷新`、`声音播放`、`屏幕保护`
-- HomeAssistant：升级到`2021.8.2`版本
-- HomeAssistant：增加`浏览器语音唤醒识别`功能
+- HomeAssistant：升级到`2021.8.4`版本
 - HomeAssistant：增加`检测激活开关`蓝图
 - HomeAssistant：增加`定时备份`自动化
 - HomeAssistant：增加`智能家居系统启动`自动化
-- HomeAssistant：增加`回家离家`自动化
 - NodeRED：新增`MQTT订阅``最高权限命令`
 - NodeRED：新增`一键备份、还原`
+- HomeBridge: 安装`BroadLink RM`博联红外依赖库
 - 支持Nginx大文件上传，最高支持100MB
 - 增加Airplay服务
 - 增加MPD-DLNA播放器服务
