@@ -41,3 +41,9 @@ sudo cp /home/pi/homeassistant/backup/nodered/flows_cred.json /root/.node-red/fl
 frpc.ini配置
 
 "W2NvbW1vbl0Kc2VydmVyX2FkZHI9aGFjaGluYWZycHMuZHVja2Rucy5vcmcKc2VydmVyX3BvcnQ9NzAwMAp0b2tlbj01ZGE1NWQ1MTIxNjFlYTc3NGNiNTZkNzI5MTNhM2FlZAoKW2hhc3MtdGVzdDEyM10KdHlwZSA9IGh0dHAKbG9jYWxfcG9ydCA9IDgwCnN1YmRvbWFpbiA9IGhhc3MtdGVzdDEyMwoKaGFzcy10ZXN0MTIzLmhhY2hpbmEuODAyMTU0LmNvbQ=="
+
+
+88体验版，就是目前的最新版本，没有后续更新
+188持续更新版，后续镜像也会持续更新维护
+
+以上都包含镜像的安装指导和咨询，制作不易，还请理解
