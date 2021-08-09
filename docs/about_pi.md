@@ -179,6 +179,16 @@ lsof -i:1880
 kill -9 PID
 ```
 
+> 修改ls命令别名
+```bash
+sudo nano ~/.bashrc
+
+# 删除别名注释
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
+```
+
 ## 安装DLNA播放器
 ```bash
 cd /usr/share/keyrings/
@@ -198,15 +208,6 @@ sudo systemctl restart upmpdcli
 sudo systemctl status upmpdcli
 ```
 
-## 修改ls命令别名
-```bash
-sudo nano ~/.bashrc
-
-# 删除别名注释
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
-```
 
 ## 连接蓝牙音箱
 
