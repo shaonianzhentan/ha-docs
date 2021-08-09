@@ -50,6 +50,7 @@
 - HomeAssistant：增加`检测激活开关`蓝图
 - HomeAssistant：增加`定时备份`自动化
 - HomeAssistant：增加`智能家居系统启动`自动化
+- HomeAssistant：增加`购物清单`集成
 - NodeRED：新增`MQTT订阅``最高权限命令`
 - NodeRED：新增`一键备份、还原`
 - HomeBridge: 安装`BroadLink RM`博联红外依赖库
