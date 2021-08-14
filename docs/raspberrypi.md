@@ -49,15 +49,17 @@
 - [ ] HomeAssistant：增加`回家离家`自动化
 - [ ] HomeAssistant：增加`语音唤醒识别`服务
 - [ ] HomeAssistant：增加`手势识别`服务
+- 初始化所有HomeBridge依赖，减少占用存储
+- 
 
 
-> 第三版 2021-8-11
+> 第三版 2021-8-15
 
 - Tileboard：增加`全屏显示`操作
 - Tileboard：修复浏览器默认翻译中文提示
 - Tileboard：修复部分`天气图标不显示`的问题
 - Tileboard：新增事件 `页面刷新`、`声音播放`、`屏幕保护`
-- HomeAssistant：升级到`2021.8.5`版本
+- HomeAssistant：升级到`2021.8.6`版本
 - HomeAssistant：增加`检测激活开关`蓝图
 - HomeAssistant：增加`定时备份`自动化
 - HomeAssistant：增加`智能家居系统启动`自动化
@@ -87,8 +89,9 @@
 - 增加周一至周五早上8点10分早安闹钟自动化
 - 过滤了云音乐和部分实体重复的记录，减少数据库大小
 
-## 注意事项
-
+## 注意事项（使用前必看）
+- 请千万别为了下载此镜像而开通百度网盘会员，可以提供阿里云盘高速下载
+- 建议使用Etcher刷写镜像：https://www.balena.io/etcher/
 - 如果`没有插网线`的环境，可以使用`WiFi配置连接`，具体方法请点击[这里](/install_image)
 - 请勿使用`:8123`端口进入HomeAssistant，可直接使用IP进入
 - 如果不知道IP，可使用`http://raspberrypi.local`进入
@@ -121,3 +124,4 @@ sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassist
 
 - 关于`TileBoard磁贴`相关视频：https://www.bilibili.com/video/BV15a4y1a7tF/
 - `自动备份、小米电视接入、小米网关收音机接入、小米设备接入、智能音箱接入`或者有`特殊需求`或`其他功能`，都可以联系我
+
