@@ -48,3 +48,8 @@ frpc.ini配置
 188持续更新版，后续镜像也会持续更新维护
 
 以上都包含镜像的安装指导和咨询，制作不易，还请理解
+
+```bash
+mount /dev/sdc1 /media
+pishrink.sh pi.img
+```
