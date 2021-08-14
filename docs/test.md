@@ -42,12 +42,12 @@ frpc.ini配置
 
 "W2NvbW1vbl0Kc2VydmVyX2FkZHI9aGFjaGluYWZycHMuZHVja2Rucy5vcmcKc2VydmVyX3BvcnQ9NzAwMAp0b2tlbj01ZGE1NWQ1MTIxNjFlYTc3NGNiNTZkNzI5MTNhM2FlZAoKW2hhc3MtdGVzdDEyM10KdHlwZSA9IGh0dHAKbG9jYWxfcG9ydCA9IDgwCnN1YmRvbWFpbiA9IGhhc3MtdGVzdDEyMwoKaGFzcy10ZXN0MTIzLmhhY2hpbmEuODAyMTU0LmNvbQ=="
 
+赞助50获得最新版镜像，无服务
+赞助88获得最新版镜像，包含安装指导基本服务，没有后续更新
+赞助188获得持续更新版镜像，包含安装指导和咨询服务，后续镜像也会持续更新维护
+如果财大气粗可以多赞助些，为我持续输出优质的功能贡献一份力量
 
-50自行摸索版，就是目前的最新版本，不包含安装指导和咨询
-88体验版，就是目前的最新版本，没有后续更新
-188持续更新版，后续镜像也会持续更新维护
-
-以上都包含镜像的安装指导和咨询，制作不易，还请理解
+制作不易，还请理解
 
 ```bash
 mount /dev/sdc1 /media

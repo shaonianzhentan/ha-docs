@@ -41,12 +41,23 @@
 
 ## 更新日志
 
-> 2021-9-1
+> 第四版 2021-10-10
+- [ ] 新增WiFi AP热点服务
+- [ ] 新增本地网易云音乐服务部署
+- [ ] 新增手机在家检测服务
+- [ ] 新增一键修改所有初始密码
+- [ ] HomeAssistant：增加`回家离家`自动化
+- [ ] HomeAssistant：增加`语音唤醒识别`服务
+- [ ] HomeAssistant：增加`手势识别`服务
+
+
+> 第三版 2021-8-11
+
 - Tileboard：增加`全屏显示`操作
 - Tileboard：修复浏览器默认翻译中文提示
 - Tileboard：修复部分`天气图标不显示`的问题
 - Tileboard：新增事件 `页面刷新`、`声音播放`、`屏幕保护`
-- HomeAssistant：升级到`2021.8.4`版本
+- HomeAssistant：升级到`2021.8.5`版本
 - HomeAssistant：增加`检测激活开关`蓝图
 - HomeAssistant：增加`定时备份`自动化
 - HomeAssistant：增加`智能家居系统启动`自动化
@@ -58,7 +69,7 @@
 - 增加Airplay服务
 - 增加MPD-DLNA播放器服务
 
-> 2021-7-31
+> 第二版 2021-7-31
 
 - 增加Tileboard面板
 - Tileboard进行基本汉化
