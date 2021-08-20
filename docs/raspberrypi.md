@@ -43,14 +43,16 @@
 
 > 第四版 2021-10-10
 - [ ] 新增WiFi AP热点服务
-- [ ] 新增本地网易云音乐服务部署
 - [ ] 新增手机在家检测服务
 - [ ] 新增一键修改所有初始密码
 - [ ] HomeAssistant：增加`回家离家`自动化
 - [ ] HomeAssistant：增加`语音唤醒识别`服务
 - [ ] HomeAssistant：增加`手势识别`服务
+- [ ] 初始化网易云音乐服务
+- [ ] 初始化QQ音乐服务
+- [ ] 初始化喜马拉雅服务
 - 初始化所有HomeBridge依赖，减少占用存储
-- 
+- 初始化所有HomeAssistant不必要的组件，加快启动速度
 
 
 > 第三版 2021-8-15
@@ -64,7 +66,7 @@
 - HomeAssistant：增加`定时备份`自动化
 - HomeAssistant：增加`智能家居系统启动`自动化
 - HomeAssistant：增加`购物清单`集成
-- NodeRED：新增`MQTT订阅``最高权限命令`
+- NodeRED：新增`MQTT订阅`的`最高权限命令`
 - NodeRED：新增`一键备份、还原`
 - HomeBridge: 安装`BroadLink RM`博联红外依赖库
 - 支持Nginx大文件上传，最高支持100MB
