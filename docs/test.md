@@ -54,4 +54,17 @@ frpc.ini配置
 ```bash
 mount /dev/sdc1 /media
 pishrink.sh pi.img
+
+
+
 ```
+
+```bash
+sudo mkdir /var/lib/airconnect
+cd /var/lib/airconnect
+sudo wget https://raw.fastgit.org/philippe44/AirConnect/master/bin/airupnp-arm && sudo chmod +x airupnp-arm
+
+sudo nano /etc/systemd/system/airupnp.service
+```
+
+https://github.com/philippe44/AirConnect
