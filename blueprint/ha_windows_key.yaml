@@ -144,7 +144,7 @@ blueprint:
         action: {}
 trigger:
 - platform: state
-  entity_id: !input wo_de_dian_nao
+  entity_id: !input 'wo_de_dian_nao'
   attribute: key_code
 action:
 - variables:
