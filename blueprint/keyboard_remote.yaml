@@ -128,7 +128,7 @@ trigger:
 - platform: event
   event_type: keyboard_remote_command_received
   event_data:
-    device_descriptor: /dev/input/event3
+    source: keyboard
 action:
 - variables:
     command: '{{ trigger.event.data.key_code }}'
