@@ -176,7 +176,7 @@ action:
     - '{{ command == 78 }}'
     sequence: !input 'key_16'
   - conditions:
-    - '{{ command == 78 }}'
+    - '{{ command == 79 }}'
     sequence: !input 'key_17'
   - conditions:
     - '{{ command == 80 }}'
