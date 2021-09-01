@@ -45,6 +45,11 @@ media_player:
 - Android：`Android/data/org.xbmc.kodi/files/.kodi/userdata/`
 - iOS：`/private/var/mobile/Library/Preferences/Kodi/userdata/`
 
+```bash
+# 上传文件
+adb push advancedsettings.xml /sdcard/Android/data/org.xbmc.kodi/files/.kodi/userdata
+```
+
 ## 相关方法
 
 > 调用服务`kodi.call_method`, 监听事件`kodi_call_method_result`
