@@ -80,6 +80,7 @@
 - 更多知识
   
   - [Android](about_android.md)
+  - [HomeKit](about_homekit.md)
   - [树莓派](about_pi.md)
   - [香橙派](about_orangepi.md)
   - [GitHub](about_github.md)
