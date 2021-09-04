@@ -106,3 +106,28 @@ server {
     
 }	
 ```
+
+## 自签名SSL
+
+```bash
+# 1.生成私钥
+openssl genrsa -out server.key 2048
+
+# 2.生成 CSR (Certificate Signing Request)
+openssl req \
+    -subj "/C=CN/ST=Shanghai/L=Shanghai/O=Test/OU=Test Software/CN=orangepizero2.local/emailAddress=65147515@qq.com" \
+    -new \
+    -key server.key \
+    -out server.csr
+
+# 3.生成自签名证书
+openssl x509 \
+    -req \
+    -days 3650 \
+    -in server.csr \
+    -signkey server.key \
+    -out server.crt
+
+# 复制文件到SSL目录
+cp server.key server.crt /etc/nginx/ssl/
+```
