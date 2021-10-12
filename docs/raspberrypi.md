@@ -46,13 +46,13 @@
 
 ## 更新日志
 
-> 第五版 2021-12-12
+> 第五版（计划中）
 - [ ] HomeAssistant：增加`回家离家`自动化
 - [ ] HomeAssistant：增加`语音唤醒识别`服务
 - [ ] HomeAssistant：增加`手势识别`服务
 - [ ] 初始化广告过滤服务
 
-> 第四版 2021-10-10
+> 第四版（测试中）
 
 - 升级HomeBridge
 - 升级HomeAssistant
