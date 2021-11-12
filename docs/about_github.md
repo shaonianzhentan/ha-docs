@@ -53,4 +53,13 @@ git push
 ```bash
 # 更换源地址
 git remote set-url origin git@github.com:shaonianzhentan/MiPadAndroid.git
+
+# 删除本地分支
+git branch -d xiaomi
+
+# 强制删除本地分支
+git branch -D xiaomi
+
+# 删除远程分支
+git push origin --delete xiaomi
 ```
