@@ -46,33 +46,39 @@
 
 ## 更新日志
 
-> 第五版（计划中）
+> 第六版（计划中）
 - [ ] HomeAssistant：增加`回家离家`自动化
 - [ ] HomeAssistant：增加`手势识别`服务
 - [ ] ~~初始化广告过滤服务~~
+- [ ] ~~新增网易云音乐服务~~
+
+> 第五版（开发中）
+
+- 升级系统、HomeBridge、HomeAssistant以及相关组件
 - [ ] HomeAssistant：使用新版`侧边栏面板`自定义组件
 - [ ] HomeAssistant：使用新版`百度地图`自定义组件
 - [ ] HomeAssistant：使用新版`QQ邮箱通知`自定义组件
 - [ ] HomeAssistant：新增`工作日`自定义组件
+- [ ] HomeAssistant：新增日期时间组件
 - [ ] TileBoard：新增手机显示配置
 - [ ] TileBoard：新增文本转语音服务
 - [ ] TileBoard：新增语音唤醒识别
 - [ ] TileBoard：新增音乐播放服务
 - [ ] 新增讯飞语音识别服务
 
-> 第四版（测试中）
+> 第四版 2021-11-15
 
 - 升级HomeBridge
 - 升级HomeAssistant
-- 升级内置组件
+- HomeAssistant：升级内置组件
+- HomeAssistant：新增pyscript组件
+- HomeAssistant：修复HACS无法启动的问题
+- NodeRED：新增重启DLNA服务（解决Airplay找不到RaspberryPi+的问题）
 - 修复Airplay在部分网络下无法启动的问题
-- 修复HACS无法启动的问题
-- 新增pyscript组件
 - 新增WiFi AP热点服务
 - 新增全网音乐查询服务
 - 新增v2ray客户端服务
 - 新增ESPHome服务
-- ~~新增网易云音乐服务~~
 
 > 第三版 2021-8-15
 
