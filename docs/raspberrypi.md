@@ -124,14 +124,8 @@
 - 如果不知道IP，可使用`http://raspberrypi.local`进入
 - 如果想使用`树莓派桌面`操作，可以`Windows`上使用远程桌面方式登录 [操作看视频](https://www.bilibili.com/video/BV1UK4y1j7cE/)
 - 如果`开启外网访问`，请务必修改以下初始密码：`HomeAssistant`、`NodeRed`、`Docker管理器`、`下载管理`
-- 初次使用，请将`configuration.yaml`文件里的`DLNA设备自动发现`开启（删除前面的#号）
 
-```yaml
-# 自动发现
-discovery:
-  enable:
-    - dlna_dmr
-```
+
 - 默认定位为上海，可以通过调用服务设置，在百度地图里取的坐标值需要转换为GPS坐标
   [坐标拾取](https://www.toolnb.com/tools/getbaidupoint.html)
   [坐标转换](https://tool.lu/coordinate/) `WGS84坐标系 = GPS坐标`
@@ -151,4 +145,3 @@ sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassist
 
 - 关于`TileBoard磁贴`相关视频：https://www.bilibili.com/video/BV15a4y1a7tF/
 - `自动备份、小米电视接入、小米网关收音机接入、小米设备接入、智能音箱接入`或者有`特殊需求`或`其他功能`，都可以联系我
-
