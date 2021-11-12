@@ -48,9 +48,17 @@
 
 > 第五版（计划中）
 - [ ] HomeAssistant：增加`回家离家`自动化
-- [ ] HomeAssistant：增加`语音唤醒识别`服务
 - [ ] HomeAssistant：增加`手势识别`服务
-- [ ] 初始化广告过滤服务
+- [ ] ~~初始化广告过滤服务~~
+- [ ] HomeAssistant：使用新版`侧边栏面板`自定义组件
+- [ ] HomeAssistant：使用新版`百度地图`自定义组件
+- [ ] HomeAssistant：使用新版`QQ邮箱通知`自定义组件
+- [ ] HomeAssistant：新增`工作日`自定义组件
+- [ ] TileBoard：新增手机显示配置
+- [ ] TileBoard：新增文本转语音服务
+- [ ] TileBoard：新增语音唤醒识别
+- [ ] TileBoard：新增音乐播放服务
+- [ ] 新增讯飞语音识别服务
 
 > 第四版（测试中）
 
