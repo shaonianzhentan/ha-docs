@@ -1,4 +1,4 @@
-# Mono For Android
+# Xamarin
 
 ## 系统浮动窗口
 ```csharp
@@ -247,4 +247,23 @@ string jsonStr = JsonConvert.SerializeObject(dict);
 
 // json字符串转字典
 Dictionary<string, object> dict = JsonConvert.DeserializeObject<Dictionary<string, object>>(jsonStr);
+```
+
+## 媒体播放 
+- [使用前提](https://github.com/Baseflow/XamarinMediaManager/wiki/Initialize-and-setup)
+```csharp
+// 播放链接
+await CrossMediaManager.Current.Play("https://ia800806.us.archive.org/15/items/Mp3Playlist_555/AaronNeville-CrazyLove.mp3");
+// 播放/暂停
+await CrossMediaManager.Current.PlayPause();
+// 停止
+await CrossMediaManager.Current.Stop();
+// 前进
+await CrossMediaManager.Current.StepForward();
+// 后退
+await CrossMediaManager.Current.StepBackward();
+// 重新播放
+await CrossMediaManager.Current.SeekToStart();
+// 播放指定位置
+await CrossMediaManager.Current.SeekTo(TimeSpan position);
 ```
