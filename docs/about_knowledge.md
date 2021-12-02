@@ -13,7 +13,7 @@ ffmpeg -f gdigrab -framerate 30 -i desktop -f mp4 -vcodec mpeg4 output.mp4
 ffmpeg -f gdigrab -framerate 15 -i desktop -f dshow -i audio="麦克风阵列 (Realtek(R) Audio)" -f mp4 -vcodec mpeg4 output.mp4
 
 # 指定不同的录音设备
-ffmpeg -f gdigrab -framerate 15 -i desktop -f dshow -i audio="麦克风 (EDIFIER W800BT Hands-Free AG Audio)" -f mp4 -vcodec mpeg4 output.mp4
+ffmpeg -f gdigrab -framerate 15 -i desktop -f dshow -i audio="耳机 (EDIFIER W800BT Hands-Free AG Audio)" -f mp4 -vcodec mpeg4 output.mp4
 
 # 因为4k导致手机无法播放，所以需要缩放至1080p
 #（-vf scale=1920:1080,setsar=1:1 ）
