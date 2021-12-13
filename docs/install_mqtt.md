@@ -36,7 +36,9 @@ sudo service mosquitto status
 
 --- 
 
-相关代码摘要
+> 相关代码摘要
+
+授权
 ```js
 // 保存用户名密码
 fetch('api/v4/auth_username', {
@@ -59,4 +61,45 @@ fetch('api/v4/auth_username/emqx_u', {
         "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
     })
 }).then(res=>res.json()).then(console.log)
+```
+
+发布订阅 ACL
+
+```bash
+# 重启验证模块
+emqx_ctl modules reload emqx_mod_acl_internal
+```
+
+```js
+// 订阅
+fetch('api/v4/acl', {
+    method: 'POST',
+    'content-type': 'application/json;charset=utf-8',
+    body: JSON.stringify({
+        "username":"test",
+        "topic":"conversation/sub/%u",
+        "action":"sub",
+        "access": "allow"
+    })
+}).then(res=>res.json()).then(console.log)
+
+// 发布
+fetch('api/v4/acl', {
+    method: 'POST',
+    'content-type': 'application/json;charset=utf-8',
+    body: JSON.stringify({
+        "username":"test",
+        "topic":"conversation/pub/%u",
+        "action":"pub",
+        "access":"allow"
+    })
+}).then(res=>res.json()).then(console.log)
+
+// 获取用户名
+fetch('api/v4/acl/username', { method: 'GET' }).then(res=>res.json()).then(console.log)
+
+// 删除ACL规则
+var username = 'emqx_u'
+var topic = encodeURIComponent('conversation/sub/t/%u')
+fetch(`api/v4/acl/username/${username}/topic/${topic}`, { method: 'DELETE' }).then(res=>res.json()).then(console.log)
 ```
