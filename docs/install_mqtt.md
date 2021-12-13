@@ -32,3 +32,31 @@ sudo service mosquitto status
 ```
 
 - 来源：https://blog.csdn.net/mycsdn_liruilin/article/details/88717041
+
+
+--- 
+
+相关代码摘要
+```js
+// 保存用户名密码
+fetch('api/v4/auth_username', {
+    method: 'POST',
+    'content-type': 'application/json;charset=utf-8',
+    body: JSON.stringify({
+        "username": "emqx_u",
+        "password": "emqx_p"
+    })
+}).then(res=>res.json()).then(console.log)
+
+// 查询所有账号
+fetch('api/v4/auth_username', { method: 'GET' }).then(res=>res.json()).then(console.log)
+
+// 更新密码
+fetch('api/v4/auth_username/emqx_u', {
+    method: 'PUT',
+    'content-type': 'application/json;charset=utf-8',
+    body: JSON.stringify({
+        "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    })
+}).then(res=>res.json()).then(console.log)
+```
