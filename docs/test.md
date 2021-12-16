@@ -68,3 +68,8 @@ sudo nano /etc/systemd/system/airupnp.service
 ```
 
 https://github.com/philippe44/AirConnect
+
+
+```bash
+sudo apt-get install netatalk avahi-daemon
+```
