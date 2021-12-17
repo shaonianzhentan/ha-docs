@@ -51,6 +51,9 @@ git push
 ```
 
 ```bash
+# 查询源地址
+git remote get-url origin
+
 # 更换源地址
 git remote set-url origin git@github.com:shaonianzhentan/MiPadAndroid.git
 
