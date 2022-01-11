@@ -267,3 +267,36 @@ await CrossMediaManager.Current.SeekToStart();
 // 播放指定位置
 await CrossMediaManager.Current.SeekTo(TimeSpan position);
 ```
+
+## 解决HTTP无法访问配置
+
+新建文件 `Resources/xml/network_security_config.xml`
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+	<base-config cleartextTrafficPermitted="true" />
+</network-security-config>
+```
+
+项目结构 `Properties/AndroidManifest.xml`
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+          android:versionCode="1" 
+          android:versionName="1.0" 
+          package="com.companyname.homeassistantandroid">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="30" />
+  <!-- 
+      在 application 节点中，添加 android:networkSecurityConfig="@xml/network_security_config"
+  -->
+  <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" 
+			   android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme"
+			   android:networkSecurityConfig="@xml/network_security_config">
+  </application>
+  <!--
+      允许访问网络
+  -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>
+```
