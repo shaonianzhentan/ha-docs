@@ -52,21 +52,21 @@
 - [ ] ~~初始化广告过滤服务~~
 - [ ] ~~新增网易云音乐服务~~
 
-> 第五版（开发中）
+> 第五版 2022-2-12
 
 - 升级系统、HomeBridge、HomeAssistant以及相关组件
-- [ ] HomeAssistant：使用新版`侧边栏面板`自定义组件
-- [ ] HomeAssistant：使用新版`百度地图`自定义组件
-- [ ] HomeAssistant：使用新版`QQ邮箱通知`自定义组件
-- [ ] HomeAssistant：使用新版`小米电视`自定义组件
-- [ ] HomeAssistant：使用新版`空调伴侣收音机`自定义组件
-- [ ] HomeAssistant：新增`工作日`自定义组件
-- [ ] HomeAssistant：新增日期时间组件
-- [ ] TileBoard：新增手机显示配置
-- [ ] TileBoard：新增文本转语音服务
-- [ ] TileBoard：新增语音唤醒识别
-- [ ] TileBoard：新增音乐播放服务
-- [ ] 新增讯飞语音识别服务
+- HomeAssistant：使用新版`侧边栏面板`自定义组件
+- HomeAssistant：使用新版`百度地图`自定义组件
+- HomeAssistant：使用新版`QQ邮箱通知`自定义组件
+- HomeAssistant：使用新版`小米电视`自定义组件
+- HomeAssistant：使用新版`空调伴侣收音机`自定义组件
+- HomeAssistant：新增`工作日`自定义组件
+- HomeAssistant：新增日期时间组件
+- TileBoard：新增手机显示配置
+- TileBoard：新增文本转语音服务
+- TileBoard：新增语音唤醒识别
+- TileBoard：新增音乐播放服务
+- 新增讯飞语音识别服务
 
 > 第四版 2021-11-15
 

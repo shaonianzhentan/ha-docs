@@ -53,7 +53,7 @@ frpc.ini配置
 制作不易，还请理解
 
 ```bash
-mount /dev/sdc1 /media
+mount /dev/sdb1 /media
 pishrink.sh pi.img
 
 
