@@ -46,11 +46,15 @@
 
 ## 更新日志
 
-> 第六版（计划中）
 - [ ] HomeAssistant：增加`回家离家`自动化
 - [ ] HomeAssistant：增加`手势识别`服务
-- [ ] ~~初始化广告过滤服务~~
-- [ ] ~~新增网易云音乐服务~~
+
+> 第六版（开发中）
+
+- NodeRED：新增仪表盘面板
+- NodeRED: 支持一键替换GitHub的DNS解析
+- HomeAssistant：新增`蓝牙在家检测`自定义组件
+- HomeAssistant：新增部分button按钮快捷操作
 
 > 第五版 2022-2-12
 
