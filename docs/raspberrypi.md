@@ -65,6 +65,7 @@
 - 赠送家庭助理Windows应用使用权限
 
 #### 第五版 2022-2-12
+https://www.bilibili.com/video/BV1d5411o7qm
 
 - 升级系统、HomeBridge、HomeAssistant以及相关组件
 - HomeAssistant：使用新版`侧边栏面板`自定义组件
@@ -81,6 +82,7 @@
 - 新增讯飞语音识别服务
 
 #### 第四版 2021-11-15
+https://www.bilibili.com/video/BV1t341187kr
 
 - 升级HomeBridge
 - 升级HomeAssistant
@@ -95,6 +97,7 @@
 - 新增ESPHome服务
 
 #### 第三版 2021-8-15
+https://www.bilibili.com/video/BV1Sq4y1Q7SV
 
 - Tileboard：增加`全屏显示`操作
 - Tileboard：修复浏览器默认翻译中文提示
@@ -113,6 +116,7 @@
 - 增加MPD-DLNA播放器服务
 
 #### 第二版 2021-7-31
+https://www.bilibili.com/video/BV1HL411n7qo
 
 - 增加Tileboard面板
 - Tileboard进行基本汉化
@@ -129,6 +133,9 @@
 - 增加整点报时自动化
 - 增加周一至周五早上8点10分早安闹钟自动化
 - 过滤了云音乐和部分实体重复的记录，减少数据库大小
+
+#### 第一版
+https://www.bilibili.com/video/BV1TP4y1t7w5
 
 ## 注意事项（必看）
 
