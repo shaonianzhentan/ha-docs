@@ -62,7 +62,7 @@
 - [ ] NodeRED：增加`node-red-contrib-ha-wechat`节点
 - [ ] NodeRED：增加`node-red-contrib-home-assistant-websocket`节点
 - [ ] TileBoard：修复语音唤醒识别引入
-- 赠送家庭助理Windows应用使用权限
+- 赠送家庭助理Windows应用兑换码一个
 
 #### 第五版 2022-2-12
 https://www.bilibili.com/video/BV1d5411o7qm
