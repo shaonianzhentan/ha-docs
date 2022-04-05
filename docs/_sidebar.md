@@ -1,5 +1,6 @@
 - 安装
 
+  - [树莓派智能家居系统](raspberrypi.md)
   - [docker安装](install_docker.md)
   - [pip安装](install_pip.md)
   - [镜像安装](install_image.md)
@@ -10,6 +11,7 @@
 
   - [frps安装](install_frps.md)
   - [梯子管理](install_v2.md)
+  - [在线工具](tool.md)
 
 - 本地服务
   - [Nginx管理](install_nginx.md)
@@ -21,7 +23,6 @@
   - [Zigbee2mqtt](install_z2m.md)
   - [MPD音乐播放](install_mpd.md)
   - [VLC音乐播放](install_vlc.md)
-  - [DLNA媒体播放器](install_dlna.md)
   - [MiniDLNA流媒体服务器](install_minidlna.md)
   - [Kodi视频播放器](install_kodi.md)
   - [Kodbox私有云盘](install_kodbox.md)
@@ -41,7 +42,6 @@
 
 - 插件配置
 
-  - [电视投屏](tv_cast.md)
   - [网易云音乐](plug_ha_cloud_music.md)
   - [语音小助手](plug_ha_voice.md)
   - [百度地图](plug_ha_baidu_map.md)
@@ -77,6 +77,7 @@
 
   - [NFC碰碰贴](automation_nfc.md)
 
+
 - 更多知识
   
   - [Android](about_android.md)
@@ -84,7 +85,7 @@
   - [树莓派](about_pi.md)
   - [香橙派](about_orangepi.md)
   - [GitHub](about_github.md)
-  - [MDI图标](website_icon.md)
   - [小知识](about_knowledge.md)
-  - [Xamarin](xamarin.md)
+  - [Xamarin](about_xamarin.md)
   - [Python](about_python.md)
+  - [MDI图标](website_icon.md)

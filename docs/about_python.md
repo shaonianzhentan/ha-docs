@@ -1,7 +1,7 @@
 # Python学习笔记
 
 ## 压缩文件
-```python
+```py
 import zipfile, tempfile, time, os
 
 '''
@@ -38,4 +38,33 @@ def zip(root_path, filter_dir=None, filter_name=None):
                 else:
                     zip.write(file_path, file_name)
     return zf
+```
+
+
+## 时间格式
+```py
+import datetime
+print(datetime.datetime.now().isoformat())
+# 2022-04-05T12:09:36.423514
+print(datetime.datetime.now().replace(microsecond=0).isoformat())
+# 2022-04-05T12:09:36
+```
+
+## 集合过滤
+```py
+inputs = [
+    {
+        'count': 1
+    },
+    {
+        'count': 3
+    },
+    {
+        'count': 2
+    }
+]
+
+result = [x for x in inputs if x['count'] > 2]
+print(result)
+# [{'count': 3}]
 ```

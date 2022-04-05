@@ -11,5 +11,8 @@
     "start": "docsify serve docs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
 }
