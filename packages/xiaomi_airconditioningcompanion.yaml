@@ -1,0 +1,7 @@
+climate:
+  - platform: xiaomi_miio_airconditioningcompanion
+    name: 小米空调伴侣
+    host: !secret xiaomi_radio_host
+    token: !secret xiaomi_radio_token
+    target_sensor: sensor.temperature_158d0001f53706
+    scan_interval: 60

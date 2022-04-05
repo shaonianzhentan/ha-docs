@@ -1,0 +1,49 @@
+blueprint:
+  name: 检测激活开关
+  description: 检测到有人时打开设备
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-config/blob/master/blueprints/motion_switch.yaml
+  input:
+    motion_entity:
+      name: 运动传感器
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: motion
+    switch_target:
+      name: 开关
+      description: 要监控的开关
+      selector:
+        target:
+          entity:
+            domain: switch
+    no_motion_wait:
+      name: 等待时间
+      description: 检测到最后一个动作后，关闭开关的时间
+      default: 120
+      selector:
+        number:
+          min: 0
+          max: 3600
+          unit_of_measurement: seconds
+
+mode: restart
+max_exceeded: silent
+
+trigger:
+  platform: state
+  entity_id: !input motion_entity
+  from: "off"
+  to: "on"
+
+action:
+  - service: switch.turn_on
+    target: !input switch_target
+  - wait_for_trigger:
+      platform: state
+      entity_id: !input motion_entity
+      from: "on"
+      to: "off"
+  - delay: !input no_motion_wait
+  - service: switch.turn_off
+    target: !input switch_target

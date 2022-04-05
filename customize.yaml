@@ -1,0 +1,9 @@
+media_player.yun_yin_le:
+  xiaodu_name: 音乐播放器
+  xiaodu_type: DVD
+media_player.xiao_mi_dian_tai:
+  xiaodu_name: 电台播放器
+  xiaodu_type: SET_TOP_BOX
+media_player.redmi_ai_speaker_play_play_control:
+  xiaodu_name: 小爱音箱
+  xiaodu_type: PROJECTOR

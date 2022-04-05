@@ -1,0 +1,10 @@
+sensor:
+  - platform: meizu_ble
+    name: 魅族智能遥控器
+    mac: 68:3E:34:CC:E0:67
+    scan_interval: 3600
+
+remote:
+  - platform: meizu_ble
+    name: 魅族智能遥控器  
+    mac: 68:3E:34:CC:E0:67

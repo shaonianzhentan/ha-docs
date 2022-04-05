@@ -1,0 +1,16 @@
+blueprint:
+  name: 系统启动
+  description: HomeAssistant启动
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-config/blob/master/blueprints/homeassistant_start.yaml
+  input:
+    service:
+      name: 服务
+      description: 执行服务
+      default: []
+      selector:
+        action: {}
+trigger:
+- platform: event
+  event_type: homeassistant_start
+action: !input 'service'

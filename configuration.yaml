@@ -1,0 +1,81 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# 自定义
+homeassistant:
+  packages: !include_dir_named packages
+  customize: !include customize.yaml
+  
+# 主题
+frontend:
+  themes: !include_dir_merge_named themes
+
+# 语音控制
+conversation:
+
+python_script:
+
+# 颜色提取器
+color_extractor:
+
+# 反向代理
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 127.0.0.1
+
+recorder:
+  # 记录多少天的数据
+  purge_keep_days: 2
+  #db_url: mysql://用户名:密码@服务器地址:3306/数据库?charset=utf8
+  exclude:
+    # 排除实体记录
+    entities:
+      - media_player.yun_yin_le
+      - sensor.date_time
+      - sensor.connected_clients
+      - sensor.disk_use_percent
+      - sensor.disk_use
+      - sensor.disk_free
+      - sensor.memory_use
+      - sensor.memory_free
+      - sensor.swap_use
+      - sensor.swap_free
+
+# 日志
+logger:
+  default: warn
+  logs:
+    homeassistant.components.keyboard_remote: debug
+    homeassistant.components.kodi.media_player: fatal
+    custom_components.pyscript: info
+    #homeassistant.components.mqtt: warn
+    #homeassistant.components.hacs: debug
+    #custom_components.conversation: debug
+    #custom_components.xiaomi_tv: debug
+
+# shell命令
+shell_command:
+  # 重启
+  restart_pow: reboot
+
+# 键盘控制器
+#keyboard_remote:
+# - device_descriptor: '/dev/input/event4'
+#   type: 'key_down'
+
+#binary_sensor:
+#  - platform: ping
+#    name: 天猫魔盒
+#    host: 192.168.1.115
+#    count: 2
+#    scan_interval: 30

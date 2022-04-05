@@ -1,0 +1,211 @@
+blueprint:
+  name: 我的电脑键盘控制
+  description: 配合Windows客户端，使用电脑键盘遥控我的智能家居系统
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-config/blob/master/blueprints/windows_keycode.yaml
+  input:
+    key_0:
+      name: Key 0
+      description: 快捷键 Alt + 0
+      default: []
+      selector:
+        action: {}
+    key_1:
+      name: Key 1
+      description: 快捷键 Alt + 1
+      default: []
+      selector:
+        action: {}
+    key_2:
+      name: Key 2
+      description: 快捷键 Alt + 2
+      default: []
+      selector:
+        action: {}
+    key_3:
+      name: Key 3
+      description: 快捷键 Alt + 3
+      default: []
+      selector:
+        action: {}
+    key_4:
+      name: Key 4
+      description: 快捷键 Alt + 4
+      default: []
+      selector:
+        action: {}
+    key_5:
+      name: Key 5
+      description: 快捷键 Alt + 5
+      default: []
+      selector:
+        action: {}
+    key_6:
+      name: Key 6
+      description: 快捷键 Alt + 6
+      default: []
+      selector:
+        action: {}
+    key_7:
+      name: Key 7
+      description: 快捷键 Alt + 7
+      default: []
+      selector:
+        action: {}
+    key_8:
+      name: Key 8
+      description: 快捷键 Alt + 8
+      default: []
+      selector:
+        action: {}
+    key_9:
+      name: Key 9
+      description: 快捷键 Alt + 9
+      default: []
+      selector:
+        action: {}    
+    key_f1:
+      name: Key F1
+      description: 快捷键 Alt + F1
+      default: []
+      selector:
+        action: {}
+    key_f2:
+      name: Key F2
+      description: 快捷键 Alt + F2
+      default: []
+      selector:
+        action: {}
+    key_f3:
+      name: Key F3
+      description: 快捷键 Alt + F3
+      default: []
+      selector:
+        action: {}
+    key_f4:
+      name: Key F4
+      description: 快捷键 Alt + F4
+      default: []
+      selector:
+        action: {}
+    key_f5:
+      name: Key F5
+      description: 快捷键 Alt + F5
+      default: []
+      selector:
+        action: {}
+    key_f6:
+      name: Key F6
+      description: 快捷键 Alt + F6
+      default: []
+      selector:
+        action: {}
+    key_f7:
+      name: Key F7
+      description: 快捷键 Alt + F7
+      default: []
+      selector:
+        action: {}
+    key_f8:
+      name: Key F8
+      description: 快捷键 Alt + F8
+      default: []
+      selector:
+        action: {}
+    key_f9:
+      name: Key F9
+      description: 快捷键 Alt + F9
+      default: []
+      selector:
+        action: {}
+    key_f10:
+      name: Key F10
+      description: 快捷键 Alt + F10
+      default: []
+      selector:
+        action: {}
+    key_f11:
+      name: Key F11
+      description: 快捷键 Alt + F11
+      default: []
+      selector:
+        action: {}
+    key_f12:
+      name: Key F12
+      description: 快捷键 Alt + F12
+      default: []
+      selector:
+        action: {}
+trigger:
+- platform: mqtt
+  topic: windows/keycode
+action:
+- variables:
+    command: '{{ trigger.payload }}'
+- choose:
+  - conditions:
+    - '{{ command == 96 }}'
+    sequence: !input 'key_0'
+  - conditions:
+    - '{{ command == 97 }}'
+    sequence: !input 'key_1'
+  - conditions:
+    - '{{ command == 98 }}'
+    sequence: !input 'key_2'
+  - conditions:
+    - '{{ command == 99 }}'
+    sequence: !input 'key_3'
+  - conditions:
+    - '{{ command == 100 }}'
+    sequence: !input 'key_4'
+  - conditions:
+    - '{{ command == 101 }}'
+    sequence: !input 'key_5'
+  - conditions:
+    - '{{ command == 102 }}'
+    sequence: !input 'key_6'
+  - conditions:
+    - '{{ command == 103 }}'
+    sequence: !input 'key_7'
+  - conditions:
+    - '{{ command == 104 }}'
+    sequence: !input 'key_8'
+  - conditions:
+    - '{{ command == 105 }}'
+    sequence: !input 'key_9'
+  - conditions:
+    - '{{ command == 112 }}'
+    sequence: !input 'key_f1'
+  - conditions:
+    - '{{ command == 113 }}'
+    sequence: !input 'key_f2'
+  - conditions:
+    - '{{ command == 114 }}'
+    sequence: !input 'key_f3'
+  - conditions:
+    - '{{ command == 115 }}'
+    sequence: !input 'key_f4'
+  - conditions:
+    - '{{ command == 116 }}'
+    sequence: !input 'key_f5'
+  - conditions:
+    - '{{ command == 117 }}'
+    sequence: !input 'key_f6'
+  - conditions:
+    - '{{ command == 118 }}'
+    sequence: !input 'key_f7'
+  - conditions:
+    - '{{ command == 119 }}'
+    sequence: !input 'key_f8'
+  - conditions:
+    - '{{ command == 120 }}'
+    sequence: !input 'key_f9'
+  - conditions:
+    - '{{ command == 121 }}'
+    sequence: !input 'key_f10'
+  - conditions:
+    - '{{ command == 122 }}'
+    sequence: !input 'key_f11'
+  - conditions:
+    - '{{ command == 123 }}'
+    sequence: !input 'key_f12'

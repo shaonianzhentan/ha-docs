@@ -1,0 +1,292 @@
+blueprint:
+  name: Aqara Opple 无线开关
+  description: 'ZigBee2Mqtt里的Aqara Opple 6键开关的操作'
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-docs/blob/master/blueprint/aqara_opple_switch.yaml
+  input:
+    switch:
+      name: Aqara switch
+      description: Aqara switch to use
+      selector:
+        entity:
+          domain: sensor
+    button_1_single:
+      name: Button 1 - single click
+      description: 键1单击
+      default: []
+      selector:
+        action: {}
+    button_1_double:
+      name: Button 1 - double click
+      description: 键1双击
+      default: []
+      selector:
+        action: {}
+    button_1_triple:
+      name: Button 1 - triple click
+      description: 键1三连击
+      default: []
+      selector:
+        action: {}
+    button_1_hold:
+      name: Button 1 - hold click
+      description: 键1长按
+      default: []
+      selector:
+        action: {}
+    button_1_release:
+      name: Button 1 - release click
+      description: 键1放开
+      default: []
+      selector:
+        action: {}
+    button_2_single:
+      name: Button 2 - single click
+      description: 键2单击
+      default: []
+      selector:
+        action: {}
+    button_2_double:
+      name: Button 2 - double click
+      description: 键2双击
+      default: []
+      selector:
+        action: {}
+    button_2_triple:
+      name: Button 2 - triple click
+      description: 键2三连击
+      default: []
+      selector:
+        action: {}
+    button_2_hold:
+      name: Button 2 - hold click
+      description: 键2长按
+      default: []
+      selector:
+        action: {}
+    button_2_release:
+      name: Button 2 - release click
+      description: 键2放开
+      default: []
+      selector:
+        action: {}
+    button_3_single:
+      name: Button 3 - single click
+      description: 键3单击
+      default: []
+      selector:
+        action: {}
+    button_3_double:
+      name: Button 3 - double click
+      description: 键3双击
+      default: []
+      selector:
+        action: {}
+    button_3_triple:
+      name: Button 3 - triple click
+      description: 键3三连击
+      default: []
+      selector:
+        action: {}
+    button_3_hold:
+      name: Button 3 - hold click
+      description: 键3长按
+      default: []
+      selector:
+        action: {}
+    button_3_release:
+      name: Button 3 - release click
+      description: 键3放开
+      default: []
+      selector:
+        action: {}
+    button_4_single:
+      name: Button 4 - single click
+      description: 键4单击
+      default: []
+      selector:
+        action: {}
+    button_4_double:
+      name: Button 4 - double click
+      description: 键4双击
+      default: []
+      selector:
+        action: {}
+    button_4_triple:
+      name: Button 4 - triple click
+      description: 键4三连击
+      default: []
+      selector:
+        action: {}
+    button_4_hold:
+      name: Button 4 - hold click
+      description: 键4长按
+      default: []
+      selector:
+        action: {}
+    button_4_release:
+      name: Button 4 - release click
+      description: 键4放开
+      default: []
+      selector:
+        action: {}
+    button_5_single:
+      name: Button 5 - single click
+      description: 键5单击
+      default: []
+      selector:
+        action: {}
+    button_5_double:
+      name: Button 5 - double click
+      description: 键5双击
+      default: []
+      selector:
+        action: {}
+    button_5_triple:
+      name: Button 5 - triple click
+      description: 键5三连击
+      default: []
+      selector:
+        action: {}
+    button_5_hold:
+      name: Button 5 - hold click
+      description: 键5长按
+      default: []
+      selector:
+        action: {}
+    button_5_release:
+      name: Button 5 - release click
+      description: 键5放开
+      default: []
+      selector:
+        action: {}
+    button_6_single:
+      name: Button 6 - single click
+      description: 键6单击
+      default: []
+      selector:
+        action: {}
+    button_6_double:
+      name: Button 6 - double click
+      description: 键6双击
+      default: []
+      selector:
+        action: {}
+    button_6_triple:
+      name: Button 6 - triple click
+      description: 键6三连击
+      default: []
+      selector:
+        action: {}
+    button_6_hold:
+      name: Button 6 - hold click
+      description: 键6长按
+      default: []
+      selector:
+        action: {}
+    button_6_release:
+      name: Button 6 - release click
+      description: 键6放开
+      default: []
+      selector:
+        action: {}
+mode: restart
+max_exceeded: silent
+trigger:
+- platform: state
+  entity_id: !input 'switch'
+  attribute: action
+action:
+- variables:
+    command: '{{ trigger.to_state.state }}'
+- choose:
+  - conditions:
+    - '{{ command == ''button_1_single'' }}'
+    sequence: !input 'button_1_single'
+  - conditions:
+    - '{{ command == ''button_1_double'' }}'
+    sequence: !input 'button_1_double'
+  - conditions:
+    - '{{ command == ''button_2_single'' }}'
+    sequence: !input 'button_2_single'
+  - conditions:
+    - '{{ command == ''button_3_single'' }}'
+    sequence: !input 'button_3_single'
+  - conditions:
+    - '{{ command == ''button_4_single'' }}'
+    sequence: !input 'button_4_single'
+  - conditions:
+    - '{{ command == ''button_5_single'' }}'
+    sequence: !input 'button_5_single'
+  - conditions:
+    - '{{ command == ''button_6_single'' }}'
+    sequence: !input 'button_6_single'
+  - conditions:
+    - '{{ command == ''button_2_double'' }}'
+    sequence: !input 'button_2_double'
+  - conditions:
+    - '{{ command == ''button_3_double'' }}'
+    sequence: !input 'button_3_double'
+  - conditions:
+    - '{{ command == ''button_4_double'' }}'
+    sequence: !input 'button_4_double'
+  - conditions:
+    - '{{ command == ''button_5_double'' }}'
+    sequence: !input 'button_5_double'
+  - conditions:
+    - '{{ command == ''button_6_double'' }}'
+    sequence: !input 'button_6_double'
+  - conditions:
+    - '{{ command == ''button_1_triple'' }}'
+    sequence: !input 'button_1_triple'
+  - conditions:
+    - '{{ command == ''button_2_triple'' }}'
+    sequence: !input 'button_2_triple'
+  - conditions:
+    - '{{ command == ''button_3_triple'' }}'
+    sequence: !input 'button_3_triple'
+  - conditions:
+    - '{{ command == ''button_4_triple'' }}'
+    sequence: !input 'button_4_triple'
+  - conditions:
+    - '{{ command == ''button_5_triple'' }}'
+    sequence: !input 'button_5_triple'
+  - conditions:
+    - '{{ command == ''button_6_triple'' }}'
+    sequence: !input 'button_6_triple'
+  - conditions:
+    - '{{ command == ''button_1_hold'' }}'
+    sequence: !input 'button_1_hold'
+  - conditions:
+    - '{{ command == ''button_2_hold'' }}'
+    sequence: !input 'button_2_hold'
+  - conditions:
+    - '{{ command == ''button_3_hold'' }}'
+    sequence: !input 'button_3_hold'
+  - conditions:
+    - '{{ command == ''button_4_hold'' }}'
+    sequence: !input 'button_4_hold'
+  - conditions:
+    - '{{ command == ''button_5_hold'' }}'
+    sequence: !input 'button_5_hold'
+  - conditions:
+    - '{{ command == ''button_6_hold'' }}'
+    sequence: !input 'button_6_hold'
+  - conditions:
+    - '{{ command == ''button_1_release'' }}'
+    sequence: !input 'button_1_release'
+  - conditions:
+    - '{{ command == ''button_2_release'' }}'
+    sequence: !input 'button_2_release'
+  - conditions:
+    - '{{ command == ''button_3_release'' }}'
+    sequence: !input 'button_3_release'
+  - conditions:
+    - '{{ command == ''button_4_release'' }}'
+    sequence: !input 'button_4_release'
+  - conditions:
+    - '{{ command == ''button_5_release'' }}'
+    sequence: !input 'button_5_release'
+  - conditions:
+    - '{{ command == ''button_6_release'' }}'
+    sequence: !input 'button_6_release'

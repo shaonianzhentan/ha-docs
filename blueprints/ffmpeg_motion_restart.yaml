@@ -1,0 +1,22 @@
+blueprint:
+  name: 摄像机守护服务
+  description: "摄像机画面监控停止时，重新启动"
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-config/blob/master/blueprints/ffmpeg_motion_restart.yaml
+  input:
+    ffmpeg_motion:
+      name: 画面监控实体
+      description: ffmpeg_motion
+      selector:
+        entity:
+          domain: binary_sensor
+mode: restart
+max_exceeded: silent
+trigger:
+  - platform: state
+    entity_id: !input "ffmpeg_motion"
+    to: unavailable
+action:
+  - service: ffmpeg.start
+    data: {}
+    entity_id: !input "ffmpeg_motion"

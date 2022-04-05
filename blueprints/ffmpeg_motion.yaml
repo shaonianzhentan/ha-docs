@@ -1,0 +1,26 @@
+blueprint:
+  name: 摄像机画面监控变动
+  description: "摄像机画面监控变动时调用服务"
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-config/blob/master/blueprints/ffmpeg_motion.yaml
+  input:
+    ffmpeg_motion:
+      name: 画面监控实体
+      description: ffmpeg_motion
+      selector:
+        entity:
+          domain: binary_sensor
+    service:
+      name: 服务
+      description: 执行服务
+      default: []
+      selector:
+        action: {}
+mode: restart
+max_exceeded: silent
+trigger:
+  - platform: state
+    entity_id: !input "ffmpeg_motion"
+    from: off
+    to: on
+action: !input "service"

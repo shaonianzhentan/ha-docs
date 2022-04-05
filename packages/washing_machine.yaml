@@ -1,0 +1,72 @@
+sensor:
+  - platform: template
+    sensors:
+      washer_cloud:
+        friendly_name: 在线
+        icon_template: mdi:cloud
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.cloud | replace('"','') }}
+      washer_status:
+        friendly_name: 运行状态
+        icon_template: mdi:list-status
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.running_status | replace('"','') }}
+      washer_program:
+        friendly_name: 洗衣程序
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.program | replace('"','') }}
+      washer_progress:
+        friendly_name: 洗衣进度
+        icon_template: mdi:progress-check
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.progress | replace('"','') }}
+      washer_water_level:
+        friendly_name: 水位
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.water_level | replace('"','') }}
+      washer_temperature:
+        friendly_name: 水温
+        unit_of_measurement: °C
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.temperature | replace('"','') }}
+      washer_wash_time:
+        friendly_name: 洗涤时间
+        unit_of_measurement: 分
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.wash_time_value }}
+      washer_soak_count:
+        friendly_name: 漂洗次数
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.soak_count | replace('"','') }}
+      washer_dehydration_time:
+        friendly_name: 脱水时间
+        unit_of_measurement: 分
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.dehydration_time_value }}
+      washer_dehydration_speed:
+        friendly_name: 脱水转速
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.dehydration_speed | replace('"','') }}
+      washer_remain_time:
+        friendly_name: 剩余时间
+        icon_template: mdi:timer-sand
+        unit_of_measurement: 分
+        value_template: >
+          {{ states.binary_sensor.sonoff_ab700014a8.attributes.remain_time }}
+
+group:
+  washing_machine:
+    name: 小天鹅洗衣机
+    entities:
+      - binary_sensor.sonoff_ab700014a8
+      - sensor.washer_cloud
+      - sensor.washer_status
+      - sensor.washer_program
+      - sensor.washer_progress
+      - sensor.washer_water_level
+      - sensor.washer_temperature
+      - sensor.washer_wash_time
+      - sensor.washer_soak_count
+      - sensor.washer_dehydration_time
+      - sensor.washer_dehydration_speed
+      - sensor.washer_remain_time

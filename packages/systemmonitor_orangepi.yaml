@@ -1,0 +1,107 @@
+# 传感器
+sensor:
+  # 显示有多少客户端连接
+  - platform: websocket_api
+  - platform: time_date
+    display_options:
+      - date_time
+  - platform: rest
+    name: wan_ip
+    resource: https://www.ip.cn/api/index?ip=&type=0
+    value_template: '{{ value_json.ip }}'
+    json_attributes:
+      - address
+    scan_interval: 3600
+  - platform: command_line
+    name: CPU Temperature
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    unit_of_measurement: "°C"
+    value_template: '{{ value | multiply(0.001) | round(1) }}'
+  # 系统监控
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /
+      - type: disk_use
+        arg: /
+      - type: disk_free
+        arg: /
+      - type: memory_use_percent
+      - type: memory_use
+      - type: memory_free
+      - type: swap_use_percent
+      - type: swap_use
+      - type: swap_free
+      - type: processor_use
+      - type: last_boot
+
+# 分组
+group:
+  systemmonitor:
+    name: 系统监控
+    entities:
+      - sensor.date_time
+      - sensor.local_ip
+      - sensor.connected_clients
+      - sensor.cpu_temperature
+      - sensor.disk_use_percent
+      - sensor.disk_use
+      - sensor.disk_free
+      - sensor.memory_use_percent
+      - sensor.memory_use
+      - sensor.memory_free
+      - sensor.swap_use_percent
+      - sensor.swap_use
+      - sensor.swap_free
+      - sensor.processor_use_percent
+      - sensor.last_boot
+      - sensor.wan_ip
+
+# 自定义名称
+homeassistant:
+  customize: 
+    sensor.date_time:
+      friendly_name: 日期时间
+    sensor.connected_clients:
+      friendly_name: 客户端数量
+    sensor.disk_use_percent:
+      friendly_name: 磁盘使用占比
+    sensor.disk_use:
+      friendly_name: 磁盘使用
+    sensor.disk_free:
+      friendly_name: 磁盘空闲
+    sensor.memory_use_percent:
+      friendly_name: 内存使用占比
+    sensor.memory_use:
+      friendly_name: 内存使用
+    sensor.memory_free:
+      friendly_name: 内存空闲
+    sensor.swap_use_percent:
+      friendly_name: 交换分区使用占比
+    sensor.swap_use:
+      friendly_name: 交换分区使用
+    sensor.swap_free:
+      friendly_name: 交换分区空闲
+    sensor.processor_use_percent:
+      friendly_name: 处理器使用
+    sensor.last_boot:
+      friendly_name: 开机时间
+    sensor.cpu_temperature:
+      friendly_name: CPU温度
+    sensor.wan_ip:
+      friendly_name: 网络IP
+    sensor.local_ip:
+      friendly_name: 本机IP
+
+recorder:
+  exclude:
+    entities:
+      - sensor.date_time
+      - sensor.connected_clients
+      - sensor.disk_use_percent
+      - sensor.disk_use
+      - sensor.disk_free
+      - sensor.memory_use
+      - sensor.memory_free
+      - sensor.swap_use
+      - sensor.swap_free

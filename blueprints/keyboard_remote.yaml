@@ -1,0 +1,195 @@
+blueprint:
+  name: 键盘遥控器
+  description: 键盘遥控器
+  domain: automation
+  source_url: https://github.com/shaonianzhentan/ha-config/blob/master/blueprints/keyboard_remote.yaml
+  input:
+    key_3:
+      name: Key 3
+      description: 等号键 =
+      default: []
+      selector:
+        action: {}
+    key_4:
+      name: Key 4
+      description: 按键TAB ⇵
+      default: []
+      selector:
+        action: {}
+    key_5:
+      name: Key 5
+      description: 数字开关 NumLock
+      default: []
+      selector:
+        action: {}
+    key_6:
+      name: Key 6
+      description: 按键 /
+      default: []
+      selector:
+        action: {}
+    key_7:
+      name: Key 7
+      description: 星号键 *
+      default: []
+      selector:
+        action: {}
+    key_8:
+      name: Key 8
+      description: 退格键 ←
+      default: []
+      selector:
+        action: {}
+    key_9:
+      name: Key 9
+      description: 按键7
+      default: []
+      selector:
+        action: {}
+    key_10:
+      name: Key 10
+      description: 按键8
+      default: []
+      selector:
+        action: {}
+    key_11:
+      name: Key 11
+      description: 按键9
+      default: []
+      selector:
+        action: {}
+    key_12:
+      name: Key 12
+      description: 减号键 -
+      default: []
+      selector:
+        action: {}
+    key_13:
+      name: Key 13
+      description: 按键4
+      default: []
+      selector:
+        action: {}
+    key_14:
+      name: Key 14
+      description: 按键5
+      default: []
+      selector:
+        action: {}
+    key_15:
+      name: Key 15
+      description: 按键6
+      default: []
+      selector:
+        action: {}
+    key_16:
+      name: Key 16
+      description: 加号键 +
+      default: []
+      selector:
+        action: {}
+    key_17:
+      name: Key 17
+      description: 按键1
+      default: []
+      selector:
+        action: {}
+    key_18:
+      name: Key 18
+      description: 按键2
+      default: []
+      selector:
+        action: {}
+    key_19:
+      name: Key 19
+      description: 按键3
+      default: []
+      selector:
+        action: {}
+    key_20:
+      name: Key 20
+      description: 按键0
+      default: []
+      selector:
+        action: {}
+    key_21:
+      name: Key 21
+      description: 小数点. Del
+      default: []
+      selector:
+        action: {}
+    key_22:
+      name: Key 22
+      description: 回车键
+      default: []
+      selector:
+        action: {}
+trigger:
+- platform: event
+  event_type: keyboard_remote_command_received
+  event_data:
+    source: keyboard
+action:
+- variables:
+    command: '{{ trigger.event.data.key_code }}'
+- choose:
+  - conditions:
+    - '{{ command == 13 }}'
+    sequence: !input 'key_3'
+  - conditions:
+    - '{{ command == 15 }}'
+    sequence: !input 'key_4'
+  - conditions:
+    - '{{ command == 69 }}'
+    sequence: !input 'key_5'
+  - conditions:
+    - '{{ command == 98 }}'
+    sequence: !input 'key_6'
+  - conditions:
+    - '{{ command == 55 }}'
+    sequence: !input 'key_7'
+  - conditions:
+    - '{{ command == 14 }}'
+    sequence: !input 'key_8'
+  - conditions:
+    - '{{ command == 71 }}'
+    sequence: !input 'key_9'
+  - conditions:
+    - '{{ command == 72 }}'
+    sequence: !input 'key_10'
+  - conditions:
+    - '{{ command == 73 }}'
+    sequence: !input 'key_11'
+  - conditions:
+    - '{{ command == 74 }}'
+    sequence: !input 'key_12'
+  - conditions:
+    - '{{ command == 75 }}'
+    sequence: !input 'key_13'
+  - conditions:
+    - '{{ command == 76 }}'
+    sequence: !input 'key_14'
+  - conditions:
+    - '{{ command == 77 }}'
+    sequence: !input 'key_15'
+  - conditions:
+    - '{{ command == 78 }}'
+    sequence: !input 'key_16'
+  - conditions:
+    - '{{ command == 79 }}'
+    sequence: !input 'key_17'
+  - conditions:
+    - '{{ command == 80 }}'
+    sequence: !input 'key_18'
+  - conditions:
+    - '{{ command == 81 }}'
+    sequence: !input 'key_19'
+  - conditions:
+    - '{{ command == 82 }}'
+    sequence: !input 'key_20'
+  - conditions:
+    - '{{ command == 83 }}'
+    sequence: !input 'key_21'
+  - conditions:
+    - '{{ command == 96 }}'
+    sequence: !input 'key_22'
