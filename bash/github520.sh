@@ -7,5 +7,5 @@ then
 else
  echo "$file not found."
 fi
-wget -P /tmp https://cdn.jsdelivr.net/gh/shaonianzhentan/ha-config@main/bash/github520.py
+wget -P /tmp https://gitee.com/shaonianzhentan/ha-docs/raw/master/bash/github520.py
 python $file
