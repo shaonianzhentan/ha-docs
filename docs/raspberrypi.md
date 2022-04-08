@@ -39,15 +39,15 @@
     - [x] `panel_iframe` - 侧边栏管理
     - [x] `hf_weather` - 和风天气
     - [ ] `baidu` - 小度音箱
-    - [ ] `todoist` - 待办事项
+    - [x] `todoist` - 待办事项
     - [ ] `blue_tacker` - 蓝牙检测
     - [ ] `conversation` - 语音小助手
     - [ ] `ha_homepage` - 浏览器主页
-    - [ ] `edge_tts` - TTS服务
+    - [x] `edge_tts` - TTS服务
     - [ ] `google_maps` - 百度地图
-    - [ ] `nodered` - NodeRED
-    - [ ] `pyscript` - Python脚本
-    - [ ] `smtp` - QQ邮箱通知
+    - [x] `nodered` - NodeRED
+    - [x] `pyscript` - Python脚本
+    - [x] `smtp` - QQ邮箱通知
 - [x] `NodeRed`可视化编程
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
@@ -73,6 +73,7 @@
 - [x] 升级ESPHome
 - [x] 升级NodeRED
 - [ ] 升级SSL证书
+- [x] 升级全网音乐搜索服务
 - [ ] 升级HomeAssistant以及相关组件
 - [ ] HomeAssistant：增加`屏幕保护`卡片
 - [ ] HomeAssistant：增加`鼠标控制面板`卡片

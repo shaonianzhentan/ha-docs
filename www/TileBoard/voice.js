@@ -7,8 +7,8 @@ class VoiceRecognition {
 
     async init() {
         await this.loadScript('https://cdn.jsdelivr.net/gh/xiangyuecn/Recorder@master/recorder.wav.min.js')
-        await this.loadScript('https://unpkg.zhimg.com/@picovoice/porcupine-web-en-worker@1.9.4/dist/iife/index.js')
-        await this.loadScript('https://unpkg.zhimg.com/@picovoice/web-voice-processor/dist/iife/index.js')
+        await this.loadScript('https://cdn.jsdelivr.net/npm/@picovoice/porcupine-web-en-worker@1.9.4/dist/iife/index.js')
+        await this.loadScript('https://cdn.jsdelivr.net/npm/@picovoice/web-voice-processor/dist/iife/index.js')
         this.startPorcupine()
         setTimeout(() => {
             this.toast(`语音助手准备好了，对我说${this.hotwords}，唤醒我吧`)
