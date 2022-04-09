@@ -21,7 +21,7 @@ graph
     ten[替代词] --> ten-one(substitute pronoun)
 ```
 ---
-#### 人称代词
+### 人称代词
 ```mermaid
 graph LR
     root(人称代词)-->nominative{主格}
@@ -32,7 +32,7 @@ graph LR
       accusative-->accusative-complex((复数))===fourth(us, you, them)
 ```
 ---
-#### 物主代词
+### 物主代词
 ```mermaid
 graph LR
     root[物主代词]--某人的...,后加人或物-->nominative{形容词性}
@@ -43,7 +43,7 @@ graph LR
       accusative==>accusative-complex((复数))-..-fourth>ours, yours, theirs]
 ```
 ---
-#### 反身代词
+### 反身代词
 
 ```mermaid
 graph TB
