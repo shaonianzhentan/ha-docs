@@ -1,7 +1,6 @@
 # 从零开始学英语
 
-
-<img src="http://ci.xiaohongshu.com/ce49bae9-1249-5a0f-b0b6-8f33dfb39fdb?imageView2/2/w/1080/format/jpg" width="500" />
+![pic](http://ci.xiaohongshu.com/ce49bae9-1249-5a0f-b0b6-8f33dfb39fdb?imageView2/2/w/1080/format/jpg ':size=50%')
 
 ```mermaid
 graph LR
