@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf8" />
     <title>工具箱</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         <h2>GitHub地址转CDN</h2>
         GitHub地址：<input type="text" v-model.trim="githubUrl" style="width:500px;" />
         <br />
@@ -20,6 +24,14 @@
         明文密码：<input type="text" v-model.trim="NodeRedPassword" />
         <br />
         密文：<mark>{{bcryptNodeRedPassword}}</mark>
+        <hr />
+        <h2>MD5加密</h2>
+        文本字符串：<input type="text" v-model.trim="md5Before" />
+        <br />
+        32位：<mark>{{md5After}}</mark>
+        <br />
+        16位：<mark>{{ md5After != '' ? md5After.substr(8,16) : "" }}</mark>
+        <hr />
     </div>
     <script src="https://cdn.jsdelivr.net/gh/dcodeIO/bcrypt.js@master/dist/bcrypt.min.js"></script>
     <script>
@@ -28,7 +40,8 @@
             data() {
                 return {
                     githubUrl: "",
-                    NodeRedPassword: ""
+                    NodeRedPassword: "",
+                    md5Before: ""
                 }
             },
             computed: {
@@ -44,6 +57,11 @@
                 bcryptNodeRedPassword() {
                     const { NodeRedPassword } = this
                     if (NodeRedPassword) return dcodeIO.bcrypt.hashSync(NodeRedPassword, 8)
+                },
+                md5After() {
+                    const { md5Before } = this
+                    if (md5Before !== '') return md5(md5Before)
+                    return ''
                 }
             },
             methods: {
@@ -56,7 +74,7 @@
             }
         })
     </script>
-
+    <script async src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
 </body>
 
 </html>
