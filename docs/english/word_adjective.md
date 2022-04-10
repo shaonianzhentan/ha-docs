@@ -1,0 +1,1 @@
+# 形容词 adjective

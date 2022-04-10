@@ -6,9 +6,11 @@
 
 !> 注意: 在安装完nvm时，需要在重新打开的终端中，执行`nvm命令`，不然会出现找不到命令的问题
 
+### 安装
+
 > nodejs安装方法一（树莓派zero系列千万别用这个）
 ```bash
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
@@ -24,8 +26,7 @@ nvm install --lts
 nvm install 10.0.0
 ```
 
-
-> npm换源
+### npm换源
 
 ```bash
 # 换源
@@ -38,6 +39,9 @@ npm config get registry
 npm config set registry https://registry.npmjs.org/
 ```
 官方文件：https://cnpmjs.org/
+
+
+### 管理node应用
 
 > 安装pm2管理所有node程序
 
@@ -59,4 +63,9 @@ pm2 save
 
 # 开机启动
 pm2 startup
+```
+
+### 开启静态服务器
+```bash
+npx http-server
 ```
