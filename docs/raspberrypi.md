@@ -72,18 +72,18 @@
 - [x] 升级Portainer
 - [x] 升级ESPHome
 - [x] 升级NodeRED
-- [ ] 升级SSL证书
+- [x] 升级SSL证书
 - [x] 升级全网音乐搜索服务
 - [ ] 升级HomeAssistant以及相关组件
 - [ ] HomeAssistant：增加`屏幕保护`卡片
 - [ ] HomeAssistant：增加`鼠标控制面板`卡片
 - [ ] HomeAssistant：增加`待办事项`集成
 - [ ] HomeAssistant：安装`HACS`极速版
-- [ ] NodeRED：增加`node-red-contrib-ha-mqtt`节点
-- [ ] NodeRED：增加`node-red-contrib-ha-wechat`节点
-- [ ] NodeRED：增加`node-red-contrib-home-assistant-websocket`节点
-- [ ] NodeRED：增加`一键更新GitHub Host`
-- [ ] TileBoard：修复语音唤醒识别引入
+- [x] NodeRED：增加`node-red-contrib-ha-mqtt`节点
+- [x] NodeRED：增加`node-red-contrib-ha-wechat`节点
+- [x] NodeRED：增加`node-red-contrib-home-assistant-websocket`节点
+- [x] NodeRED：增加`一键更新GitHub Host`
+- [x] TileBoard：修复语音唤醒识别引入
 - [x] [home-assistant/android](https://github.com/home-assistant/android/releases/tag/2022.3.0)
 
 #### 第五版 2022-2-12
