@@ -2,7 +2,9 @@
 
 ?> 玩转HomeAssistant遇到的各种问题与解决方案
 
-> 文档作者：`shaonianzhentan`，联系方式：`QQ: 635147515`
+> 联系方式：`QQ: 635147515`，`微信扫下方二维码`，`添加时请注明来意`
+
+> ![wx](./img/wx.jpg ':size=150px')
 
 [![windows](https://img.shields.io/badge/Windows-家庭助理-blue?logo=windows&style=for-the-badge)](https://www.microsoft.com/zh-cn/store/productId/9n2jp5z9rxx2)
 
