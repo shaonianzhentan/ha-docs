@@ -37,6 +37,9 @@ service php7.3-fpm restart
 # 查看服务运行情况
 ps auwx | grep php
 
+# 如果一直报sqlite不可用，还需要安装相关依赖
+sudo apt install php7.3-sqlite
+
 # 如果你有硬盘，可以挂载
 # 编辑开机启动
 nano /etc/rc.local

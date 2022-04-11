@@ -52,7 +52,7 @@
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
 - [x] `Docker`管理器
-- [x] `Kodbox`私人云盘
+- [x] [`Kodbox`私人云盘](http://kodcloud.com/download/)
 - [x] `Aria2`下载管理
 - [x] `WebSSH2`在线终端服务
 - [x] `ffmpeg`视频处理服务
@@ -72,6 +72,7 @@
 - [x] 升级Portainer
 - [x] 升级ESPHome
 - [x] 升级NodeRED
+- [x] 升级Kodbox
 - [x] 升级SSL证书
 - [x] 升级全网音乐搜索服务
 - [ ] 升级HomeAssistant以及相关组件
