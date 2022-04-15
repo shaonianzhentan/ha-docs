@@ -68,3 +68,54 @@ result = [x for x in inputs if x['count'] > 2]
 print(result)
 # [{'count': 3}]
 ```
+
+## URL解析
+```py
+from urllib.parse import urlparse
+
+url = 'rtsp://admin:password@192.168.1.123:554/onvif1'
+parsed = urlparse(url)
+print('scheme  :', parsed.scheme)
+print('netloc  :', parsed.netloc)
+print('path    :', parsed.path)
+print('params  :', parsed.params)
+print('query   :', parsed.query)
+print('fragment:', parsed.fragment)
+print('username:', parsed.username)
+print('password:', parsed.password)
+print('hostname:', parsed.hostname)
+print('port    :', parsed.port)
+```
+
+## 视频处理
+```py
+import av
+source = 'rtsp://admin:password@192.168.1.123:554/onvif2'
+options = {'rtsp_flags': 'prefer_tcp', 'stimeout': '5000000', 'rtsp_transport': 'udp'}
+SOURCE_TIMEOUT = 30
+container = av.open(source, options=options, timeout=SOURCE_TIMEOUT)
+video_stream = container.streams.video[0]
+print(video_stream)
+count = 0
+for frame in container.decode(video=0):
+    count = count + 1
+    if count > 30:
+        frame.to_image().save('frame-%04d.jpg' % frame.index)
+        break
+```
+
+视频帧转字节流
+```py
+import av, io
+
+def camera_image(source, options) -> bytes | None:
+    SOURCE_TIMEOUT = 30
+    container = av.open(source, options=options, timeout=SOURCE_TIMEOUT)
+    count = 0
+    for frame in container.decode(video=0):
+        count = count + 1
+        if count > 30:
+            imgByteArr = io.BytesIO()
+            frame.to_image().save(imgByteArr, format='JPEG')
+            return imgByteArr.getvalue()
+```
