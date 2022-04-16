@@ -50,6 +50,30 @@ print(datetime.datetime.now().replace(microsecond=0).isoformat())
 # 2022-04-05T12:09:36
 ```
 
+```py
+import time
+
+t = time.time()
+
+print('秒', int(t))
+# 秒 1650094683
+print('毫秒', int(round(t * 1000)))
+# 毫秒 1650094683777
+print('微秒', int(round(t * 1000000)))
+# 微秒 1650094683777255
+
+today = time.localtime()
+print('字符串', time.strftime('%Y-%m-%d %H:%M:%S', today))
+# 2022-04-16 15:38:03
+
+# 转时间结构
+datetime_str = '2022-04-16 15:38:03'
+dt = time.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+print('时间结构', dt)
+# time.struct_time(tm_year=2022, tm_mon=4, tm_mday=16, tm_hour=15, tm_min=38, tm_sec=3, tm_wday=5, tm_yday=106, tm_isdst=-1)
+print('年', dt.tm_year)
+```
+
 ## 集合过滤
 ```py
 inputs = [
