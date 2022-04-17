@@ -62,3 +62,11 @@ https://github.com/philippe44/AirConnect
 ```bash
 sudo apt-get install netatalk avahi-daemon
 ```
+
+```bash
+auth reset --username 用户名 --password 新密码
+
+hass --script  auth list
+
+hass --script  auth change_password 用户名 新密码
+```

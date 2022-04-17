@@ -44,10 +44,15 @@ def zip(root_path, filter_dir=None, filter_name=None):
 ## 时间格式
 ```py
 import datetime
-print(datetime.datetime.now().isoformat())
+
+now = datetime.datetime.now()
+print(now.isoformat())
 # 2022-04-05T12:09:36.423514
-print(datetime.datetime.now().replace(microsecond=0).isoformat())
+print(now.replace(microsecond=0).isoformat())
 # 2022-04-05T12:09:36
+
+print('当前时间', now.strftime('%Y-%m-%d %H:%M:%S'))
+# 2022-04-16 15:56:24
 ```
 
 ```py
