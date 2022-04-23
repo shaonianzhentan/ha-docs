@@ -33,18 +33,18 @@
     - [x] `xiaomi_radio` - 小米空调伴侣电台
     - [x] `xiaomi_tv` - 小米电视
     - [x] `xiaomi_gateway3` - 小米第三代网关
-    - [ ] `ble_monitor` - 蓝牙监视器
+    - [x] `ble_monitor` - 蓝牙监视器
     - [x] `workday` - 工作日
     - [x] `ha_cloud_music` - 云音乐
     - [x] `panel_iframe` - 侧边栏管理
     - [x] `hf_weather` - 和风天气
     - [ ] `baidu` - 小度音箱
     - [x] `todoist` - 待办事项
-    - [ ] `blue_tacker` - 蓝牙检测
-    - [ ] `conversation` - 语音小助手
-    - [ ] `ha_homepage` - 浏览器主页
+    - [x] `blue_tacker` - 蓝牙检测
+    - [x] `conversation` - 语音小助手
+    - [x] `ha_homepage` - 浏览器主页
     - [x] `edge_tts` - TTS服务
-    - [ ] `google_maps` - 百度地图
+    - [x] `google_maps` - 百度地图
     - [x] `nodered` - NodeRED
     - [x] `pyscript` - Python脚本
     - [x] `smtp` - QQ邮箱通知
@@ -66,24 +66,28 @@
 
 ## 更新日志
 
-#### 第六版（开发中）
-- [x] 更新树莓派系统
+#### 第六版 2022-4-23
+- [x] 更新树莓派系统及相关软件
+- [x] 升级nodejs
 - [x] 升级HomeBridge
-- [x] 升级Portainer
 - [x] 升级ESPHome
 - [x] 升级NodeRED
 - [x] 升级Kodbox
 - [x] 升级SSL证书
-- [x] 升级全网音乐搜索服务
-- [ ] 升级HomeAssistant以及相关组件
-- [ ] HomeAssistant：增加`屏幕保护`卡片
-- [ ] HomeAssistant：增加`鼠标控制面板`卡片
-- [ ] HomeAssistant：增加`待办事项`集成
-- [ ] HomeAssistant：安装`HACS`极速版
+- [x] 移除全网音乐搜索服务
+- [x] 升级HomeAssistant以及相关组件
+- [x] HomeAssistant：增加`屏幕保护`卡片
+- [x] HomeAssistant：增加`鼠标控制面板`卡片
+- [x] HomeAssistant：增加`待办事项`集成
+- [x] HomeAssistant：增加`蓝牙监视器`集成
+- [x] HomeAssistant：增加`浏览器主页`集成
+- [x] HomeAssistant：安装`HACS`极速版
 - [x] NodeRED：增加`node-red-contrib-ha-mqtt`节点
 - [x] NodeRED：增加`node-red-contrib-ha-wechat`节点
 - [x] NodeRED：增加`node-red-contrib-home-assistant-websocket`节点
 - [x] NodeRED：增加`一键更新GitHub Host`
+- [x] NodeRED：增加`一键重启Nginx命令`
+- [x] NodeRED：增加`智能家居面板`
 - [x] TileBoard：修复语音唤醒识别引入
 - [x] [home-assistant/android](https://github.com/home-assistant/android/releases/tag/2022.3.0)
 
