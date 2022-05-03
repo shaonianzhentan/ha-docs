@@ -21,6 +21,7 @@ graph
     ten[替代词] --> ten-one(substitute pronoun)
 ```
 ---
+
 ### 人称代词
 ```mermaid
 graph LR
@@ -45,22 +46,4 @@ graph LR
 ---
 ### 反身代词
 
-```mermaid
-graph TB
-    subgraph 子图表
-        id2==粗线==>id3{菱形}
-        id3-.虚线.->id4>右向旗帜]
-        id3--无箭头---id5((圆形))
-    end
-```
-
-```mermaid
-graph
-    默认方形
-    id1[方形]
-    id2(圆边矩形)
-    id3([体育场形])
-    id4[[子程序形]]
-    id5[(圆柱形)]
-    id6((圆形))
-```
+xxx
