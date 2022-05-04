@@ -70,3 +70,22 @@ hass --script  auth list
 
 hass --script  auth change_password 用户名 新密码
 ```
+
+
+```bash
+# 打开前端库
+cd /usr/local/lib/python3.9/site-packages/hass_frontend/
+
+grep -rnl 'recognition.lang="en-US"' *
+
+frontend_es5/3742bad2.js
+frontend_latest/bc21e120.js
+
+# 替换
+sed -i 's/recognition.lang="en-US"/recognition.lang="zh-CN"/g' frontend_es5/3742bad2.js
+sed -i 's/recognition.lang="en-US"/recognition.lang="zh-CN"/g' frontend_latest/bc21e120.js
+
+# 移除压缩文件
+rm -rf frontend_es5/3742bad2.js.gz
+rm -rf frontend_latest/bc21e120.js.gz
+```
