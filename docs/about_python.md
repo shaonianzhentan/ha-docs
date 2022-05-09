@@ -53,6 +53,9 @@ print(now.replace(microsecond=0).isoformat())
 
 print('当前时间', now.strftime('%Y-%m-%d %H:%M:%S'))
 # 2022-04-16 15:56:24
+
+s = '2022-04-10T18:44:09+00:00'
+dt = datetime.datetime.fromisoformat(s)
 ```
 
 ```py
@@ -147,4 +150,20 @@ def camera_image(source, options) -> bytes | None:
             imgByteArr = io.BytesIO()
             frame.to_image().save(imgByteArr, format='JPEG')
             return imgByteArr.getvalue()
+```
+
+## 执行异步方法
+```py
+import _thread, time, asyncio
+
+def async_create_task(tasks):
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(asyncio.gather(*tasks))
+
+async def test(a):
+    print(a)
+
+_thread.start_new_thread(async_create_task, ([test(1)],))
+time.sleep(5)
 ```
