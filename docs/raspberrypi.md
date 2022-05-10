@@ -38,7 +38,6 @@
     - [x] `ha_cloud_music` - 云音乐
     - [x] `panel_iframe` - 侧边栏管理
     - [x] `hf_weather` - 和风天气
-    - [ ] `baidu` - 小度音箱
     - [x] `todoist` - 待办事项
     - [x] `blue_tacker` - 蓝牙检测
     - [x] `conversation` - 语音小助手
@@ -48,6 +47,9 @@
     - [x] `nodered` - NodeRED
     - [x] `pyscript` - Python脚本
     - [x] `smtp` - QQ邮箱通知
+    - [ ] `baidu` - 小度音箱
+    - [ ] `updater` - 更新程序
+    - [ ] `cloud_backup` - 云备份
 - [x] `NodeRed`可视化编程
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
@@ -68,6 +70,9 @@
 
 #### 第七版
 - [ ] NodeRED面板：增加`重启HomeAssistant`按钮
+- [ ] HomeAssistant：增加`语音唤醒`卡片
+- [ ] HomeAssistant：增加`更新程序`集成
+- [ ] HomeAssistant：增加`云备份`集成
 
 #### 第六版 2022-4-23
 - [x] 更新树莓派系统及相关软件
