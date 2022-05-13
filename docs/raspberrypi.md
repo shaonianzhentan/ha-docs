@@ -128,7 +128,7 @@ https://www.bilibili.com/video/BV1t341187kr
 - 修复Airplay在部分网络下无法启动的问题
 - 新增WiFi AP热点服务
 - 新增全网音乐查询服务
-- 新增v2ray客户端服务
+- 新增v2客户端服务
 - 新增ESPHome服务
 
 #### 第三版 2021-8-15
