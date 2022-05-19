@@ -1,6 +1,5 @@
 - 句子类型
   - [疑问句 interrogative sentence](english/interrogative_sentence.md)
-  - [谚语 proverb](english/proverb.md)
 
 - 句子成份
 

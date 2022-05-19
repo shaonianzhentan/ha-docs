@@ -45,5 +45,103 @@ graph LR
 ```
 ---
 ### 反身代词
+```mermaid
+graph TB
+    root(反身代词)-->singular{单数}
+      singular==>myself((myself))
+      singular==>yourself((yourself))
+      singular==>himself((himself))
+      singular==>herself((herself))
+      singular==>itself((itself))
+    root-->complex{复数}
+      complex==>ourselves((ourselves))
+      complex==>yourselves((yourselves))
+      complex==>themselves((themselves))
+```
 
-xxx
+### 指示代词
+
+```mermaid
+graph TB
+    root(指示代词)-->singular{单数}
+      singular==>this(this)-..-this_translate(这)
+      singular==>that(that)-..-that_translate(那)
+    root-->complex{复数}
+      complex==>these(these)-..-these_translate(这些)
+      complex==>those(those)-..-those_translate(那些)
+```
+
+### 相互代词
+
+`each other` 两者之间 
+
+`one another` 三者之间/三者以上之间
+
+
+### 疑问代词
+
+### 关系代词
+
+### 连接代词
+
+### 不定代词
+
+many 许多，很多 
+代替/修饰可数名词的复数
+much 很多
+代替/修饰不可数名词的复数
+
+a few  （肯定意义）一些
+few  （否定意义）几乎没有
+后接可数名词
+
+a little  （肯定意义）一些
+little  （否定意义）几乎没有
+后接不可数名词
+
+some 一些
+any 任何
+
+each 每（2个/2个以上）
+后接单数
+every 每（3个/3个以上）
+
+either 
+两者中的每一个（谓语用单数）
+neither
+两者中的每一个都不（谓语用单数）
+
+都；全部（它们做主语时，谓语动词都要用复数形式）
+both
+两者
+all
+两者及以上
+
+other
+另外的；其它的（+名词）
+
+the other
+特指两者中的另一个
+
+another
+泛指3个及以上另一个
+
+### 复合不定代词
+
+```mermaid
+graph TB
+    root(复合不定代词)-->every{every}
+      every===every_text(每人/人人)==>everyone(everyone)==>everybody(everybody)
+      every===everything_translate(每件事/一切事)==>everything(everything)
+    root-->some{some}
+      some===some_text(某人)==>someone(someone)==>somebody(somebody)
+      some===something_translate(某事)==>something(something)
+    root-->any{any}
+      any===any_text(任何人)==>anyone(anyone)==>anybody(anybody)
+      any===anything_translate(任何事)==>anything(anything)
+    root-->no{no}
+      no===no_text(没人)==>noone(no one)==>nobody(nobody)
+      no===nothing_translate(没事)==>nothing(nothing)
+```
+
+### 替代词
