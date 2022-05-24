@@ -4,6 +4,14 @@
   - [短语 phrase](english/phrase.md)
 
 - 句子成分 - Sentence element
+  - [主语 subject](english/sentence_subject.md)
+  - [谓语 predicate](english/sentence_predicate.md)
+  - [宾语 object](english/sentence_object.md)
+  - [定语 attribute](english/sentence_attribute.md)
+  - [状语 adverbial](english/sentence_adverbial.md)
+  - [补语 complement](english/sentence_complement.md)
+  - [表语 predicative](english/sentence_predicative.md)
+  - [同位语 appositive](english/sentence_appositive.md)
 
 - [词类 - Part of speech](english/part_of_speech.md)
   - [n.名词 noun](english/word_noun.md)

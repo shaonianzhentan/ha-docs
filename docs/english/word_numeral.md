@@ -1,5 +1,8 @@
 # 数词 numeral
 
+https://baike.baidu.com/item/%E6%95%B0%E8%AF%8D/1523081
+
+### 基数词
 - 1. one
 - 2. two
 - 3. three
@@ -10,21 +13,21 @@
 - 8. eight
 - 9. nine
 - 10. ten
-- 11. eleven
-- 12. twelve
-- 13. thirteen
+- 11. `eleven`
+- 12. `twelve`
+- 13. `thirteen`
 - 14. fourteen
-- 15. fifteen
+- 15. `fifteen`
 - 16. sixteen
 - 17. seventeen
 - 18. eighteen
 - 19. nineteen
-- 20. twenty
-- 23. twenty-three
-- 35. thirty-five
-- 30. thirty
-- 40. forty
-- 50. fifty
+- 20. `twenty`
+- 23. `twenty-three`
+- 30. `thirty`
+- 35. `thirty-five`
+- 40. `forty`
+- 50. `fifty`
 - 60. sixty
 - 70. seventy
 - 80. eighty
@@ -34,3 +37,10 @@
 - 1,000. thousand
 - 1,000,000. million
 - 1,000,000,000. billion
+
+
+# 序数词
+- 1st. first
+- 2nd. sencond
+- 3rd. third
+- 31st. thirty-first
