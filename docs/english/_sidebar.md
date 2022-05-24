@@ -2,6 +2,7 @@
   - [疑问句 interrogative sentence](english/interrogative_sentence.md)
   - [谚语 proverb](english/proverb.md)
   - [短语 phrase](english/phrase.md)
+  - [短文 article](english/article.md)
 
 - 句子成分 - Sentence element
   - [主语 subject](english/sentence_subject.md)
@@ -29,4 +30,6 @@
 
 ---
 
+- [词根 Root word](english/root_word.md)
+- [词缀 Affix](english/root_affix.md)
 - [每日学习 Daily learning](english/timeline.md)

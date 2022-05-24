@@ -1,9 +1,5 @@
 # timeline
 
-## May 20, 2022
-
-
-
 ## May 19, 2022
 
 ```
@@ -50,3 +46,13 @@ D. behaviour  [bɪˈheɪvjər] n.行为;举止;态度;
 D项发音为/ei/，其余发音为/æ/。
 ```
 
+## May 24, 2022
+
+```
+A. edition      [ɪˈdɪʃn]  n.版本(出版形式)
+B. question     [ˈkwestʃən]  n.问题  v.正式提问
+C. application  [ˌæplɪˈkeɪʃn] n.应用; 申请;
+D. explanation  [ˌekspləˈneɪʃn]  n.解释; 说明;
+
+B项发音为/tʃən/，其余发音为/ʃən/
+```
