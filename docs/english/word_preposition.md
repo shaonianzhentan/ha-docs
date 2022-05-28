@@ -1,5 +1,11 @@
 # 介词 preposition
 
+`in，on，with，by，for，at，about，under，of`
+<br>`during，for，over，within，throughout，from，to`
+<br>`before，after，since，until，till，between，up to`
+<br>`at，in，on，to，for，above，over，below，under，in front of，in the front of，beside，behind`
+<br>`by，with，through`
+<br>`about，around，over`
 
 ### 方位介词
 

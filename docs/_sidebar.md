@@ -89,4 +89,3 @@
   - [Xamarin](about_xamarin.md)
   - [Python](about_python.md)
   - [MDI图标](website_icon.md)
-  - [学英语](/english/)
