@@ -26,31 +26,35 @@
     - [x] 全网音乐搜索服务
   - 组件
     - [x] 系统监控
-    - [x] `hacs` - HACS
-    - [x] `ha_file_explorer` - 文件管理器
-    - [x] `sonoff` - 易微联集成
-    - [x] `xiaomi_miot` - 小米全家桶
-    - [x] `xiaomi_radio` - 小米空调伴侣电台
-    - [x] `xiaomi_tv` - 小米电视
-    - [x] `xiaomi_gateway3` - 小米第三代网关
-    - [x] `ble_monitor` - 蓝牙监视器
-    - [x] `workday` - 工作日
-    - [x] `ha_cloud_music` - 云音乐
-    - [x] `panel_iframe` - 侧边栏管理
-    - [x] `hf_weather` - 和风天气
+    - [x] `hacs` - [HACS](https://github.com/hacs-china/integration)
+    - [x] `sonoff` - [易微联集成](https://github.com/AlexxIT/SonoffLAN)
+    - [x] `ha_file_explorer` - [文件管理器](https://github.com/shaonianzhentan/ha_file_explorer)
+    - [x] `ha_cloud_music` - [云音乐](https://github.com/shaonianzhentan/ha_cloud_music)
+    - [x] `panel_iframe` - [侧边栏管理](https://github.com/shaonianzhentan/panel_iframe)
+    - [x] `google_maps` - [百度地图](https://github.com/shaonianzhentan/google_maps)
+    - [x] `xiaomi_tv` - [小米电视](https://github.com/shaonianzhentan/xiaomi_tv)
+    - [x] `xiaomi_radio` - [小米空调伴侣电台](https://github.com/shaonianzhentan/xiaomi_radio)
+    - [x] `xiaomi_miot` - [小米全家桶](https://github.com/al-one/hass-xiaomi-miot)
+    - [x] `xiaomi_gateway3` - [小米第三代网关](https://github.com/AlexxIT/XiaomiGateway3)
+    - [x] `ble_monitor` - [蓝牙监视器](https://github.com/custom-components/ble_monitor)
+    - [x] `workday` - [工作日](https://github.com/shaonianzhentan/workday)
+    - [x] `hf_weather` - [和风天气](https://github.com/shaonianzhentan/hf_weather)
     - [x] `todoist` - 待办事项
     - [x] `blue_tacker` - 蓝牙检测
-    - [x] `conversation` - 语音小助手
+    - [x] `conversation` - [语音小助手](https://github.com/shaonianzhentan/conversation)
     - [x] `ha_homepage` - 浏览器主页
-    - [x] `edge_tts` - TTS服务
-    - [x] `google_maps` - 百度地图
-    - [x] `nodered` - NodeRED
-    - [x] `pyscript` - Python脚本
-    - [x] `smtp` - QQ邮箱通知
+    - [x] `edge_tts` - [TTS服务](https://github.com/hasscc/hass-edge-tts)
+    - [x] `nodered` - [NodeRED](https://github.com/zachowj/hass-node-red)
+    - [x] `pyscript` - [Python脚本](https://github.com/custom-components/pyscript)
+    - [x] `smtp` - [QQ邮箱通知](https://github.com/shaonianzhentan/smtp)
     - [ ] `baidu` - 小度音箱
-    - [ ] `updater` - 更新程序
+    - [ ] `updater` - [更新程序](https://github.com/shaonianzhentan/updater)
     - [ ] `cloud_backup` - 云备份
-- [x] `NodeRed`可视化编程
+    - [ ] `bookmark` - [书签](https://github.com/shaonianzhentan/bookmark)
+    - [ ] `meiju` - [美的美居](https://github.com/hasscc/meiju)
+- [x] `NodeRed`可视化编程    
+    - [ ] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
+    - [ ] `node-red-contrib-ha-mqtt` - [ha-mqtt](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
 - [x] `Docker`管理器
@@ -68,8 +72,14 @@
 
 ## 更新日志
 
-#### 第七版
-- [ ] NodeRED面板：增加`重启HomeAssistant`按钮
+#### 第七版 开在开发中
+- [x] 使用树莓派64位系统
+- [ ] 升级`HomeAssistant` 版本
+  - [ ] 安装`updater` 版本
+  - [ ] 安装`bookmark` 版本
+  - [ ] 安装`meiju` 版本
+- [ ] 升级NodeRED 版本
+  - [ ] 升级`NodeRED面板`
 - [ ] HomeAssistant：增加`语音唤醒`卡片
 - [ ] HomeAssistant：增加`更新程序`集成
 - [ ] HomeAssistant：增加`云备份`集成
