@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-  
 
-import re, os, urllib2
+import re, os, sys
 
 # 加载内容
 def load_content(file_path):
@@ -23,8 +23,21 @@ def main():
     old_hosts_content = load_content(hosts_file)
 
     # 获取hosts内容
-    response = urllib2.urlopen('https://raw.hellogithub.com/hosts')
-    githosts = response.read()
+    hosts_url = 'https://raw.hellogithub.com/hosts'
+    PY2 = sys.version_info[0] == 2
+    PY3 = sys.version_info[0] == 3
+
+    if PY3:
+      import urllib.request
+      response = urllib.request.urlopen(hosts_url)
+
+    if PY2:
+      import urllib2
+      response = urllib2.urlopen(hosts_url)
+
+    githosts = str(response.read(), 'UTF-8')
+
+    # print(githosts)
 
     # 检测是否已经添加
     reg = re.match(r".*(# GitHub520 Host Start.*# GitHub520 Host End)", old_hosts_content, flags = re.S)
