@@ -15,15 +15,15 @@
   - 卡片
     - [x] [天气卡片](https://github.com/bramkragten/weather-card)
     - [x] [动画背景](https://github.com/Villhellm/lovelace-animated-background)
+    - [x] [Mushroom](https://github.com/piitaya/lovelace-mushroom)
   - 主题
-    - [x] Windows10
-    - [x] waves
-    - [x] ios
-    - [x] google
+    - [x] [Windows10](https://github.com/mikosoft83/hass-windows10-themes)
+    - [x] [waves](https://github.com/tgcowell/waves)
+    - [x] [iOS](https://github.com/basnijholt/lovelace-ios-themes)
+    - [x] [google](https://github.com/JuanMTech/google-theme)
   - 页面
-    - [x] 离线下载管理
-    - [x] Tileboard
-    - [x] 全网音乐搜索服务
+    - [x] [离线下载管理](https://github.com/mayswind/AriaNg)
+    - [x] [Tileboard](https://github.com/resoai/TileBoard)
   - 组件
     - [x] 系统监控
     - [x] `hacs` - [HACS](https://github.com/hacs-china/integration)
@@ -53,8 +53,10 @@
     - [ ] `bookmark` - [书签](https://github.com/shaonianzhentan/bookmark)
     - [ ] `meiju` - [美的美居](https://github.com/hasscc/meiju)
 - [x] `NodeRed`可视化编程    
-    - [ ] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
-    - [ ] `node-red-contrib-ha-mqtt` - [ha-mqtt](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
+    - [x] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
+    - [x] `node-red-contrib-ha-mqtt` - [创建MQTT实体](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
+    - [x] `node-red-contrib-ha-wechat` - [微信控制HomeAssistant](https://github.com/shaonianzhentan/node-red-contrib-ha-wechat)
+    - [x] `node-red-dashboard` - [仪表盘](https://github.com/node-red/node-red-dashboard)
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
 - [x] `Docker`管理器
@@ -75,14 +77,12 @@
 #### 第七版 开在开发中
 - [x] 使用树莓派64位系统
 - [ ] 升级`HomeAssistant` 版本
-  - [ ] 安装`updater` 版本
-  - [ ] 安装`bookmark` 版本
-  - [ ] 安装`meiju` 版本
+  - [ ] 安装集成`updater` 版本
+  - [ ] 安装集成`bookmark` 版本
+  - [ ] 安装集成`meiju` 版本
+  - [ ] 安装卡片`语音唤醒`卡片
 - [ ] 升级NodeRED 版本
   - [ ] 升级`NodeRED面板`
-- [ ] HomeAssistant：增加`语音唤醒`卡片
-- [ ] HomeAssistant：增加`更新程序`集成
-- [ ] HomeAssistant：增加`云备份`集成
 
 #### 第六版 2022-4-23
 - [x] 更新树莓派系统及相关软件
