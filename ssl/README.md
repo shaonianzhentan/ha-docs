@@ -27,3 +27,12 @@ openssl req -config openssl.cnf -new -out server.req -key server.key
 
 openssl x509 -req  -extfile openssl.cnf -extensions v3_req -in server.req -out server.cer -CAkey myCA.key -CA myCA.cer -days 36500 -CAcreateserial -CAserial serial
 ```
+
+---
+
+
+C:\Windows\System32\drivers\etc\hosts
+
+```yaml
+192.168.1.26                ha.home-assistant.local
+```
