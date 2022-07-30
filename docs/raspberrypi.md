@@ -74,16 +74,13 @@
 
 ## 更新日志
 
-#### 第七版 开在开发中
+#### 第七版 2022-7-30
+
 - [x] 使用树莓派64位系统
-- [ ] 升级`HomeAssistant` 版本
-  - [ ] 安装集成`updater` 版本
-  - [ ] 安装集成`bookmark` 版本
-  - [ ] 安装集成`meiju` 版本
-  - [ ] 安装卡片`语音唤醒`卡片
-- [ ] 升级NodeRED 版本
-  - [ ] 升级`NodeRED面板`
-- [ ] 删除`Kodbox`
+- [x] 升级`HomeAssistant` 版本
+- [x] 升级NodeRED 版本
+- [x] 删除`Kodbox`、`HomeBridge`、`ESPHome`（树莓派3b+内存只有1G，需要安装请联系我）
+- [x] 支持https局域网无限制访问
 
 #### 第六版 2022-4-23
 - [x] 更新树莓派系统及相关软件
