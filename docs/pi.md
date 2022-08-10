@@ -2,7 +2,7 @@
 
 - 树莓派：`pi` `raspberry`
 - HomeAssistant：`ha` `ha123456`
-- Docker管理器：`admin` `ha123456`
+- Docker管理器：`admin` `ha123456` 或 `homeassistant`
 - NodeRed：`admin` `ha123456`
 - HomeBridge：`admin` `admin`
 - 下载管理：`ha123456`
