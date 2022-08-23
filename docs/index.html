@@ -12,15 +12,12 @@
   <title>HomeAssistant学习笔记</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" href="/img/home-assistant.png" type="image/png">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/docsify@latest/themes/vue.css" rel="stylesheet"> -->
-  <link href="/docsify/themes/vue.css" rel="stylesheet">
+  <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/docsify/4.12.2/themes/vue.min.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="/docsify/mermaid.min.css">
 </head>
-
 <body>
   <div id="app">页面正在加载中...</div>
-  <script src="/docsify/docsify@latest.js"></script>
-  <script src="/docsify/mermaid.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/docsify/4.12.2/docsify.min.js" type="application/javascript"></script>
   <script>
     var num = 0;
     mermaid.initialize({ startOnLoad: false });
@@ -35,19 +32,7 @@
       loadSidebar: true,
       // loadNavbar: true,
       maxLevel: 4,
-      subMaxLevel: 3,
-      markdown: {
-        renderer: {
-          code: function (code, lang) {
-            if (lang === "mermaid") {
-              return (
-                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-              );
-            }
-            return this.origin.code.apply(this, arguments);
-          }
-        }
-      }
+      subMaxLevel: 3
     }
   </script>
   <script async
