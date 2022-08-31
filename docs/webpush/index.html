@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8" />
     <title>Web推送</title>
     <style>
@@ -20,7 +21,7 @@
     <textarea  id="txtConfig" rows="20"></textarea>
     <script>
 function registerPush(appPubkey) {
-    navigator.serviceWorker.register('sw.js');
+    navigator.serviceWorker.register('sw.js?v=2');
     navigator.serviceWorker.ready.then(function(registration) {
         return registration.pushManager.getSubscription()
             .then(function(subscription) {
