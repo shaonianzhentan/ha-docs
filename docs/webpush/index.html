@@ -56,7 +56,7 @@ function urlBase64ToUint8Array(base64String) {
     return outputArray;
 }
 
-document.getElementById('btnConfig').onclick = ()=>{
+document.getElementById('btnConfig').onclick = function(){
     if (navigator.serviceWorker) {
         registerPush('BIY9wd7fR1h5Mn1UguOEiytD_nq91PWvxDW12cApNvZdHWZoEAqk5OyuPeNnGE0MlegLO5cVMvxqIPzQHijCDQE');
     }else{
