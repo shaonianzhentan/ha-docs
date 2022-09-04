@@ -5,15 +5,16 @@
 安装相关服务
 ```bash
 # 安装Docker管理
-sudo docker run -itd --net="host" --restart=always --name="portainer" -v /var/run/docker.sock:/var/run/docker.sock docker.io/portainer/portainer
-
 sudo docker run -itd --net="host" --restart=always --name="portainer" \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -v ~/portainer:/data \
 portainer/portainer-ce:latest
 
 # 安装HomeAssistant
-sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" -v ~/homeassistant:/config -e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" \
+-v ~/homeassistant:/config \
+-v ~/homeassistant/media:/media \
+-e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
 
 # 安装EMQX
 sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
