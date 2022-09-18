@@ -16,6 +16,13 @@ sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha"
 -v ~/homeassistant/media:/media \
 -e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
 
+# 树莓派
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" \
+-v ~/homeassistant:/config \
+-v ~/homeassistant/media:/media \
+-v /run/dbus:/run/dbus:ro \
+-e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
+
 # 安装EMQX
 sudo docker run -itd --net="host" --restart=always --name="emqx" emqx/emqx:latest
 

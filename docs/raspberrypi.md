@@ -75,7 +75,10 @@
 ## 更新日志
 
 #### 第八版 dev
-- [ ] 一键升级HomeAssistant
+
+- [x] 更新树莓派系统及HomeAssistant
+- [x] 新增HomeAssistant蓝牙支持
+- [x] 安装php环境
 
 #### 第七版 2022-7-30
 
