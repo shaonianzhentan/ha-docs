@@ -1,0 +1,35 @@
+input_text:
+  mipad_clipboard:
+    name: 小米平板剪切板
+    initial: ''
+  mipad_tts:
+    name: 小米平板TTS
+    initial: ''
+
+automation:
+- id: '1646378225322'
+  alias: 小米平板TTS
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_text.mipad_tts
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: android/dc64b8774f81298c/tts
+      payload: '{{trigger.to_state.state}}'
+  mode: single
+- id: '1646378225323'
+  alias: 小米平板剪切板
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_text.mipad_clipboard
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: android/dc64b8774f81298c/clipboard
+      payload: '{{trigger.to_state.state}}'
+  mode: single

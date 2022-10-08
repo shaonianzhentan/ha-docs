@@ -1,0 +1,19 @@
+input_text:
+  wechat_push:
+    name: 微信推送
+    initial: ''
+
+automation:
+- id: '1646381319694'
+  alias: 微信推送
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_text.wechat_push
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: wechat_push
+      payload: '{{trigger.to_state.state}}'
+  mode: single

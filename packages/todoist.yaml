@@ -1,0 +1,81 @@
+conversation:
+  intents:
+    TodoistAdd:
+      - "{date}提醒我{event}"
+    TodoistDelete:
+      - "删除{event}提醒"
+
+intent_script:
+  TodoistAdd:
+    speech:
+      text: "{{date}} {{ event }}"
+    action:
+      service: todoist.add
+      data:
+        date: "{{date}}"
+        event: "{{event}}"
+  TodoistDelete:
+    speech:
+      text: "正在删除{{ event }}"
+    action:
+      service: todoist.delete
+      data:
+        event: "{{event}}"
+
+# 分组显示
+group:
+  todoist:
+    name: 待办事项
+    entities:
+      - sensor.dai_ban_shi_xiang
+      - input_datetime.latest_time_todoist
+
+# 过滤警告提醒，请在主配置文件中设置default值
+logger:
+  logs:
+    custom_components.todoist: error
+
+# 排除实体记录
+recorder:
+  exclude:
+    entities:
+      - sensor.dai_ban_shi_xiang
+      - input_datetime.latest_time_todoist
+
+# 自动化提醒
+automation:
+- id: '1645335885345'
+  alias: 待办事项通知提醒
+  description: 最近一次的待办事项通知提醒
+  trigger:
+  - platform: time
+    at: input_datetime.latest_time_todoist
+  condition: []
+  action:
+  - service: todoist.add
+    data:
+      date: 一小时后
+      event: '{{state_attr(trigger.entity_id, "friendly_name")}}'
+  - service: persistent_notification.create
+    data:
+      title: '{{now().strftime("%Y-%m-%d %H:%M:%S")}}'
+      message: '{{state_attr(trigger.entity_id, "friendly_name")}}'
+  - service: smtp.notify
+    data:
+      message: '{{state_attr(trigger.entity_id, "friendly_name")}}'
+      title: 待办事项通知提醒
+  - service: input_text.set_value
+    data:
+      entity_id: input_text.mipad_tts
+      value: >-
+        现在是{{now().strftime('%H:%M')}}，你有一条{{state_attr(trigger.entity_id, "friendly_name")}}的提醒
+  - service: xiaomi_radio.tts
+    data:
+      text: 你有一条待办事项通知提醒：{{state_attr(trigger.entity_id, "friendly_name")}}，请注意查看哦
+  - service: xiaomi_radio.tts
+    data:
+      text: 你有一条待办事项通知提醒：{{state_attr(trigger.entity_id, "friendly_name")}}，请注意查看哦
+  - service: notify.mobile_app_81th
+    data:
+      message: '{{state_attr(trigger.entity_id, "friendly_name")}}'
+  mode: single
