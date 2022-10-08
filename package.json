@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docsify serve docs"
+    "start": "docsify serve docs --port 3006"
   },
   "author": "",
   "license": "ISC",
