@@ -74,7 +74,15 @@
 
 ## 更新日志
 
-#### 第八版 dev
+#### 第九版 开发中
+- [ ] 更新树莓派系统
+- [ ] 更新HomeAssistant到最新版本
+- [ ] 更新HACS极速版到最新版本
+- [ ] 删除GitHub域名hosts自动解析
+- [ ] 更新Docker管理器到最新版本
+- [ ] 增加`Kodbox`私人云盘
+
+#### 第八版 2022-9-19
 
 - [x] 更新树莓派系统及HomeAssistant
 - [x] 新增HomeAssistant蓝牙支持
