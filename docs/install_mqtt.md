@@ -33,6 +33,17 @@ sudo service mosquitto status
 
 - 来源：https://blog.csdn.net/mycsdn_liruilin/article/details/88717041
 
+> `mosquitto 2.0版本`之后需要手动允许外部连接
+
+在`/etc/mosquitto/conf.d`中创建文件`allow.conf`
+```conf
+listener 1883
+allow_anonymous true
+```
+重启服务
+```bash
+sudo service mosquitto restart
+```
 
 --- 
 
