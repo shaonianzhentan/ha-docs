@@ -18,9 +18,9 @@ sudo apt install php php-fpm php-mysql
 nano /etc/php/7.3/fpm/pool.d/www.conf
 ```
 
-> 编辑`/lib/systemd/system/php7.3-fpm.service`
+> 编辑`/lib/systemd/system/php7.4-fpm.service`
 ```bash
-nano /lib/systemd/system/php7.3-fpm.service
+nano /lib/systemd/system/php7.4-fpm.service
 
 # 在ExecStart的 --nodaemonize前面加上 --allow-to-run-as-root
 # ExecStart=/usr/sbin/php-fpm7.3 --allow-to-run-as-root --nodaemonize...
@@ -32,13 +32,13 @@ nano /lib/systemd/system/php7.3-fpm.service
 systemctl daemon-reload
 
 # 重新启动服务
-service php7.3-fpm restart
+service php7.4-fpm restart
 
 # 查看服务运行情况
 ps auwx | grep php
 
 # 如果一直报sqlite不可用，还需要安装相关依赖
-sudo apt install php7.3-sqlite
+sudo apt install php7.4-sqlite3
 
 # 如果你有硬盘，可以挂载
 # 编辑开机启动
@@ -63,7 +63,7 @@ server {
                 fastcgi_send_timeout 3600;
 
                 include        snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+                fastcgi_pass unix:/run/php/php7.4-fpm.sock;
 
         }
 
