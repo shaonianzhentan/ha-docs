@@ -77,12 +77,13 @@
 #### 第九版 开发中
 - [x] 更新树莓派系统
 - [x] 更新HomeAssistant版本
-- [ ] 更新NodeRED版本
+- [x] 更新NodeRED版本
 - [x] 更新Docker管理器版本
 - [x] 更新HACS极速版到最新版本
 - [ ] 删除GitHub域名hosts自动解析
-- [ ] 解决MQTT只有当前设备可以连接的问题
-- [ ] 增加`Kodbox`私人云盘
+- [x] 解决MQTT只有当前设备可以连接的问题
+- [x] Docker换源
+- [x] 增加`Kodbox`私人云盘
 
 #### 第八版 2022-9-19
 
