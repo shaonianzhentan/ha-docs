@@ -48,9 +48,8 @@
     - [x] `pyscript` - [Python脚本](https://github.com/custom-components/pyscript)
     - [x] `smtp` - [QQ邮箱通知](https://github.com/shaonianzhentan/smtp)
     - [ ] `baidu` - 小度音箱
-    - [ ] `updater` - [更新程序](https://github.com/shaonianzhentan/updater)
     - [ ] `cloud_backup` - 云备份
-    - [ ] `bookmark` - [书签](https://github.com/shaonianzhentan/bookmark)
+    - [x] `bookmark` - [书签](https://github.com/shaonianzhentan/bookmark)
     - [ ] `meiju` - [美的美居](https://github.com/hasscc/meiju)
 - [x] `NodeRed`可视化编程    
     - [x] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
@@ -74,13 +73,12 @@
 
 ## 更新日志
 
-#### 第九版 开发中
+#### 第九版 2022-12-12
 - [x] 更新树莓派系统
 - [x] 更新HomeAssistant版本
 - [x] 更新NodeRED版本
 - [x] 更新Docker管理器版本
 - [x] 更新HACS极速版到最新版本
-- [ ] 删除GitHub域名hosts自动解析
 - [x] 解决MQTT只有当前设备可以连接的问题
 - [x] Docker换源
 - [x] 增加`Kodbox`私人云盘
