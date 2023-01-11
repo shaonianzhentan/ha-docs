@@ -35,10 +35,3 @@ server {
 > 插件配置
 
 源码地址：https://github.com/shaonianzhentan/ha_cloud_music
-
-```yaml
-# 详细配置请参考源码文档
-media_player:
-  - platform: ha_cloud_music
-    api_url: http://localhost:3000
-```

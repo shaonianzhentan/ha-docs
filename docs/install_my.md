@@ -184,19 +184,6 @@ sudo rm -rf ha_file_explorer
 
 # 编辑配置
 sudo nano ~/homeassistant/configuration.yaml
-
-```
-```yaml
-# 配置文件管理器
-ha_file_explorer:
-```
-
-### 配置网易云音乐
-```yaml
-# 配置媒体播放器
-media_player:
-  - platform: ha_cloud_music
-    api_url: http://localhost:3000
 ```
 
 ## OrangepiZero快速安装

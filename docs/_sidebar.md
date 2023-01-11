@@ -44,7 +44,7 @@
 
   - [网易云音乐](plug_ha_cloud_music.md)
   - [语音小助手](plug_ha_voice.md)
-  - [百度地图](plug_ha_baidu_map.md)
+  - [百度地图](https://github.com/shaonianzhentan/google_maps)
   - [侧边栏管理](plug_ha_sidebar.md)
   - [文件管理器](plug_ha_file_explorer.md)
   - [蓝牙在家](plug_ha_ble_home.md)
