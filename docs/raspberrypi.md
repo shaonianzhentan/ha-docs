@@ -39,16 +39,13 @@
     - [x] `ble_monitor` - [蓝牙监视器](https://github.com/custom-components/ble_monitor)
     - [x] `workday` - [工作日](https://github.com/shaonianzhentan/workday)
     - [x] `hf_weather` - [和风天气](https://github.com/shaonianzhentan/hf_weather)
-    - [x] `todoist` - 待办事项
-    - [x] `blue_tacker` - 蓝牙检测
-    - [x] `conversation` - [语音小助手](https://github.com/shaonianzhentan/conversation)
-    - [x] `ha_homepage` - 浏览器主页
+    - [x] `conversation` - [语音小助手](https://github.com/shaonianzhentan/conversation)    
     - [x] `edge_tts` - [TTS服务](https://github.com/hasscc/hass-edge-tts)
     - [x] `nodered` - [NodeRED](https://github.com/zachowj/hass-node-red)
     - [x] `pyscript` - [Python脚本](https://github.com/custom-components/pyscript)
     - [x] `smtp` - [QQ邮箱通知](https://github.com/shaonianzhentan/smtp)
     - [ ] `baidu` - 小度音箱
-    - [ ] `cloud_backup` - 云备份
+    - [x] `cloud_backup` - 云备份
     - [x] `bookmark` - [书签](https://github.com/shaonianzhentan/bookmark)
     - [ ] `meiju` - [美的美居](https://github.com/hasscc/meiju)
 - [x] `NodeRed`可视化编程    
@@ -72,6 +69,16 @@
 - **更多功能，持续开发中...**
 
 ## 更新日志
+
+#### 第十版（开发中）
+- [ ] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
+- [ ] 新增`云备份`插件
+- [ ] 新增`家庭助理Windows应用`插件
+- [ ] 新增`家庭助理Android应用`插件
+- [ ] 更新`语音小助手`插件
+- [ ] 更新`微信控制HomeAssistant`插件
+- [ ] 使用新版`云音乐`插件
+- [ ] 使用新版`云音乐MPD播放器`插件
 
 #### 第九版 2022-12-12
 - [x] 更新树莓派系统

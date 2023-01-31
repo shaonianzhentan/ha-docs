@@ -6,7 +6,6 @@
 - NodeRed：`admin` `ha123456`
 - HomeBridge：`admin` `admin`
 - 下载管理：`ha123456`
-- WiFi热点：`HomeAssistant` `ha123456`
 - V2：`admin` `ha123456`
 
 ## 相关问题与解决方案
