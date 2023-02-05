@@ -51,7 +51,6 @@
 - [x] `NodeRed`可视化编程    
     - [x] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
     - [x] `node-red-contrib-ha-mqtt` - [创建MQTT实体](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
-    - [x] `node-red-contrib-ha-wechat` - [微信控制HomeAssistant](https://github.com/shaonianzhentan/node-red-contrib-ha-wechat)
     - [x] `node-red-dashboard` - [仪表盘](https://github.com/node-red/node-red-dashboard)
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
@@ -64,21 +63,22 @@
 - [x] `MPD`音乐服务
 - [x] `DLNA`流媒体服务器
 - [x] `Airplay`投屏服务
-- [x] `Frpc`内网穿透服务
+- [x] `Frpc`内网穿透服务 - `需要则单独收费`
 - _
 - **更多功能，持续开发中...**
 
 ## 更新日志
 
 #### 第十版（开发中）
-- [ ] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
-- [ ] 新增`云备份`插件
-- [ ] 新增`家庭助理Windows应用`插件
-- [ ] 新增`家庭助理Android应用`插件
-- [ ] 更新`语音小助手`插件
-- [ ] 更新`微信控制HomeAssistant`插件
-- [ ] 使用新版`云音乐`插件
-- [ ] 使用新版`云音乐MPD播放器`插件
+- [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
+- [x] 新增`云备份`插件
+- [x] 新增`家庭助理Windows应用`插件
+- [x] 新增`家庭助理Android应用`插件
+- [x] 更新`语音小助手`插件
+- [x] 更新`微信控制HomeAssistant`插件
+- [x] 使用新版`云音乐`插件
+- [x] 使用新版`云音乐MPD播放器`插件
+- [x] 新增`本地日历`集成，配置自动化提醒
 
 #### 第九版 2022-12-12
 - [x] 更新树莓派系统
@@ -202,40 +202,40 @@ https://www.bilibili.com/video/BV1HL411n7qo
 #### 第一版
 https://www.bilibili.com/video/BV1TP4y1t7w5
 
-## 注意事项（必看）
+## 界面预览
 
-注意：不要用8123端口访问、请直接使用ip访问
+待补充
+
+## 使用说明
+
+> 整体流程如下，全程只有我一个人，
+- 加我微信`shaonianzhentan`或QQ`635147515`
+- 咨询一下 `最好先了解一下自己的需求，看看是否能满足`
+- 开始付款 `不能还价是因为时间和知识就是金钱，还得吃饭`
+- 发你下载链接 `阿里云盘&百度云盘，默认发百度云盘`
+- 拉你进群 `下次有更新，新的版本直接发群里`
+
+### 下载镜像压缩包
+
+- 提供`百度云盘`和`阿里云盘`两种下载途径
+
+### 下载树莓派系统刷写工具
+
+- 树莓派官方刷写软件：https://github.com/raspberrypi/rpi-imager/releases/latest
+
+### 刷写镜像到SD卡
+
+- 设置WiFi等相关信息，开始刷写
+
+### 进入HomeAssistant页面
+
+!> 注意：不要用8123端口访问、请直接使用ip访问
+
 - 请勿使用`:8123`端口进入HomeAssistant，可直接使用IP进入
 - 如果不知道IP，可使用`http://raspberrypi.local`进入
+
+### 设置家的位置
+
+!> 第一次使用，请将家的默认位置改成你的
+
 - 在百度地图中右键点击可以`设置家的位置`
-- 关于`TileBoard磁贴`相关视频：https://www.bilibili.com/video/BV15a4y1a7tF/
-
-### 镜像烧录
-- 请千万别为了下载此镜像而开通百度网盘会员，可以提供阿里云盘高速下载
-- 建议使用树莓派官方刷写软件：https://github.com/raspberrypi/rpi-imager/releases/latest
-
-### 无网线，配置WiFi
-如果使用WiFi连接，则镜像烧录后，打开内存卡在`boot`目录下新建`wpa_supplicant.conf`文件，写入以下内容
-```conf
-country=CN 
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev 
-update_config=1 
-network={
-    ssid="wifi名称"
-    psk="wifi密码"
-    key_mgmt=WPA-PSK
-    priority=1
-}
-```
-
-### 安全问题
-- 如果`开启外网访问`，请务必修改以下初始密码：`HomeAssistant`、`NodeRed`、`Docker管理器`、`下载管理`
-
-### 内网穿透
-- 启动`内网穿透服务`之前请先在`文件管理器`里修改`frpc.ini`配置，如果没有自己的服务器，可联系我
-```bash
-sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
-```
-
-### 远程桌面
-- 如果想使用`树莓派桌面`操作，可以`Windows`上使用远程桌面方式登录 [操作看视频](https://www.bilibili.com/video/BV1UK4y1j7cE/)

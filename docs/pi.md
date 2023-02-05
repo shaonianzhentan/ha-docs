@@ -1,30 +1,19 @@
 ## 初始密码
 
-- 树莓派：`pi` `raspberry`
+- 树莓派：`pi` `ha123456`
 - HomeAssistant：`ha` `ha123456`
-- Docker管理器：`admin` `ha123456` 或 `homeassistant`
+- Docker管理器：`admin` `homeassistant`
 - NodeRed：`admin` `ha123456`
-- HomeBridge：`admin` `admin`
 - 下载管理：`ha123456`
-- V2：`admin` `ha123456`
 
-## 相关问题与解决方案
+### 安全问题
+- 如果`开启外网访问`，请务必修改以下初始密码：`HomeAssistant`、`NodeRed`、`Docker管理器`、`下载管理`
 
-> 重新安装NodeRED
+### 内网穿透
+- 启动`内网穿透服务`之前请先在`文件管理器`里修改`frpc.ini`配置，如果没有自己的服务器，可联系我
+```bash
+sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
+```
 
-打开终端, 切换到用户目录
-```bash
-cd ~/
-```
-输入以下命令重新安装NodeRED
-```bash
-sudo npm install -g --unsafe-perm node-red
-```
-安装成功后，执行重启服务命令
-```bash
-sudo pm2 restart node-red
-```
-重启成功后，运行以下命令，然后截图给我看看
-```bash
-sudo pm2 logs node-red
-```
+### 远程桌面
+- 如果想使用`树莓派桌面`操作，可以`Windows`上使用远程桌面方式登录 [操作看视频](https://www.bilibili.com/video/BV1UK4y1j7cE/)
