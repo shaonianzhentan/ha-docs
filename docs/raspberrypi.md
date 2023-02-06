@@ -2,16 +2,22 @@
 
 这是一个`树莓派原生系统`，集成 `HomeAssistant` 的 `Core版本`（不包含`Supervisor`）
 
-并且已经安装了和 `HomeAssistant` 相关的所有功能，**零配置开箱即用**
+预装众多有用的插件和服务，不管是学习还是自定义开发，都能省去大量时间
+
+我的目标是让每一位新手玩家 **零配置开箱即用**，不用考虑那么多，直接就能够玩起来😁
 
 ```
 因个人时间精力有限，需要先养活自己，才能保证持续提供更多完备的功能
-所以本镜像收费200，包含持续更新与咨询的服务
+所以本镜像收费200，包含持续更新与本系统相关问题咨询服务
 还请理解与支持
 ```
+
 ## 镜像功能
 
-- [x] `HomeAssistant`智能家居系统
+> 预装`php` `nodejs` `python` 等环境，可以直接运行相关程序
+
+### HomeAssistant
+
   - 卡片
     - [x] [天气卡片](https://github.com/bramkragten/weather-card)
     - [x] [动画背景](https://github.com/Villhellm/lovelace-animated-background)
@@ -24,61 +30,79 @@
   - 页面
     - [x] [离线下载管理](https://github.com/mayswind/AriaNg)
     - [x] [Tileboard](https://github.com/resoai/TileBoard)
-  - 组件
+  - 设备插件
+    - [x] `sonoff`  [易微联集成](https://github.com/AlexxIT/SonoffLAN)
+    - [x] `midea_ac_lan`  [美的M-Smart设备](https://github.com/georgezhao2010/midea_ac_lan)
+    - [x] `xiaomi_miot`  [小米全家桶](https://github.com/al-one/hass-xiaomi-miot)
+    - [x] `xiaomi_gateway3`  [小米第三代网关](https://github.com/AlexxIT/XiaomiGateway3)
+    - [x] `ble_monitor`  [蓝牙设备接入](https://github.com/custom-components/ble_monitor)
+    - [x] `xiaomi_tv`  [小米电视](https://github.com/shaonianzhentan/xiaomi_tv)
+    - [x] `xiaomi_radio`  [小米空调伴侣电台](https://github.com/shaonianzhentan/xiaomi_radio)
+  - 控制插件
+    - [x] `bemfa` [巴法云](https://github.com/larry-wong/bemfa) - 小爱同学/天猫精灵/小度音箱
+    - [x] `conversation`  [语音小助手](https://github.com/shaonianzhentan/conversation)
+    - [x] `ha_app`  [家庭助理Android应用](https://github.com/shaonianzhentan/ha_app)
+    - [x] `ha_windows`  [家庭助理Windows应用](https://github.com/shaonianzhentan/ha_windows)
+    - [x] `ha_wechat`  [微信控制](https://github.com/shaonianzhentan/ha_wechat)
+  - 显示插件
     - [x] 系统监控
-    - [x] `hacs` - [HACS](https://github.com/hacs-china/integration)
-    - [x] `sonoff` - [易微联集成](https://github.com/AlexxIT/SonoffLAN)
-    - [x] `ha_file_explorer` - [文件管理器](https://github.com/shaonianzhentan/ha_file_explorer)
-    - [x] `ha_cloud_music` - [云音乐](https://github.com/shaonianzhentan/ha_cloud_music)
-    - [x] `panel_iframe` - [侧边栏管理](https://github.com/shaonianzhentan/panel_iframe)
-    - [x] `google_maps` - [百度地图](https://github.com/shaonianzhentan/google_maps)
-    - [x] `xiaomi_tv` - [小米电视](https://github.com/shaonianzhentan/xiaomi_tv)
-    - [x] `xiaomi_radio` - [小米空调伴侣电台](https://github.com/shaonianzhentan/xiaomi_radio)
-    - [x] `xiaomi_miot` - [小米全家桶](https://github.com/al-one/hass-xiaomi-miot)
-    - [x] `xiaomi_gateway3` - [小米第三代网关](https://github.com/AlexxIT/XiaomiGateway3)
-    - [x] `ble_monitor` - [蓝牙监视器](https://github.com/custom-components/ble_monitor)
-    - [x] `workday` - [工作日](https://github.com/shaonianzhentan/workday)
-    - [x] `hf_weather` - [和风天气](https://github.com/shaonianzhentan/hf_weather)
-    - [x] `conversation` - [语音小助手](https://github.com/shaonianzhentan/conversation)    
-    - [x] `edge_tts` - [TTS服务](https://github.com/hasscc/hass-edge-tts)
-    - [x] `nodered` - [NodeRED](https://github.com/zachowj/hass-node-red)
-    - [x] `pyscript` - [Python脚本](https://github.com/custom-components/pyscript)
-    - [x] `smtp` - [QQ邮箱通知](https://github.com/shaonianzhentan/smtp)
-    - [ ] `baidu` - 小度音箱
-    - [x] `cloud_backup` - 云备份
-    - [x] `bookmark` - [书签](https://github.com/shaonianzhentan/bookmark)
-    - [ ] `meiju` - [美的美居](https://github.com/hasscc/meiju)
-- [x] `NodeRed`可视化编程    
-    - [x] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
-    - [x] `node-red-contrib-ha-mqtt` - [创建MQTT实体](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
-    - [x] `node-red-dashboard` - [仪表盘](https://github.com/node-red/node-red-dashboard)
-- [x] `Samba`局域网共享 - 已赋予最高权限
-- [x] `Windows`远程连接
-- [x] `Docker`管理器
-- [x] [`Kodbox`私人云盘](http://kodcloud.com/download/)
+    - [x] `google_maps`  [百度地图](https://github.com/shaonianzhentan/google_maps)
+    - [x] `ha_file_explorer`  [文件管理器](https://github.com/shaonianzhentan/ha_file_explorer)
+    - [x] `workday`  [工作日](https://github.com/shaonianzhentan/workday)
+    - [x] `hf_weather`  [和风天气](https://github.com/shaonianzhentan/hf_weather)
+  - 音乐插件
+    - [x] `ha_cloud_music`  [云音乐](https://github.com/shaonianzhentan/ha_cloud_music)
+    - [x] `cloud_music_mpd`  [云音乐MPD播放器](https://github.com/shaonianzhentan/cloud_music_mpd)
+    - [x] `edge_tts`  [TTS服务](https://github.com/hasscc/hass-edge-tts)
+  - 功能插件
+    - [x] `hacs`  [HACS](https://github.com/hacs-china/integration)
+    - [x] `bookmark` [书签](https://github.com/shaonianzhentan/bookmark)
+    - [x] `panel_iframe`  [侧边栏管理](https://github.com/shaonianzhentan/panel_iframe)
+    - [x] `nodered`  [NodeRED](https://github.com/zachowj/hass-node-red)
+    - [x] `pyscript`  [Python脚本](https://github.com/custom-components/pyscript)
+    - [x] `smtp`  [QQ邮箱通知](https://github.com/shaonianzhentan/smtp)
+    - [x] `cloud_backup`  [云备份](https://github.com/shaonianzhentan/cloud_backup)
+    - [ ] `meiju` [美的美居](https://github.com/hasscc/meiju)
+
+### NodeRED
+
+一个可视化编程平台，通过拖拉节点可轻松编程实现简单的功能，已预装`HomeAssistant`相关插件
+
+- [x] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
+- [x] `node-red-contrib-ha-mqtt` - [创建MQTT实体](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
+- [x] `node-red-dashboard` - [仪表盘](https://github.com/node-red/node-red-dashboard)
+
+### 服务
+
 - [x] `Aria2`下载管理
 - [x] `WebSSH2`在线终端服务
 - [x] `ffmpeg`视频处理服务
 - [x] `MQTT`服务
 - [x] `MPD`音乐服务
 - [x] `DLNA`流媒体服务器
-- [x] `Airplay`投屏服务
-- [x] `Frpc`内网穿透服务 - `需要则单独收费`
-- _
-- **更多功能，持续开发中...**
+- [x] `Airplay`投屏服务  
+- [x] `Samba`局域网共享 - 已赋予最高权限
+- [x] `Windows`远程连接
+- [x] `Docker`管理器
+- [x] [`Kodbox`私人云盘](http://kodcloud.com/download/)
+- [x] `Frpc` 内网穿透服务 - `需要则单独收费`
 
 ## 更新日志
 
-#### 第十版（开发中）
+#### 第十版 2023-2-6
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
 - [x] 新增`云备份`插件
 - [x] 新增`家庭助理Windows应用`插件
 - [x] 新增`家庭助理Android应用`插件
+- [x] 更新`微信控制`插件
 - [x] 更新`语音小助手`插件
-- [x] 更新`微信控制HomeAssistant`插件
 - [x] 使用新版`云音乐`插件
 - [x] 使用新版`云音乐MPD播放器`插件
 - [x] 新增`本地日历`集成，配置自动化提醒
+- [x] 新增`微信消息`自动化
+- [x] 新增`树莓派关机`脚本
+- [x] 新增`树莓派开机`脚本
+- [x] 新增`Web ESPHome`侧边栏链接
 
 #### 第九版 2022-12-12
 - [x] 更新树莓派系统
