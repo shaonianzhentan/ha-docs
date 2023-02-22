@@ -56,6 +56,13 @@ print('当前时间', now.strftime('%Y-%m-%d %H:%M:%S'))
 
 s = '2022-04-10T18:44:09+00:00'
 dt = datetime.datetime.fromisoformat(s)
+
+s = '2022-04-10 18:44:09'
+dt = datetime.strptime(s, '%Y-%m-%d %H:%M:%S')
+
+# 日期加减
+now = now + datetime.timedelta(seconds=+300)
+print(now.strftime('%Y-%m-%d %H:%M:%S'))
 ```
 
 ```py
