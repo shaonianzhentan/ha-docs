@@ -62,7 +62,7 @@
     - [x] `pyscript`  [Python脚本](https://github.com/custom-components/pyscript)
     - [x] `smtp`  [QQ邮箱通知](https://github.com/shaonianzhentan/smtp)
     - [x] `cloud_backup`  [云备份](https://github.com/shaonianzhentan/cloud_backup)
-    - [ ] `meiju` [美的美居](https://github.com/hasscc/meiju)
+    <!-- - [ ] `meiju` [美的美居](https://github.com/hasscc/meiju) -->
 
 ### NodeRED
 
@@ -88,6 +88,13 @@
 - [x] `Frpc` 内网穿透服务 - `需要则单独收费`
 
 ## 更新日志
+
+#### 第11版 开发中
+- [ ] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
+- [ ] 支持在HA里修改`NodeRED`登录密码
+- [ ] 更新HomeAssistant相关插件
+- [ ] 修复自动化`日历提醒`
+- [ ] 安装`V-2-r-a-y-A`
 
 #### 第十版 2023-2-6
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
