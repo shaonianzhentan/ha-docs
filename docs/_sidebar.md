@@ -79,7 +79,8 @@
 
 
 - 更多知识
-  
+
+  - [Linux](about_linux.md)
   - [Android](about_android.md)
   - [HomeKit](about_homekit.md)
   - [树莓派](about_pi.md)
