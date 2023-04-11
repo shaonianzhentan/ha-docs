@@ -90,11 +90,12 @@
 ## 更新日志
 
 #### 第11版 开发中
-- [ ] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
-- [ ] 支持在HA里修改`NodeRED`登录密码
-- [ ] 更新HomeAssistant相关插件
-- [ ] 修复自动化`日历提醒`
-- [ ] 安装`V-2-r-a-y-A`
+- [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
+- [x] 支持命令修改`NodeRED`登录密码
+- [x] 新增简略移动端界面
+- [x] 新增使用小提示
+- [x] 修复自动化`日历提醒`
+- [x] 安装`V2rayA`
 
 #### 第十版 2023-2-6
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
