@@ -37,6 +37,21 @@ docker run -itd --net=host --restart=always --name=homebridge -v ~/homeassistant
 
 # 安装AirPlay服务
 docker run -itd --net=host --restart=always --name=airplay 1activegeek/airconnect
+
+# 安装DLNA服务
+docker run -itd --net=host --name=upmpdcli \
+  -e MPD_HOST=localhost \
+  -e MPD_PORT=6600 \
+  -e AV_FRIENDLY_NAME=RaspberryPi \
+  giof71/upmpdcli:stable
+
+
+docker run -itd --net=host --name=upmpdcli nolte/upmpdcli -h localhost -p 6600 -f RaspberryPi
+
+# 安装V2
+docker pull mzz2017/v2raya:latest
+
+docker run --net=host --name=v2raya mzz2017/v2raya:latest
 ```
 
 ### 配置zigbee2mqtt
