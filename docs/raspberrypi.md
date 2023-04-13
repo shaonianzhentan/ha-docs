@@ -22,6 +22,7 @@
     - [x] [天气卡片](https://github.com/bramkragten/weather-card)
     - [x] [动画背景](https://github.com/Villhellm/lovelace-animated-background)
     - [x] [Mushroom](https://github.com/piitaya/lovelace-mushroom)
+    - [x] `kiosk-mode` [全屏显示](https://github.com/NemesisRE/kiosk-mode)
   - 主题
     - [x] [Windows10](https://github.com/mikosoft83/hass-windows10-themes)
     - [x] [waves](https://github.com/tgcowell/waves)
@@ -91,11 +92,11 @@
 
 #### 第11版 开发中
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
-- [x] 支持命令修改`NodeRED`登录密码
-- [x] 新增简略移动端界面
-- [x] 新增使用小提示
-- [x] 修复自动化`日历提醒`
-- [x] 安装`V2rayA`
+- [ ] 支持命令修改`NodeRED`登录密码
+- [ ] 新增简略移动端界面
+- [ ] 新增`kiosk-mode`插件（隐藏Home Assistant标题或侧边栏）
+- [ ] 修复自动化`日历提醒`
+- [ ] 新增自动化`每日备份`
 
 #### 第十版 2023-2-6
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
