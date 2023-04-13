@@ -3,7 +3,7 @@
 # 更新源
 apt update
 # 系统升级
-apt upgrade
+apt upgrade -y
 
 # 拉取最新镜像
 docker pull portainer/portainer-ce:latest
