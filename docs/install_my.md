@@ -102,7 +102,7 @@ apk add ffmpeg
 ### 安装PM2开机启动管理
 ```bash
 # 安装淘宝npm
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npmmirror.com
 
 # 安装pm2管理
 cnpm i -g pm2
@@ -217,7 +217,7 @@ apt update
 # 安装npm
 apt install npm
 # npm换源
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 # 安装node管理模块
 npm i -g n
 # 安装node最新稳定版

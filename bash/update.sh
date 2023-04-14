@@ -2,7 +2,7 @@
 
 : ' 执行脚本
 
-wget https://gitee.com/shaonianzhentan/ha-docs/raw/master/bash/pi.sh
+wget https://gitee.com/shaonianzhentan/ha-docs/raw/master/bash/update.sh
 
 sudo chmod +x pi.sh
 
@@ -45,19 +45,19 @@ docker rm ha
 docker run -itd --net="host" --restart=always --privileged=true --name="ha" -v ~/homeassistant:/config -v ~/homeassistant/media:/media -v /run/dbus:/run/dbus:ro -e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
 
 # 更新WebSSH
-cd ~/git/webssh2
+cd /root/webssh2
 
 git pull
 
-cd ~/git/webssh2/app
+cd /root/webssh2/app
 
 npm i
 
 pm2 restart webssh
 
 # 更新NodeRED
-sudo pm2 stop nodered
+pm2 stop node-red
 
-sudo npm install -g --unsafe-perm node-red
+npm install -g --unsafe-perm node-red
 
-sudo pm2 restart nodered
+pm2 restart node-red
