@@ -1,5 +1,15 @@
 #!/bin/bash
 
+: ' 执行脚本
+
+wget https://gitee.com/shaonianzhentan/ha-docs/raw/master/bash/pi.sh
+
+sudo chmod +x pi.sh
+
+./pi.sh
+
+'
+
 # 更新源
 apt update
 # 系统升级
