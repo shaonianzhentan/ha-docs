@@ -90,13 +90,21 @@
 
 ## 更新日志
 
-#### 第11版 开发中
+#### 第12版 开发中
+- [ ] 增加GPIO控制
+
+#### 第11版 2023-4-16
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
-- [ ] 支持命令修改`NodeRED`登录密码
-- [ ] 新增简略移动端界面
-- [ ] 新增`kiosk-mode`插件（隐藏Home Assistant标题或侧边栏）
-- [ ] 修复自动化`日历提醒`
-- [ ] 新增自动化`每日备份`
+- [x] `HomeAssistant`、`Portainer`、`WebSSH`安装到root目录中
+- [x] `pip`换源
+- [x] Samba只共享`homeassistant`文件夹
+- [x] 支持命令修改`NodeRED`登录密码
+- [x] 新增简略移动端界面
+- [x] 新增`kiosk-mode`插件（隐藏Home Assistant标题或侧边栏）
+- [x] 修复自动化`日历提醒`
+- [x] 新增自动化`每日备份`
+- [x] 新增意图脚本`我想听xxx的歌`
+- [x] 删除`hf_weather`插件（京东万象服务停止，此插件不可用）
 
 #### 第十版 2023-2-6
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS
