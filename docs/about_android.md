@@ -74,6 +74,12 @@ adb shell dumpsys window windows
 
 # 查看Android手机当前正在运行的Activity
 adb shell dumpsys activity activities
+
+# 安装APK（将apk文件复制到adb.exe的目录）
+adb install app.apk
+
+# 强制覆盖安装
+adb install -r app.apk
 ```
 
 ```bash
