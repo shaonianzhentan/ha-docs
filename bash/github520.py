@@ -30,12 +30,13 @@ def main():
     if PY3:
       import urllib.request
       response = urllib.request.urlopen(hosts_url)
+      githosts = str(response.read(), 'UTF-8')
 
     if PY2:
       import urllib2
       response = urllib2.urlopen(hosts_url)
-
-    githosts = str(response.read(), 'UTF-8')
+      githosts = response.read()
+   
 
     # print(githosts)
 
