@@ -91,7 +91,8 @@
 ## 更新日志
 
 #### 第12版 开发中
-- [ ] 增加GPIO控制
+- [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
+- [x] 增加GPIO控制
 
 #### 第11版 2023-4-16
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
