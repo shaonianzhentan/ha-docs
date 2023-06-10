@@ -38,7 +38,7 @@ npm config get registry
 # 还原npm源
 npm config set registry https://registry.npmjs.org/
 ```
-官方文件：https://cnpmjs.org/
+官方文件：https://npmmirror.com/
 
 
 ### 管理node应用

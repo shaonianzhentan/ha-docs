@@ -13,7 +13,7 @@
 ```bash
 cd ~/git
 
-git clone https://github.com.cnpmjs.org/blinker-iot/blinker-py
+git clone https://ghproxy.com/https://github.com/blinker-iot/blinker-py
 
 cd blinker-py
 sudo python3 setup.py install

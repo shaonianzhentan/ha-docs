@@ -20,9 +20,9 @@ C:\Windows\System32\drivers\etc\hosts
 
 ## 替换域名
 
-格式：`github.com`更换为`github.com.cnpmjs.org`
+格式：`github.com`更换为`ghproxy.com/https://github.com`
 
-例子：https://github.com.cnpmjs.org/shaonianzhentan/ha-docs/blob/master/README.md
+例子：https://ghproxy.com/https://github.com/shaonianzhentan/ha-docs/blob/master/README.md
 
 格式：`github.com`更换为`hub.fastgit.org`
 

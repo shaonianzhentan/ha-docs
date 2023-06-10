@@ -62,7 +62,7 @@ ffmpeg -y -i rtsp://admin:123456@192.168.1.111:554/ -vcodec copy -acodec copy -f
 sudo apt install dnsmasq hostapd -y
 
 # 复制文件到指定目录
-git clone https://github.com.cnpmjs.org/oblique/create_ap
+git clone https://ghproxy.com/https://github.com/oblique/create_ap
 cd create_ap
 sudo cp -r create_ap /usr/bin/
 sudo cp -r create_ap.service /etc/systemd/system/

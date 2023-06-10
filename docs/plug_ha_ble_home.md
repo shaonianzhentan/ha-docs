@@ -54,7 +54,7 @@ rfcomm bind /dev/rfcomm0 50:D2:F5:56:2D:DB
 ---
 
 ```bash
-git clone https://github.com.cnpmjs.org/shaonianzhentan/ha_ble_home
+git clone https://ghproxy.com/https://github.com/shaonianzhentan/ha_ble_home
 ```
 
 源码地址：https://github.com/shaonianzhentan/ha_ble_home
