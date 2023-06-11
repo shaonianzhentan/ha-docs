@@ -293,6 +293,7 @@ server {
         proxy_pass http://webssh;
         proxy_set_header  Upgrade  $http_upgrade;
         proxy_set_header  Connection  $connection_upgrade;
+        proxy_read_timeout  3600;
     }
 
     location /node-red/ {
@@ -352,4 +353,72 @@ wget https://github.com/resoai/TileBoard/releases/download/v2.1.3/TileBoard.zip
 unzip TileBoard.zip
 rm -rf TileBoard.zip
 echo 'success'
+```
+
+## 香橙派armbian
+
+SSH默认密码：1234
+```bash
+# 更新系统
+apt update
+
+apt upgrade -y
+
+# 安装Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+# 安装HA
+sudo docker run -itd --net="host" --restart=always --privileged=true --name="ha" \
+-v ~/homeassistant:/config \
+-v ~/homeassistant/media:/media \
+-e TZ="Asia/Shanghai" homeassistant/home-assistant:latest
+
+# 安装portainer
+sudo docker run -itd --net="host" --restart=always --name="portainer" \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v ~/portainer:/data \
+portainer/portainer-ce:latest
+
+# 安装MQTT
+sudo apt install mosquitto libmosquitto-dev mosquitto-clients -y
+
+# 安装Node
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+npm config set registry https://registry.npmmirror.com/
+
+# 安装NodeRED（还原数据）
+sudo npm install -g --unsafe-perm node-red
+
+# 安装PM2 
+npm i pm2 -g
+
+pm2 start node-red
+
+pm2 save
+
+pm2 startup
+
+# 安装WebSSH2
+
+git clone https://ghproxy.com/https://github.com/billchurch/webssh2
+
+cd webssh2/app
+
+npm i
+
+pm2 start index.js --name webssh
+
+# 安装frpc
+sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
+
+# 安装Nginx
+apt install nginx -y
+
+nano /etc/nginx/sites-enabled/default
+
+nginx -s reload
 ```

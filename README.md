@@ -133,6 +133,7 @@ server {
         proxy_pass http://webssh;
         proxy_set_header  Upgrade  $http_upgrade;
         proxy_set_header  Connection  $connection_upgrade;
+        proxy_read_timeout  3600;
     }
 
     location /node-red/ {
