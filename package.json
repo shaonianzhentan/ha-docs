@@ -8,11 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docsify serve docs --port 3006"
+    "dev": "docsify serve docs --port 3006",
+    "start": "cd docs && npx --no-install http-server -p 3006"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "docsify-cli": "^4.4.4"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
