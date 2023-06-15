@@ -96,6 +96,7 @@
 - [x] 新增涂鸦插件
 - [x] 增加GPIO控制相关库
 - [x] 安装v2rayA
+- [x] 修复WebSSH长时间会自动断线的问题
 
 #### 第11版 2023-4-16
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
