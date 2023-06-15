@@ -33,6 +33,7 @@
     - [x] [Tileboard](https://github.com/resoai/TileBoard)
   - 设备插件
     - [x] `sonoff`  [易微联集成](https://github.com/AlexxIT/SonoffLAN)
+    - [x] `localtuya`  [涂鸦](https://github.com/rospogrigio/localtuya)
     - [x] `midea_ac_lan`  [美的M-Smart设备](https://github.com/georgezhao2010/midea_ac_lan)
     - [x] `xiaomi_miot`  [小米全家桶](https://github.com/al-one/hass-xiaomi-miot)
     - [x] `xiaomi_gateway3`  [小米第三代网关](https://github.com/AlexxIT/XiaomiGateway3)
@@ -92,7 +93,9 @@
 
 #### 第12版 开发中
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
-- [x] 增加GPIO控制
+- [x] 新增涂鸦插件
+- [x] 增加GPIO控制相关库
+- [x] 安装v2rayA
 
 #### 第11版 2023-4-16
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
