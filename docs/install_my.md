@@ -287,6 +287,7 @@ server {
         proxy_pass  http://homeassistant;
         proxy_set_header  Upgrade  $http_upgrade;
         proxy_set_header  Connection  $connection_upgrade;
+        client_max_body_size 100M;
     }
 
     location /ssh/ {
