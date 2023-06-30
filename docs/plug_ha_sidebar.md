@@ -1,11 +1,7 @@
 # 侧边栏管理
 
-*视频介绍：https://www.bilibili.com/video/BV1Ya4y1v7mR/*
+*视频介绍：*
 
 ---
 
-```bash
-git clone https://ghproxy.com/https://github.com/shaonianzhentan/ha_sidebar
-```
-
-源码地址：https://github.com/shaonianzhentan/ha_sidebar
+项目地址：https://github.com/shaonianzhentan/panel_iframe
