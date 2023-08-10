@@ -91,6 +91,11 @@
 
 ## 更新日志
 
+#### 第13版 开发中
+- [ ] 更新树莓派系统、HomeAssistant、NodeRED、HACS及相关插件
+- [ ] 使用Docker管理器汉化版
+- [ ] 增加键盘监控器服务
+
 #### 第12版 2023-6-18
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
 - [x] 新增涂鸦插件
