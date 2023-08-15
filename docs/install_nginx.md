@@ -131,3 +131,44 @@ openssl x509 \
 # 复制文件到SSL目录
 cp server.key server.crt /etc/nginx/ssl/
 ```
+
+
+## 问题解决方案
+
+
+### 无法加载大文件
+
+在`nginx.conf`中`http`里面加入三行配置
+```nginx
+http {
+
+    proxy_buffer_size 128k;
+    proxy_buffers   32 128k;
+    proxy_busy_buffers_size 128k;
+
+}
+```
+
+### 无法上传大文件
+
+nginx默认的客户端body大小为1M
+
+通过全局或单个服务定义上传文件的大小可解决此问题
+
+**全局定义**
+```nginx
+http {
+
+    client_max_body_size 1024m;
+
+}
+```
+
+**单个服务定义**
+```nginx
+server {
+
+    client_max_body_size 1024m;
+
+}
+```

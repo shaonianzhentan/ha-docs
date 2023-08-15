@@ -66,7 +66,7 @@
     - [x] `cloud_backup`  [云备份](https://github.com/shaonianzhentan/cloud_backup)
     <!-- - [ ] `meiju` [美的美居](https://github.com/hasscc/meiju) -->
 
-### NodeRED
+### [NodeRED](https://github.com/node-red/node-red)
 
 一个可视化编程平台，通过拖拉节点可轻松编程实现简单的功能，已预装`HomeAssistant`相关插件
 
@@ -92,9 +92,11 @@
 ## 更新日志
 
 #### 第13版 开发中
-- [ ] 更新树莓派系统、HomeAssistant、NodeRED、HACS及相关插件
+- [ ] 更新树莓派系统、Kodbox
+- [ ] 更新HomeAssistant、HACS及相关插件
+- [ ] 更新NodeRED及相关插件
 - [ ] 使用Docker管理器汉化版
-- [ ] 增加键盘监控器服务
+- [ ] 调整Nginx配置支持大文件上传和预览
 
 #### 第12版 2023-6-18
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
