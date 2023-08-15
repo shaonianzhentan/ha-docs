@@ -73,6 +73,7 @@
 - [x] `node-red-contrib-home-assistant-websocket` - [homeassistant](https://github.com/zachowj/node-red-contrib-home-assistant-websocket)
 - [x] `node-red-contrib-ha-mqtt` - [创建MQTT实体](https://github.com/shaonianzhentan/node-red-contrib-ha-mqtt)
 - [x] `node-red-dashboard` - [仪表盘](https://github.com/node-red/node-red-dashboard)
+- [x] `node-red-node-pi-gpio` - [GPIO](https://flows.nodered.org/node/node-red-node-pi-gpio)
 
 ### 服务
 
@@ -82,7 +83,7 @@
 - [x] `MQTT`服务
 - [x] `MPD`音乐服务
 - [x] `DLNA`流媒体服务器
-- [x] `Airplay`投屏服务  
+- [x] `Airplay`投屏服务
 - [x] `Samba`局域网共享 - 已赋予最高权限
 - [x] `Windows`远程连接
 - [x] `Docker`管理器
