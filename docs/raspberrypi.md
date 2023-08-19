@@ -92,13 +92,13 @@
 
 ## 更新日志
 
-#### 第13版 开发中
-- [ ] 更新树莓派系统、Kodbox
-- [ ] 更新HomeAssistant、HACS及相关插件
-- [ ] 更新NodeRED及相关插件
-- [ ] 使用Docker管理器汉化版
-- [ ] 调整Nginx配置支持大文件上传和预览
-- [ ] 树莓派3B/4B禁止屏幕休眠
+#### 第13版 2023-8-19
+- [x] 更新树莓派系统、Kodbox
+- [x] 更新HomeAssistant、HACS及相关插件
+- [x] 更新NodeRED及相关插件
+- [x] 使用Docker管理器汉化版
+- [x] 调整Nginx配置支持大文件上传和预览
+- [x] 树莓派3B/4B禁止屏幕休眠
 
 #### 第12版 2023-6-18
 - [x] 更新树莓派系统、HomeAssistant、NodeRED、Docker管理器、HACS及相关插件
