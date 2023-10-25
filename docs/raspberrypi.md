@@ -94,7 +94,7 @@
 
 #### 第14版 开发中
 
-- [ ] 更新树莓派系统、Kodbox
+- [ ] 更新树莓派系统、Kodbox、NodeJS
 - [ ] 更新HomeAssistant、HACS及相关插件
 - [ ] 更新NodeRED及相关插件
 - [ ] 添加NodeRED仪表盘到HomeAssistant

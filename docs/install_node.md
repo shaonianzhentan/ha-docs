@@ -8,11 +8,9 @@
 
 ### 安装
 
-> nodejs安装方法一（树莓派zero系列千万别用这个）
-```bash
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
+> nodejs安装方法一
+
+https://github.com/nodesource/distributions
 
 > nodejs安装方法二
 ```bash
