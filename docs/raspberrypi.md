@@ -92,12 +92,12 @@
 
 ## 更新日志
 
-#### 第14版 开发中
+#### 第14版 2023-12-10
 
-- [ ] 更新树莓派系统、Kodbox、NodeJS
-- [ ] 更新HomeAssistant、HACS及相关插件
-- [ ] 更新NodeRED及相关插件
-- [ ] 添加NodeRED仪表盘到HomeAssistant
+- [x] 更新树莓派系统、NodeJS、Docker管理器
+- [x] 更新HomeAssistant、HACS及相关插件
+- [x] 更新NodeRED及相关插件
+- [x] 添加NodeRED仪表盘到HomeAssistant
 
 #### 第13版 2023-8-19
 - [x] 更新树莓派系统、Kodbox
