@@ -414,7 +414,7 @@ npm i
 pm2 start index.js --name webssh
 
 # 安装frpc
-sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc
+sudo docker run -itd --net="host" --restart=always --name="frpc" -v ~/homeassistant/frpc.ini:/etc/frp/frpc.ini snowdreamtech/frpc:0.51.3
 
 # 安装Nginx
 apt install nginx -y
