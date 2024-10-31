@@ -22,7 +22,7 @@ C:\Windows\System32\drivers\etc\hosts
 
 格式：`github.com`更换为`ghproxy.com/https://github.com`
 
-例子：https://ghproxy.com/https://github.com/shaonianzhentan/ha-docs/blob/master/README.md
+例子：https://ghp.ci/https://github.com/shaonianzhentan/ha-docs/blob/master/README.md
 
 格式：`github.com`更换为`hub.fastgit.org`
 

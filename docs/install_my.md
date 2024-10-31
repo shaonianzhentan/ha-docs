@@ -111,7 +111,7 @@ cnpm i -g pm2
 ### 网易云音乐API
 ```bash
 cd ~/git
-git clone https://ghproxy.com/https://github.com/Binaryify/NeteaseCloudMusicApi
+git clone https://ghp.ci/https://github.com/Binaryify/NeteaseCloudMusicApi
 cd NeteaseCloudMusicApi
 cnpm i
 pm2 start app.js --name music
@@ -132,7 +132,7 @@ pm2 start node-red
 
 ```bash
 cd ~/git
-git clone https://ghproxy.com/https://github.com/billchurch/webssh2
+git clone https://ghp.ci/https://github.com/billchurch/webssh2
 cd webssh2/app
 cnpm i
 pm2 start index.js --name webssh
@@ -148,7 +148,7 @@ location /ssh/ {
 ```bash
 # 下载安装
 cd ~/git
-git clone https://ghproxy.com/https://github.com/Koenkk/zigbee2mqtt
+git clone https://ghp.ci/https://github.com/Koenkk/zigbee2mqtt
 cd zigbee2mqtt
 cnpm i
 # 修改配置(自动发现：homeassistant的值修改为true)
@@ -191,7 +191,7 @@ sudo systemctl status frpc.service
 
 ```bash
 # clone文件
-git clone https://ghproxy.com/https://github.com/shaonianzhentan/ha_file_explorer
+git clone https://ghp.ci/https://github.com/shaonianzhentan/ha_file_explorer
 # 复制文件夹
 sudo mv ./ha_file_explorer/custom_components custom_components
 # 删除clone的文件
@@ -337,7 +337,7 @@ cd /var/www && sudo chmod 777 html
 cd html && mkdir aria2 && cd aria2
 # 拉取指定目录
 git init
-git remote add -f origin https://ghproxy.com/https://github.com/ziahamza/webui-aria2
+git remote add -f origin https://ghp.ci/https://github.com/ziahamza/webui-aria2
 git config core.sparsecheckout true
 echo "docs" >> .git/info/sparse-checkout
 git pull origin master
@@ -405,7 +405,7 @@ pm2 startup
 
 # 安装WebSSH2
 
-git clone https://ghproxy.com/https://github.com/billchurch/webssh2
+git clone https://ghp.ci/https://github.com/billchurch/webssh2
 
 cd webssh2/app
 

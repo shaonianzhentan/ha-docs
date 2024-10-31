@@ -7,7 +7,7 @@
 ## 语音小助手修改增强版
 
 ```bash
-git clone https://ghproxy.com/https://github.com/shaonianzhentan/conversation
+git clone https://ghp.ci/https://github.com/shaonianzhentan/conversation
 ```
 
 源码地址：https://github.com/shaonianzhentan/conversation

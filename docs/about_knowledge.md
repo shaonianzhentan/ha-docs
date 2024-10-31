@@ -43,7 +43,7 @@ curl -X POST -H "Authorization: Bearer 令牌凭据" \
 - https://d.serctl.com/
 - http://toolwa.com/github/
 - https://gh.api.99988866.xyz/
-- https://ghproxy.com/
+- https://ghp.ci/
 - http://gitd.cc/
 - https://github.zhlh6.cn/
 
